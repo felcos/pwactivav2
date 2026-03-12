@@ -1,0 +1,969 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>PropertyWeb</title>
+<!--include virtual="inc_head.asp" -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<link href="../../css/base.css" rel="stylesheet" type="text/css">
+<link href="../../css/estilos.css" rel="stylesheet" type="text/css">
+<link href="../../css/fuentes.css"  rel="stylesheet" type="text/css" >
+<link href="../../css/css-bootstrap/todo-bootstrap.css"  rel="stylesheet"  type="text/css" >
+
+<link href="../../css/form_boots.css" rel="stylesheet" type="text/css">
+<link href="../../css/titulos.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_info.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_operaciones.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/leer_javier.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/js-components.css" rel="stylesheet" type="text/css">
+<!-- css temporal, estilos por defecto bt-->
+<link href="../../css/header.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/footer.css" rel="stylesheet" type="text/css">
+<link  href="../../css/estilo_imprimir.css" rel="stylesheet" type="text/css" media="print">
+
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/mapaCoord.css">
+
+<!-- EXTRA  -->
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/tabs031-izq.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosForm.css">
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosResultados.css"><!---->
+
+<link  href="../../css/css-pags/filtrosForm.css" rel="stylesheet" type="text/css">
+
+<link  href="js/typeshead.css" rel="stylesheet" type="text/css">
+
+
+
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+
+<!--[if lt IE 9]><script src=""js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--<script src="js/ie-emulation-modes-warning.js"></script>-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<!--include virtual="/js/inc_js.asp" -->
+<script src="../../lib/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="../../js/jquery.form.js" type="text/javascript"></script>
+
+<!--<script src="../../lib/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>  -->
+
+<script src="../../lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../js/modernizr.js" type="text/javascript"></script>
+<!--   EXTRA -->
+<script src="js/javier.js"></script>
+
+<script src="js/typeshead.js"></script>
+
+<!-- :inc_head.asp  -->
+
+
+
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+	
+/*	
+	var substringMatcher = function(strs) {
+  return function findMatches(q, cb) {
+    var matches, substringRegex;
+
+    // an array that will be populated with substring matches
+    matches = [];
+
+    // regex used to determine if a string contains the substring `q`
+    substrRegex = new RegExp(q, 'i');
+
+    // iterate through the pool of strings and for any string that
+    // contains the substring `q`, add it to the `matches` array
+    $.each(strs, function(i, str) {
+      if (substrRegex.test(str)) {
+        matches.push(str);
+      }
+    });
+
+    cb(matches);
+  };
+};
+
+var states = ['A Coruña',  'Albacete',  'Alicante',  'Almería',  'Araba',  'Asturias',  'Ávila',  'Badajoz',  'Barcelona',  'Burgos',  'Cáceres',  'Cádiz',  'Cantabria',  'Castellón',  'Ciudad Real',  'Córdoba',  'Cuenca',  'Girona',  'Gipuzkoa',  'Granada',  'Guadalajara',  'Huelva',  'Huesca',  'Baleares',  'Jaén',  'La Rioja',  'Las Palmas',  'León',  'Lérida',  'Lugo',  'Madrid',  'Málaga',  'Murcia',  'Navarra',  'Orense',  'Palencia',  'Pontevedra',  'Salamanca',  'Segovia',  'Sevilla',  'Soria',  'Tarragona',  'Santa Cruz de Tenerife',  'Teruel',  'Toledo',  'Valencia',  'Valladolid',  'Vizcaya',  'Zamora',  'Zaragoza'
+];
+
+
+
+
+
+
+
+$('#the-basics .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  source: substringMatcher(states)
+});
+	
+	*/
+
+	
+	// jj Bloodhound
+	
+var states = ['A Coruña',  'Albacete',  'Alicante',  'Almería',  'Araba',  'Asturias',  'Ávila',  'Badajoz',  'Barcelona',  'Burgos',  'Cáceres',  'Cádiz',  'Cantabria',  'Castellón',  'Ciudad Real',  'Córdoba',  'Cuenca',  'Girona',  'Gipuzkoa',  'Granada',  'Guadalajara',  'Huelva',  'Huesca',  'Baleares',  'Jaén',  'La Rioja',  'Las Palmas',  'León',  'Lérida',  'Lugo',  'Madrid',  'Málaga',  'Murcia',  'Navarra',  'Orense',  'Palencia',  'Pontevedra',  'Salamanca',  'Segovia',  'Sevilla',  'Soria',  'Tarragona',  'Santa Cruz de Tenerife',  'Teruel',  'Toledo',  'Valencia',  'Valladolid',  'Vizcaya',  'Zamora',  'Zaragoza'
+];
+	
+// constructs the suggestion engine
+var states = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // `states` is an array of state names defined in "The Basics"
+  local: states
+});
+
+$('#the-basics .typeahead').typeahead({
+  hint: true,
+  highlight: true,
+  minLength: 1
+},
+{
+  name: 'states',
+  source: states
+});
+	
+	// jj prefetch
+
+	var countries = new Bloodhound({
+  datumTokenizer: Bloodhound.tokenizers.whitespace,
+  queryTokenizer: Bloodhound.tokenizers.whitespace,
+  // url points to a json file that contains an array of country names, see
+  // https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json
+ 	 //prefetch: 'https://github.com/twitter/typeahead.js/blob/gh-pages/data/countries.json'
+ // prefetch: '../data/countries.json'
+ prefetch: 'js/countries.json'  
+});
+
+// passing in `null` for the `options` arguments will result in the default
+// options being used
+$('#prefetch .typeahead').typeahead(null, {
+  name: 'countries',
+  source: countries
+});
+
+
+	//$('.dropdown-toggle').dropdown()
+
+/* BOTON submenu lateral derecho : animacion  /////////////////     */
+
+	$("#verSubmenu").data("clicks", false);	
+	
+	btSubmenu($("#verSubmenu"));	
+	
+	$("#verSubmenu").on('click', function (e){
+	     btSubmenu($(this));
+		 e.preventDefault();
+	 });
+	 
+/*  saca SUBMENU  .filtros-navs  */   
+	 function btSubmenu(elemento){
+		//  alert( elemento.data('clicks') );
+			  var clicks = elemento.data('clicks');
+			  
+			  if (clicks) {
+				$(".filtros-navs").addClass("activo");
+				elemento.find("span.ico").removeClass("icon-search").addClass("icon-cross giro"); //icon-arrow-left2 
+				$(".PwTabs>.tab-content").addClass("confiltros");
+				
+				
+			  } else {
+				$(".filtros-navs").removeClass("activo");
+				elemento.find("span.ico").removeClass("icon-cross giro").addClass("icon-search"); //icon-arrow-left2 
+				$(".PwTabs>.tab-content").removeClass("confiltros");
+			  }
+			 elemento.data("clicks", !clicks);
+		 };
+
+
+
+
+	 /* CLOSE para esta pantalla en concreto :  pablo v0.3   CERRAR   */
+	$(".close").on('click',function(){
+		cerrarPreguntas();
+		
+	});
+	function cerrarPreguntas(){               //cierra divPreguntas
+		//$(this).parent().hide("slow");
+		$('.divPreguntas').removeClass("activo");    //cierra preguntas
+		$('#verSubmenu').removeClass("animaHide");   // bton  verSubmenu lo hace visible
+				
+		setTimeout( function () {
+			 		//$('.divPreguntas').appendTo('#busqueda').addClass("lateralFiltro");  //añade contenido a #busqueda y lo posiciona dentro de este div;
+		}, 800 );
+		
+		//$('#verSubmenu').removeClass("animaHide");
+		
+		}
+	
+
+
+
+
+	$(".divPreguntas").addClass("activo");
+	
+	
+	 
+/* btCiudad     ///////////////// */
+
+	$(".btCiudad").on('click',function(e){ 
+	      
+		var diapos =  $(".contTodo .cont").length;  
+		var i = $(".btCiudad").index($(this))+1;
+		 // alert(i);
+		 				 //   alert( i + " :::: " +  $(".contTodo .cont").length  + " :::: " +   $(".btCiudad").text()   )
+		  
+		if( $("#qCiudad").val().length < 1){     	//  $(this).val().length < 1)
+				$(this).parent("cont").css({"color": "red"});		
+				$(".depura").addClass("activo");    	
+				$(".depura").text("Hay que rellenar campo");
+				//alert("vacio")
+			}else if( $(this).text()=="NO" ) { 
+				cerrarPreguntas();
+			}else if( $(this).text()=="SI" ) { 
+				// alert("HOLA");
+				//$(".divPreguntas").removeClass("activo");
+				$("#verSubmenu").data("clicks", true);
+				cerrarPreguntas();
+							
+				setTimeout( function () {
+			 		btSubmenu($("#verSubmenu"));
+				}, 600 );	
+				
+				//btSubmenu($("#verSubmenu"));
+				
+			}else {
+				//alert($(".btCiudad").index());
+				preguntaSiguiente(i);
+				}
+			
+		e.preventDefault();
+	});
+		
+/*  qCiudad AUTOMATICO   ///////////////// */  
+
+	$("#qCiudad").change(function(){
+		//var i = $(".btCiudad").index($(this)) + 1;
+		if( $("#qCiudad").val().length < 1){
+				$(".depura").addClass("activo");
+				$(".depura").text("hay que rellenar campo");
+				//alert("vacio")
+			}else{
+				$(".tit_busqueda").text($("#qCiudad").val());				
+				preguntaSiguiente(1);
+				//alert("relleno")
+			}	
+	});
+		
+		
+	$(".navPuntos span").on('click',function(){
+		preguntaSiguiente($(this).index());
+		 // preguntaSiguienteBIS($(this));  $(event.delegateTarget)
+	});
+	
+	function preguntaSiguiente(i){
+		$(".depura").removeClass("activo");
+		
+		$(".navPuntos span").removeClass("checked"); 
+		 $(".navPuntos span").eq(i).addClass("checked");		 
+		 var ii = i * -100;
+		 $(".contTodo").css({"left": ii + "%" });
+		}
+		
+
+	
+
+
+
+/*  PARTE CORRESPONDIENTE A LOS FILTROS   ///////////////// */  
+	
+/*  PLUGIN    */	
+$(".selectDrop").fnSelectDrop();/*'red'*/
+$(window).on('resize', function(){ $(".selectDrop").fnSelectDrop();});/*'yellow'*/
+
+/*  Drop Selec*/	
+
+
+
+
+/*  cerrar depuraAA*/
+$('#bt-enviar').on("click",function(){
+	if($("[aria-label='ciudad']").val()==""){
+		    $("[aria-label='ciudad']").css({"border-color": "red"});
+			//$(this).css({"border": "red"});
+			$('.depuraAA').text("Tienes que rellenar este campo");
+			$('.depuraAA').slideToggle();
+			//alert("hola");
+		}
+});
+//
+
+
+
+
+
+
+
+
+/*  bt masCalles >  añade camposinput .calle-filtro para introducir más calles */
+$('.bt-mascalles').on("click",function(){
+	var nCalles = $('#calle .calle-filtro').length;
+	var cadenaCalles =  "<div><input type='text' class='calle-filtro form-control'  placeholder='Añade otra calle'><span class='borrarInput'><a href='#' class='btn'><span class='icon-cross'></span></a></span></div>"
+	
+/**/	if ( nCalles <9) {
+			$(".bts-mascalles ").before(cadenaCalles);
+		} else if ( nCalles == 9) {
+			 $(".bts-mascalles ").before(cadenaCalles);
+			 //$('#calle .calle-filtro').attr("placeholder","Añade otra calle");
+			// alert($('#calle .calle-filtro').eq(9).html());
+			 $('#calle .calle-filtro').eq(9).attr("placeholder","Añade la última calle");
+		} else {
+			return false;
+		}
+		
+		
+		
+		
+/*		var elemento01 = $('#calle .calle-filtro').index()
+	if ( nCalles <11) {	
+	*/
+	
+/*	else if ( nCalles < 10 ) {
+		$(".bts-mascalles ").before("<div><input type='text' class='calle-filtro form-control'  placeholder='Añade la última calle'><span class='borrarInput'><a href='#' class='btn'><span class='icon-cross'></span></a></span></div>");	
+	} else if (( nCalles == 10 )&& ( $('p.info-filtro').length )) {
+		return false;
+	} else {
+		$(".calle-filtro:last").parent().append("<p class='info-filtro'> Has llegado al límite de <strong>10 calles</strong> seleccionables<p>");
+	}*/
+	
+	//find( $('#calle .calle-filtro').index();
+	
+/*	if ( nCalles <11) {
+		$(".bts-mascalles ").before("<div><input type='text' class='calle-filtro form-control'  placeholder='Añade otra calle'><span class='borrarInput'><a href='#' class='btn'><span class='icon-cross'></span></a></span></div>");
+	} else if ( nCalles < 10 ) {
+		$(".bts-mascalles ").before("<div><input type='text' class='calle-filtro form-control'  placeholder='Añade la última calle'><span class='borrarInput'><a href='#' class='btn'><span class='icon-cross'></span></a></span></div>");	
+	} else if (( nCalles == 10 )&& ( $('p.info-filtro').length )) {
+		return false;
+	} else {
+		$(".calle-filtro:last").parent().append("<p class='info-filtro'> Has llegado al límite de <strong>10 calles</strong> seleccionables<p>");
+	}*/
+
+	
+	
+	});
+
+     
+	
+$('#calle').on('click','.borrarInput>a',function(e){
+	if ( $('#calle .calle-filtro').length == 10) {
+		$('#calle .calle-filtro').attr("placeholder","Añade otra calle");
+		}
+		
+	 $(this).closest("div").remove();
+	 e.preventDefault();
+	});  
+	
+
+	
+	
+/* añade botón de "ver en mapa" solo cuando se vuelve de otra pestaña y no se han borrado los campos calles de este tab  */	
+/* por lo general se actualizara los campos según se rellenan los campos de calles  */	
+		/*$("[href='#calle']").on("click",function(){         
+			if(($('#calle .calle-filtro').val().length ) && ($(this).attr("aria-expanded")=="false") ){ 	  
+				$('.bt-calleMapa').css("display", "block");
+				}
+		
+			});*/
+
+/* activa el bt-calleMapa  */				
+$('#calle').on('change','.calle-filtro',function(){ 
+		if( $('.bt-calleMapa').attr("disabled")){
+					$('.bt-calleMapa').removeAttr("disabled");
+					$('.bt-calleMapa').addClass("btnAzul");
+			}
+	});
+				
+
+
+/*$("select[name=color1]").change(function(){
+            alert($('select[name=color1]').val());
+            $('input[name=valor1]').val($(this).val());
+        });*/
+
+
+	});
+	
+	
+	
+	
+	
+	
+	
+</script>
+<!-- //////////////////        /////////////////////// -->
+<style type="text/css">
+header {
+	background: url(img/gnral/header-1170.jpg) no-repeat;
+	height: 246px;
+}
+
+
+
+/* //////////    divPreguntas   /////////////////// */
+
+</style>
+</head>
+<body>
+<div class="container">
+  <header> </header>
+</div>
+<!--
+<div class="container">
+<button id="bt_lanza" type="button">DimensionesPantalla</button>
+<div id="informaSize" class="divInline"></div>
+</div>-->
+
+<div class="container">
+
+
+<div id="the-basics"> <!--   -->
+  <input class="typeahead" type="text" placeholder="Provincias">
+</div>
+
+
+<div id="prefetch">
+  <input class="typeahead" type="text" placeholder="Countries">
+</div>
+
+
+  <div class="caja">
+    <div class="miga">
+      <h2 class="tit_miga02">Disponibilidad</h2>
+    </div>
+    <div class="tit_resultados">
+      <p><span class="tit_busqueda">ESPAÑA </span><span class="tit_numero">67 resultados, </span><span class="tit_metros">con un total de 734.203 m2</span></p>
+      </div>
+
+    
+    
+    
+    
+    
+    <div class="PwTabs"> <!--deal-tabs--> 
+      
+      <a id="verSubmenu" href=""  class="btn bt_lupa animaHide" ><span class="ico icon-cross"></span><span class="hidden-xs"> ZONAS/SUBZONAS</span></a> <!--visible-xs icon-arrow-left2--> 
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs clearfix lineNavs" style="">
+        <li class="active"><a href="#mapa" data-toggle="tab" aria-expanded="true"><span class="icon-map2"></span> Mapa</a></li>
+        <li class=""><a href="#list" data-toggle="tab" aria-expanded="false"><span class="icon-menu"></span> Listado</a></li><!--icon-list2-->
+        
+    
+<!--  
+        <li class="dropdown visible-xs">
+                  <a class="dropdown-toggle " data-toggle="dropdown" id="" aria-expanded="false">
+                    <span class="icon-stats-bars2"></span>
+                    <span class="icon-arrow-down2 separadorSpan"></span>
+                  </a>
+                  <ul class="dropdown-menu" >
+                     <li> <a href="#agencias" data-toggle="tab" aria-expanded="false">Agencias</a></li>
+                     <li> <a href="#distribucion" data-toggle="tab" aria-expanded="false">Distribución</a></li>
+                  </ul>
+        </li> -->
+        
+    <!-- /////////////////////////   : TAB NAV -->
+
+		<!--        <li class="hidden-xs"><a href="#agencias" data-toggle="tab" aria-expanded="false">Agencias</a></li>
+        <li class="hidden-xs"><a href="#distribucion" data-toggle="tab" aria-expanded="false" >Distribución</a></li>-->
+      </ul>
+      
+      <!-- Tab panes -->
+      <div class="tab-content">
+      
+        <div class="filtros-navs" > 
+          <!-- Nav tabs -->
+<!--          <ul class="nav nav-tabs clearfix" style="display:none">
+            <li class="active"><a href="#busqueda" data-toggle="tab" aria-expanded="false"><span class="icon-search"></span> Busqueda</a></li>
+            <li style="display: none;"><a href="#resultados" data-toggle="tab">Resultados</a></li>
+          </ul>-->
+          
+          <!-- Tab  CONTENT -->
+          <div class="tab-content">
+            <div class="tab-pane  active" id="busqueda"> <!--     01 --> 
+            	
+                
+                <form class="filtrosForm">
+        
+        
+        <!-- ciudad-->
+        <div class="form-group">
+          <label for="ciudad-filtro">¿En qué ciudad de Europa?</label>
+          <input type="text" id="ciudad-filtro" class="form-control"  placeholder="Ej. Madrid">
+        </div>
+        
+         <div class="tb-Gral-cont">
+      <table class="tabla tbFiltros">
+        <caption>Madrid</caption>
+        <thead class="">
+          <tr class="trFiltros">
+            <th></th>
+            <th>Ops.</th>
+            <th>M<sup>2</sup></th>
+            <th></th>
+            <th colspan="2">Ver</th>
+          </tr>
+        </thead>
+        
+        <tbody class="">
+          <tr class="trFiltros">
+            <td>Of. Disponibles</td>
+            <td>29</td>
+            <td>23.000</td>
+            <td></td>
+            <td><a href="#" class="btFiltros"><span class="icon-location"></span></a></td>
+            <td><a href="#" class="btFiltros"><span class="icon-menu"></span></a></td>
+          </tr>
+          
+          <tr class="trFiltros">
+            <td>Of. Registradas</td>
+            <td>50</td>
+            <td>100.000</td>
+            <td></td>
+            <td><a href="#" class="btFiltros"><span class="icon-location"></span></a></td>
+            <td><a href="#" class="btFiltros"><span class="icon-menu"></span></a></td>
+          </tr>
+          
+          <tr class="trTotalAlquilado">
+            <td>Total Alquilado:</td>
+            <td colspan="5"><strong>60%</strong> <span class="totalAlquilado">@25/04/16</span></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+        
+        <!-- m2-->
+        <div class="form-group clearfix periodo"> 
+          <!--<p class="labelForm">Periodo</p>-->
+          <label for="metros-filtro">¿Qué M<sup>2</sup> buscas?</label>
+          <input type="text" id="" class="form-control bl50"  placeholder="Desde...">
+          <input type="text" id="" class="form-control bl50"  placeholder="Hasta">
+        </div>
+   
+<!-- agencia
+        <div class="form-group">
+          <label for="agencia">Agencia</label>
+          <div class="dropdown selectDrop">       
+            <select id="Agencia" >   
+              <option value="Agencia">Agencia 01</option>
+              <option value="Agencia">Agencia 02</option>
+              <option value="Agencia" selected>Agencia 03</option>
+              <option value="Agencia">Agencia 04</option>
+            </select>
+            <div class="dropdown-toggle form-control" data-toggle="dropdown" id="" aria-expanded="false">
+              <span class="dropdown-txt paisNombre">¿Quieres filtrar por Agencia?</span> 
+              <span class="caret"></span>
+            </div>
+            <ul class="dropdown-menu" role="menu" >
+            </ul>
+          </div>
+        </div>
+         /form-group  /agencia --> 
+        
+        
+        
+        
+        <!-- agencia-->
+        <div class="form-group">
+          <label for="agencia">Agencia:</label>
+          <div class="dropdown selectDrop ">       
+            <select id="Agencia" >   <!--class="hide"  -->
+              <option value="Agencia">Agencia 01</option>
+              <option value="Agencia">Agencia 02</option>
+              <option value="Agencia" selected>Agencia 03</option>
+              <option value="Agencia">Agencia 04</option>
+            </select>
+            <div class="dropdown-toggle form-control" data-toggle="dropdown" id="" aria-expanded="false"><!--   id="dropdownMenu1"           sr-only--> 
+              <span class="dropdown-txt paisNombre">¿Quieres filtrar por Agencia?</span> 
+              <span class="icon-arrow-down2 separadorSpan"></span>
+              <!--<span class="caret"></span> -->
+            </div>
+            <ul class="dropdown-menu" role="menu" >
+            </ul>
+          </div>
+        </div>
+        <!-- /form-group  /agencia --> 
+        <!-- <p class="info-filtro">En breve estará activo los filtros de Zona y Subzona</strong></p>-->
+        <!-- agencia-->
+        <div id="filtrosDisponibilidad"><!-- jj --> 
+        
+          <!-- area-->
+          <label>Area:</label>
+          <ul class="nav  nav-pills">
+
+            <li class="dropdown"> 
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Zonas <span class="caret"></span> </a>
+                <ul class="dropdown-menu">
+                   <li ><a href="#zonas" data-toggle="tab" >PRIME</a></li>
+                   <li ><a href="#zonas" data-toggle="tab" >A1</a></li>
+                   <li ><a href="#zonas" data-toggle="tab">A2</a></li>
+                   <li ><a href="#zonas" data-toggle="tab" >A3</a></li>
+                   <li ><a href="#zonas" data-toggle="tab" >DEC</a></li>
+                   <li ><a href="#zonas" data-toggle="tab">OUT</a></li>
+                   
+                </ul>
+            </li>
+           
+           <li class="dropdown"> 
+            	<a class="dropdown-toggle" data-toggle="dropdown" href="#">Subzonas <span class="caret"></span> </a>
+                <ul class="dropdown-menu dropdown-subzonas">
+                  <li ><h6>CENTRO</h6></li>
+                   <li ><a href="#subzonas"  data-toggle="tab" >Chamartín</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Avenida Burgos</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Castellana Norte</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Castellana Centro</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab" >Avenida Burgos</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">María de Molina – Velázquez</a></li>
+                   
+                   <li ><h6>OUT</h6></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Corredor de henares</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Rivas-Vaciamadrid</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Getafe – Leganés</a></li>
+                   <li ><a href="#subzonas"  data-toggle="tab">Las Rozas – Majadahonda</a></li> 
+                   <li ><a href="#subzonas"  data-toggle="tab">Tres Cantos</a></li>          
+                   <li ><a href="#subzonas"  data-toggle="tab">Boadilla</a></li>                
+
+                </ul>
+            </li>
+            
+            <li ><a href="#calle" data-toggle="tab">Calle</a></li>
+            <!--<li ><a href="#tudecides" data-toggle="tab"> Tu decides!</a></li>-->
+          </ul>
+          
+           <div class="tab-content">
+
+          
+            <div class="tab-pane" id="zonas">
+            	
+               <!--  <div class="tit_resultados" id="informa_resultados">
+                	 <p><span class="tit_busqueda">PRIME </span><span class="tit_numero"> 151 inmuebles</span><span class="tit_metros">, con un total de 346.056 m²</span>
+                     </p> 
+                </div> -->   
+            </div> 
+              
+ 		
+                     
+            
+           
+            <div class="tab-pane" id="subzonas">  
+			<!--	<div class="tit_resultados" id="informa_resultados">
+                	 <p><span class="tit_busqueda">Castellana Norte </span><span class="tit_numero"> 151 inmuebles</span><span class="tit_metros">, con un total de 346.056 m²</span>
+                     </p> 
+                </div>  -->
+                
+            </div>
+           
+                         
+            <div class="tab-pane" id="calle">
+                <input type="text" class="calle-filtro form-control"  placeholder="Ej. Castellana">
+                            
+                
+                <div class="bts-mascalles periodo clearfix">  <!--  -->
+                  <span class="bl50">
+                    <button  class="btn gris bt-mascalles" type="button">+ Añadir calles</button> <!--  btn-default-->
+                  </span>
+                  <span class="bl50" >
+                    <button  class="btn bt-calleMapa" type="button" disabled> Ver en mapa</button	> <!-- style="display:none" -->
+                  </span>
+                  <!--<input type="text" class="form-control" placeholder="" disabled>
+                  <p class="info-filtro">Hasta un máximo de <strong>10 calles</strong></p>-->
+                </div>
+            
+                <!-- <div class="tit_resultados" id="informa_resultados">
+                	<p><span class="tit_numero">151 inmuebles</span><span class="tit_metros">, con un total de 346.056 m²</span>
+                    </p> 
+                </div> -->   
+           
+            </div>
+            
+ 			<!--           
+            <div class="tab-pane" id="tudecides"> 
+            	<p class="info-filtro">Marca el área que deseas sobre el mapa.</p>
+
+            </div>-->
+            
+          </div>
+          <br>
+          <!--<div class="tit_resultados" id="">
+<div class="tb-Gral-cont">
+      <table class="tabla">
+      	 <caption><span class="tit_ciudad">MADRID </span><span class="tit_zona">PRIME  </span></caption>
+        <thead class="">
+          <tr class="">
+            <th></th>
+            <th>Ops</th>
+            <th>M<sup>2</sup></th>
+            <th colspan="2">Ver</th>
+          </tr>
+        </thead>
+        <tbody class="">
+          <tr class="">
+            <td>Of. Disponibles</td>
+            <td>100</td>
+            <td>100</td>
+            <td><a href="#">ver</a></td>
+            <td><a href="#">ver</a></td>
+          </tr>
+          <tr class="">
+            <td>Of. Registradas</td>
+            <td>50</td>
+            <td>50</td>
+            <td><a href="#">ver</a></td>
+            <td><a href="#">ver</a></td>
+          </tr>
+          <tr class="">
+            <td>Total Alquilado</td>
+            <td colspan="4"><span class="alquilado-porcentaje">60 % </span><span class="class="alquilado-fecha"">@01/06/2015</span></td>
+          </tr>
+         
+        </tbody>
+      </table>
+    </div>
+                </div>-->
+          
+          
+        </div>
+        
+
+
+        <!--<div  class="form-botones clearfix"> <a href="#" class="btn gris"><span class="icon-circle-down"></span> Más filtros</a>
+          <input name="reset" type="button" value="Restablecer"  onclick="" class="btn gris">
+          <button id="bt-enviar" type="button" value="Buscar" class="btn btnAzul pull-right"><span class="icon-search"></span> Buscar</button>
+          <div class="divBuscando">
+            <div id="buscando" style="display:none;"><img src="/img/loading.gif"></div>
+          </div>
+        </div>-->
+      </form>
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+            
+              
+            </div> <!--   :01 --> 
+
+            <!-- <div class="tab-pane " id="registros">    
+                        <img src="img/gnral/transacciones.jpg">
+             </div>    
+             <div class="tab-pane" id="resultados">     
+              <p>Enlace03</p>
+            </div>-->
+          </div>
+        </div>
+        <div class="tab-pane active" id="mapa"> <!-- /////////////////////////     01 -->
+        
+        
+        
+        
+        <!--   PABLO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      
+          
+          <div class="divPreguntas"> <!-- jj  style="width:500px-->
+             <button type="button" class="close"><span aria-hidden="true">×</span></button>
+
+             <div class="contTodo">
+             
+                  <div id="cont01" class="cont fCiudad">
+                    <label for="qCiudad">¿En qué ciudad?</label>
+                    <div> 
+                      <span class="icon-location"></span>
+                      <input id="qCiudad" type="text" class="qCiudad">
+                      <a href="#" class="btn transparente btCiudad pull-right" ><span class="icon-arrow-right2"></span></a> 
+                    </div>
+                    <div class="depura">hola</div>
+                  </div><!--  : contenedor 1   -->
+                  
+                  <div id="cont02" class="cont fMetros">
+                    <label for="">¿Qué M<sup>2</sup> buscas?</label>
+                    <div class="periodo">
+                          <div class="bl47">
+                                  <span class="icon-arrow-right"></span> 
+                                 <input  type="text" class="" id="desde" placeholder="desde...">
+                          </div>
+                          <div class="bl47">
+                                 <span class="icon-arrow-left  icon-right"></span>         
+                                 <input  type="text" class="" id="hasta" placeholder=" hasta">
+                          </div>
+                     </div>
+                     <a href="#" class="btn transparente btCiudad pull-right"><span class="icon-arrow-right2"></span></a><!--btCiudad-->
+                     <div class="depura">hola</div>
+                  </div><!--  : cont02   -->
+                  
+                  
+                   <div id="cont03" class="cont fFiltros">
+                   			 <label for="qFiltros">¿Más filtros?</label>
+                        <div class=""> 
+                         <a href="#" class="btn blancoHover col-xs-5 btCiudad">SI</a> <a href="#" class="btn blancoHover col-xs-5 col-xs-offset-1 btCiudad">NO</a> 
+                        </div>
+                    	<div class="depura">hola</div>
+                  </div><!--  : contenedor 1   -->              
+                  
+                  
+                  
+                  
+                  
+           </div> <!--  : contTodo   --> 
+        
+     	   <div class="navPuntos"><span class="checked"></span><span></span><span></span></div> 	<!--   -->
+        </div><!--  : Preguntas   -->
+        
+        
+        <!--  : PABLO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    
+
+          
+        <div class="mapaPrueba-div myMap" style="background-position-x: center;background-image: url(img/gnral/mapa02.jpg); width:100%"><!--background-image: url(/_inc/javier/img/gnral/mapa02.jpg);-->
+          <div class="infoBox">
+            <div class="infoboxPosition"  style="left:160px;  top:290px">
+              <div class="popover top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck"><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:100px; top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck ckecked"><!--<span class="icon-checkmark" style="color:green;background-color:white"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:200px;  top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck "><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011--> 
+          <!--coordenadas--> 
+        </div>
+        <!--:mapaPrueba-div   :infobox --> 
+      </div>
+      <div class="tab-pane" id="list"> <!-- /////////////////////////     02 -->
+        <p>panel002</p>
+        <div class="caja-listado"> <img src="img/gnral/tab-operaciones.jpg"> 
+          <!--coordenadas--> 
+        </div>
+        <!--:mapaPrueba-div--> 
+      </div>
+      <div class="tab-pane" id="agencias"> <!-- /////////////////////////     03 -->
+        <p>panel003</p>
+        <div class="caja-agencias"> <img src="img/gnral/tab-agencias.jpg"> </div>
+      </div>
+      <div class="tab-pane" id="distribucion"> <!-- /////////////////////////     04 -->
+        <p>panel004</p>
+        <div class="caja-distribucion"> <img src="img/gnral/distribucion.jpg"> </div>
+      </div>
+    </div>
+    <!--:tab-content--> 
+    
+  </div>
+</div>
+<!-- :titulas-->
+</section>
+</div>
+
+<!--include virtual="footer.asp" -->
+</body>
+</html>

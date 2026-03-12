@@ -1,0 +1,190 @@
+/*
+
+div {border: 1px solid #999;
+background-color:#f7f7f7;}
+*/
+    /* comunicacion; */
+.comunicacion{
+	border: 1px solid #d4d4d6;
+	border-radius: 10px;
+	padding-bottom: 10px;
+	background-color: #FAFAFA;
+	margin-top: 10px;
+	}
+	
+.comunicacion img{
+	display:block;
+	margin: auto; }	
+
+.comunicacion h5, .comunicacion h6{
+	display:table;
+	margin:auto;
+	font-size: 20px;
+    font-family: 'Ruda', sans-serif;
+    color: #909092;
+	font-weight: normal;
+	 }	
+.comunicacion h6{
+	font-size: 18px;
+	color:#c6c6c6;
+	}
+
+
+
+.comunicacion>div[class^="col"]{
+	padding: 5px 20px 1px 20px;
+	background-image: url(/img/linea_footer.png);
+	background-repeat: no-repeat;
+	background-position: right 10px;
+	}
+	
+.comunicacion div.comu-ultima{
+		background-image: none;
+}
+	
+/*.comunicacion>div[class^="col"]:last-child{
+	background-image: none;
+	}*/
+	
+	
+.comunicacion .ico {
+	padding:10px 20px 7px 20px ;}
+
+.suscribete {
+	margin:auto;
+	max-width:31%;
+	min-width:262px;	
+	clear:both;
+	}
+	
+.suscribete button:hover{
+	background-color:#CCC;}
+
+
+
+    /* mapa */
+	
+footer {
+	margin: auto -15px;	}
+	
+.mapaFo {
+    background-color: #000;
+    border-radius: 10px;
+    padding: 5px 30px;
+	margin-top: 8px;
+	}
+ 
+.mapaFo p { margin:6px 4px;
+font-weight: bold;
+/*text-align:center;*/}
+.mapaFo a {
+	    display: inline-block;
+    /* background-color: #999; */
+    padding: 1px 8px;
+    text-decoration: none;
+    border-right: 1px solid #FF7800;
+	    line-height:16px;}
+.mapaFo a:last-child{
+	  border-right: none;
+	}
+
+
+.mapaFo .mapaInfo {
+	 padding: 1px 8px; 
+	color:#FF7800;}
+
+  /* empresas */	  	
+.empresas .logos{ 	
+    padding: 5px;
+	display: table;
+    margin: auto;
+	width:100%;
+}
+
+.empresas span{ 
+	/*display: inline-block;
+		  width:80px;*/
+	display: table-cell;
+	padding: 1px 3px;
+    margin: 0px;
+	height: 45px;
+	width:auto;  /*jj*/}
+	  
+   .empresas span img{ 
+
+		max-width:100%;
+		height:auto;
+		width: 100%;	/* jj  */
+		
+		  }
+
+.empresas p{ 
+	color:#909090;
+	}
+		  
+    /* grupoPW */	  
+.grupoPW{}	  
+
+
+    /* andy */	
+.grupoPW .andy{
+	background-color:#FFF;
+	padding: 8px;
+	border: 1px solid #d2d2d2;
+	margin: 10px -15px auto -15px;
+
+}	
+	  
+.grupoPW .foto-andy{ 
+	float: left;
+	width: 72px; 
+	height: 95px; 
+	}
+	
+.foto-andy img{
+	border: solid 1px #DCDCDC;
+	box-shadow: 2px 2px 2px #E1E1E1;
+}
+	
+
+.grupoPW .txt-andy{
+	padding-top:3px;
+	margin-left: 77px;
+		text-align:center;		
+
+}
+	
+	
+.txt-andy p{  
+	display:inline-block;
+	margin: 3px auto;
+	font-size:13px}
+	
+	
+.txt-andy p.mencion{
+    font-family: 'Ruda', sans-serif;
+	margin-bottom:0px;
+	font-weight: bold;
+	
+	}
+	
+.txt-andy p.extracto{
+	font-size:12px;
+		margin-bottom:6px;}
+	
+.txt-andy p.fundador{
+	color:#547180;	
+	}	
+	
+
+	
+	
+@media (max-width: 767px) {
+		.mapaFo{border-radius: 0px;
+		}
+	}	
+	
+
+	
+	
+	

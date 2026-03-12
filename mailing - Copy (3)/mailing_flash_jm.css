@@ -1,0 +1,115 @@
+#contenedor_izq_mail{
+	float: left;
+	width: 470px;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+
+
+#contenedor_dere_mail{
+	float: right;
+	width: 470px;
+	margin-top:10px;
+	margin-bottom: 10px;
+}
+
+.tit_hr{
+	position: relative;
+	bottom: 10px;
+	border:1px solid #f1f1f1;
+}
+
+.seccion {
+	/* border: 1px solid #0F0; */
+	margin-bottom: 30px;
+
+	border-radius: 9px;
+	-moz-border-radius:9px;
+	-webkit-border-radius:9px;
+	border:1px solid #e9e9e9;
+	padding: 20px;
+	background-color: #ffffff;
+
+	}
+.seccion_tit {
+	color: #313131;
+	font-family: 'ruda',sans-serif;
+	font-size: 25px;
+	}
+	
+.bloque {
+	/* border: 1px solid #00F; */
+	}
+.bloque_ubic {
+	text-align: right;
+	font-family: 'ruda',sans-serif;
+	font-size: 18px;
+	margin-bottom: 0px;
+	border-top: solid 1px #e1e1e1;
+}
+.primero {
+	border-top: 0px; 
+}
+
+.ubicacion_separador {
+	min-height:1.8em;
+}
+
+.apartado {
+	margin-top: 10px;
+	margin-bottom:10px;
+	color: #313131;
+	font-family: 'ruda',sans-serif;
+	font-size: 20px;
+	}
+.apartado_primero {
+	margin-top: 0;
+	margin-bottom:10px;
+	color: #313131;
+	font-family: 'ruda',sans-serif;
+	font-size: 20px;
+	}
+
+.articulo {
+	padding: 2px;
+	font-size: 14px;
+	background: white url(/img/flash/trama_puntos_claros_bl.png) repeat 0 0;
+	margin-bottom:10px;
+	font-family: 'Ruda', sans-serif;
+	line-height: 20px;
+	border-bottom: 1px solid #e1e1e1;
+
+	}
+
+
+.vencim_empresa {
+	float: left;
+	width:50%;
+	}
+
+.vencim_sup {
+	float: left;
+	width:18%;
+	text-align:right;
+	margin-right:2%;
+	}
+	
+.vencim_ubic {
+	float: left;
+	width:30%;
+	}
+	
+.vencim_encabezado {
+	margin-top:1em;
+	font-size: 12px;
+	margin-bottom:10px;
+	font-family: 'Ruda', sans-serif;
+	border-bottom: 1px solid #e1e1e1;
+	}
+
+/*
+.vencim_encabezado.vencim_empresa {
+	padding-left:25px;
+	}
+*/

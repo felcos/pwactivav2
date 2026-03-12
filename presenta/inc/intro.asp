@@ -1,0 +1,10 @@
+<h1>Con&oacute;zcanos un poco</h1>
+<p><img src="/presenta/inc/relax.gif" width="276" height="184" hspace="10" vspace="5" align="left" />- <strong>Es el m&aacute;s amplio servicio de informaci&oacute;n inmobiliaria del mercado espa&ntilde;ol y portugu&eacute;s</strong>.  Nuestros clientes tienen acceso al mejor centro de contacto y plataforma inmobiliaria entre inversores, fondos, bancos, constructoras, arquitectos, project managers, consultores, agencias inmobiliarias y particulares. </p>
+<p>- Es una de las herramientas de trabajo m&aacute;s &uacute;tiles que existen en el mercado inmobiliario que ofrece el poder para estar mejor informado. <strong>Imprescindible para llevar a cabo cualquier negocio inmobiliario</strong></p>
+<p>- Es un soporte de calidad que le <strong>ahorrar&aacute; tiempo</strong>: la infomaci&oacute;n est&aacute; distribuida en distintas secciones (Noticias, rumores, estudios, operaciones&hellip;) que le proporcionar&aacute; ideas, oportunidades y contactos para aumentar la eficacia y rendimiento de su negocio.</p>
+<p>- Es &quot;el poder de la informaci&oacute;n inmobiliaria&quot; que llega a los despachos de algunas de las personas m&aacute;s influyentes del mercado inmobiliario (decision makers) a trav&eacute;s de un correo electr&oacute;nico diario con informaci&oacute;n del d&iacute;a y al acceder a la Base de Datos que contiene informaci&oacute;n desde 1993 y en constante actualizaci&oacute;n.</p>
+<p>- Publicidad: uno de los soportes publicitarios m&aacute;s eficaces del sector inmobiliario, a trav&eacute;s de banners, enlaces, anuncios, art&iacute;culos, operaciones, disponibilidad de producto, publicando estudios de mercado, etc.<br />
+</p>
+<h2>&#61633; Podr&aacute; encontrar</h2>
+<p>- Informaci&oacute;n diaria e informaci&oacute;n de la base de datos.</p>
+<p>- Las secciones son:<br />Noticias Nacionales y Europeas, Rumores y Oportunidades, Estudios de Mercado, Operaciones, Buscador de Inmuebles, Demandas, Concursos/Subastas, Info-Empresas e Info-Inmuebles.</p>

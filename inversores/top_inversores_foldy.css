@@ -1,0 +1,86 @@
+    /* Tablas Divs - Inversores
+-------------------------------------------------------------- 
+
+
+
+
+
+
+QUITADA
+
+
+SE USA 			/inversores/inc/inversores_foldy.css
+
+
+
+
+
+
+*/
+.tablamain {
+   display: table;
+   border-collapse: collapse;
+   width:100%;
+   outline: solid 1px #2b4e61;
+   color: #2b4e61;
+   font-size: 0.8em;
+}
+.tablatit {
+   display: table;
+   border-collapse: collapse;
+   width:100%;
+   color: #fff;
+   background-color:#2b4e61;
+   outline: solid 1px #2b4e61;
+   font-weight: 900;
+   font-size: 0.96em;
+}
+.boxerfoot{
+   display: table;
+   border-collapse: collapse;
+   width:100%;
+   outline: solid 1px #2b4e61;
+   font-weight: 900;
+   margin-bottom: 1em;
+}
+
+.tablamain .box-row, .tablatit .filatit, .boxerfoot .filafoot {
+   display: table-row;
+}
+.box1,
+.box2,
+.box3 {padding: 7px;}
+.box1tit {padding: 7px;}
+.box2tit {padding-left: 10px;}
+.box1foot {font-size:0.8em; padding: 2px 7px 2px 2px;}
+.box2foot {padding-right: 10px;}
+.tablamain .box1 {
+	width: 5%;
+   display: table-cell;
+   text-align: left;
+}
+.tablamain .box2 {
+	width: 80%;
+   display: table-cell;
+   text-align: left;
+}
+.tablamain .box3 {
+	width: 15%
+   display: table-cell;
+   text-align: left;
+}
+.tablatit .box1tit {
+	width: 85%;
+   display: table-cell;
+   text-align: left;
+}
+.tablatit .box2tit {
+	width: 15%;
+   display: table-cell;
+   text-align: left;
+}
+.boxerfoot .box1foot {
+	width: 100%;
+   display: table-cell;
+   text-align: right;
+}

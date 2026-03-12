@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+a:link {color: 0099ff; text-decoration: none;}
+a:visited {text-decoration: none; color: 0099ff;}
+a:hover {text-decoration: underline; color: 0099ff;}
+a:active {text-decoration: none; color: 0099ff;}
+
+.fondo {
+	background-image: url(separadordegradado.gif);
+	background-repeat:  repeat-x;
+}
+.Titulos {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	font-weight: bold;
+	color: 0099ff;
+	padding-top: 20px;
+}
+.nombre {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 19px;
+	font-weight: normal;
+	color: #0099ff;
+	letter-spacing: -1px;
+}
+.cargo {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	font-weight: bold;
+	color: #666666;
+}
+.empresa {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 21px;
+	color: #000000;
+	font-weight: bold;
+	letter-spacing: -1px;
+}
+.texto {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #999999;
+}
+.url {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	color: 9a9a9a;
+	font-weight: bold;
+}
+.accionariado {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: 9a9a9a;
+}

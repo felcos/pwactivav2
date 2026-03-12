@@ -1,0 +1,15 @@
+/* activa-v2/css/themes/ocean.css */
+[data-theme="ocean"] {
+    --bg-main: #001220;
+    --bg-surface: #001d36;
+    --bg-surface-hover: #002b50;
+    --bg-header: rgba(0, 18, 32, 0.9);
+    --border-color: #003b6d;
+    --accent: #00a8cc;
+    --accent-hover: #00c6f0;
+    --accent-light: rgba(0, 168, 204, 0.2);
+    --text-primary: #e0f2fe;
+    --text-secondary: #7dd3fc;
+    --text-muted: #0284c7;
+    --shadow-glow: 0 0 20px rgba(0, 168, 204, 0.4);
+}

@@ -1,0 +1,95 @@
+#main_read {
+	border: 0px green solid;
+	float:left;
+	width:650px;
+	padding:2px;
+}
+
+#sidebar_read {
+	border: 0px red solid;
+	padding:2px;
+	float:right;
+	width:280px;
+}
+
+#contenedor_articulos {
+	margin-left:5px;
+	font-family: 'Ruda';
+	font-size: 15px;
+	width:635px;
+}
+
+.divMisArticulos {
+	/* margin: 0px auto; */
+	min-height: 100px;
+	/*width: 100%;*/
+	box-shadow: 0 2px 5px #666666; 
+	padding: 5px;
+	font-size:10px;
+	style="font-family:'Ruda',sans-serif;"
+	/*display:none;*/
+}
+
+.tbl_jp {
+	font-family:'Ruda', sans-serif;
+}
+.tbl_jp td {
+	font-family:'Ruda', sans-serif;
+	font-size:13px;
+	border-top:#39F 1px solid;
+}
+
+.tbl_plantas {}
+.tbl_plantas td {
+	font-family:'Ruda', sans-serif;
+	font-size:10px;
+	border-bottom:#39F 1px solid;
+	border-top: 0px;
+}
+
+
+/* password */
+#div_frmAdminLogin {
+	/*border: 1px dashed blue;*/
+	font-family: 'ruda',sans-serif;
+	}
+#div_frmAdminLogin p {
+	text-align:center;
+	margin-bottom:.8em;
+	
+	}
+#div_frmAdminLogin h1 {
+	padding:20px;
+	font-family: 'ruda',sans-serif;
+	font-size: 24px;
+	}	
+#div_frmAdminLogin form {
+	/*border: 1px green dotted;*/
+	}
+#div_frmAdminLogin form textarea {
+	margin-bottom:1em;
+	} 
+.bienvenido {
+	/*border: 1px dashed red;*/
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	
+}
+.restringida {
+	padding-top:30px;
+	}
+
+#div_registro {
+	/*border: 1px dashed red;*/
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	}
+#result_registro {
+	/*border: 1px dashed red;*/
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	}
+

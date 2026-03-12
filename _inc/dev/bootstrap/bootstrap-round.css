@@ -1,0 +1,44 @@
+code {
+	border-radius: 4px;
+}
+kbd {
+	border-radius: 3px;
+}
+pre {
+	border-radius: 4px;
+}
+pre code {
+	border-radius: 0;
+}
+
+.form-control {
+	border-radius: 4px;
+}
+.input-sm {
+	border-radius: 3px;
+}
+.form-group-sm .form-control {
+	border-radius: 3px;
+}
+.input-lg {
+	border-radius: 6px;
+}
+.form-group-lg .form-control {
+	border-radius: 6px;
+}
+
+.btn {
+	border-radius: 4px;
+}
+.btn-link {
+	border-radius: 0;
+}
+.btn-lg {
+	border-radius: 6px;
+}
+.btn-sm {
+	border-radius: 3px;
+}
+.btn-xs {
+	border-radius: 3px;
+}

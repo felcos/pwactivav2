@@ -1,0 +1,1 @@
+<%= session("PW_WS").boolAceptadasCondiciones %>

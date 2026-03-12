@@ -1,0 +1,115 @@
+/* CSS Document */
+.frm_cmd, .frm_cmd_med, .frm_cmd_ancho {
+	margin-top:24px;
+	margin-bottom:24px;
+}
+
+.btn2 {
+    background-color: #658db5;
+    /* height: 40px; */
+    
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.btn {
+	background-color: #658db5;
+	/*
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	*/
+	padding:12px;
+	font-size: inherit;
+	font-weight: 700;
+	/*
+	padding-left:15px;
+	padding-right:15px;
+	*/
+	min-width:120px;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.btn.disabled {
+	background-color:#CCC;
+	color: #2B4E61;
+}
+.btn.disabled:hover {
+	background-color:#CCC;
+}
+
+.btn.link {
+	min-width:inherit;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+.btn.destaca {
+	color: #f47c04;
+}
+
+.btn:hover {
+    background: #406C86; 	/* f47c04 ; */
+}
+.btn.destaca:hover {
+	color: #2B4E61;
+}
+
+.frm_cmd > .izq {
+	margin-right: 10px;
+	}
+.frm_cmd > .centro {
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.frm_cmd > .dra {
+	margin-left: 10px;
+	}
+/*
+
+
+font-family: 'Ruda', sans-serif;
+
+*/
+
+/*
+form > .widget-body {
+	padding:0;
+	}
+
+form > .widget-body > .row {
+	padding-top:0;
+	padding-bottom:0;
+	}
+	
+form > .widget-body > .row > div[class*='cols-'] {
+	margin:0;
+	}
+form > .widget-body > div.row > div.cols-1 { width:16.66666666667%; }
+form > .widget-body > div.row > div.cols-2 { width:33.33333333333%; }
+form > .widget-body > div.row > div.cols-3, .widget > .widget-body.form > div.row > div.cols-half	{ width:50%; }
+form > .widget-body > div.row > div.cols-4 { width:66.66666666667%; }
+form > .widget-body > div.row > div.cols-5 { width:83.33333333333%; }
+form > .widget-body > div.row > div.cols-6, .widget > .widget-body.form > div.row > div.cols-full	{ width:100%; }
+
+form > .widget-body > .row:first-of-type { / * padding-top:0; * / }
+form > .widget-body > .row:last-of-type { padding-bottom:0; }
+
+form > .widget-body > div.row > div[class*='cols-'] > label {
+	padding-left:10px;
+	}
+
+form > .widget-body > .row > div[class*='cols-'] {
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+form > .widget-body > .row > div[class*='cols-'].checkbox {
+	padding-top:0;
+	padding-bottom:0;
+	
+	}
+	
+*/
+

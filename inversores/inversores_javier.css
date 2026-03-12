@@ -1,0 +1,125 @@
+/*========================================================
+           		TABLAS TOP INVERSORES (JP3)
+=========================================================*/
+.boxer {
+	display: table;
+	border-collapse: collapse;
+	width:100%;
+	    margin: 2px 0px;
+	
+	color: #2b4e61;
+}
+.boxerhead {
+	display: table;
+	border-collapse: collapse;
+	width:100%;
+	border-bottom: 1px solid #898888;
+	/*outline: 1px solid #898888; */
+	/*font-weight: 900;
+	font-size:14px;*/
+}
+	
+.boxerfoot {
+	text-align:right;
+/*	margin-right:6px;*/
+	font-size:13px;
+	border-top: 1px solid #898888;
+	}
+	
+.boxerfoot a{
+	display: inline-block;
+	padding: 4px 4px 5px;
+	    text-transform: capitalize;
+	}	
+	
+.boxer .box-row, .boxerhead .filatit {
+	display: table-row;
+}
+.boxer .box-row {
+	font-size: 13px;
+}
+.box3 img{
+		vertical-align: middle;
+}
+.box1,
+.box2,
+.box3,
+.box4 {padding: 0.4em; line-height:1; vertical-align:middle;}
+.box1tit {padding: 7px;     padding-bottom: 3px;}
+.box2tit{ padding-left: 20px;}
+.boxer .box1 {
+	width: 5%;
+	display: table-cell;
+	text-align: left;
+/*	color: #0973bf;*/
+	color: #444;
+}
+.boxer .box2 {
+	width: 70%;
+	display: table-cell;
+	text-align: left;
+}
+.boxer .box3 {
+	width: 10%;
+	display: table-cell;
+	text-align: left;
+	vertical-align:middle;
+}
+.boxer .box4 {
+	width: 15%;
+	display: table-cell;
+	text-align: right;
+/*	padding-right:15px;*/
+}
+
+
+.boxerhead .box1tit {
+	width: 85%;
+	display: table-cell;
+	text-align: center;
+}
+.boxerhead .box2tit {
+	width: 15%;
+	display: table-cell;
+	text-align:right;
+	vertical-align: bottom;
+	
+	color:#444;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:13px;
+}
+
+.boxerhead .box1tit a{
+/*	font-size:0.85em;*/
+	line-height:1.2;
+/*	color:#2b4e61;*/
+	color:#CF5800;
+	font-weight:bold;
+	text-decoration:none;
+	font-size:13px;
+	display:block;
+	}
+.boxerhead .box1tit a::first-line{
+	color:#444;
+	}
+	
+.boxerhead .box1tit a:hover{
+/*	text-decoration: underline;*/
+    /* background-color: #FFF3CA; */
+    color: #ff6701 !important;
+	}	
+.boxerhead .box1tit a:hover::first-line{
+	text-decoration: underline;
+    /* background-color: #FFF3CA; */
+    color: #ff6701 !important;
+	
+	}
+
+
+
+.invcont{
+	display:table;
+	margin-bottom:0;
+	width:100%;
+}

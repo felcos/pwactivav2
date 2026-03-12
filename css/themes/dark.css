@@ -1,0 +1,20 @@
+/* activa-v2/css/themes/dark.css */
+[data-theme="dark"] {
+    --bg-main: #0f172a;
+    --bg-surface: #1e293b;
+    --bg-surface-hover: #334155;
+    --bg-header: rgba(15, 23, 42, 0.9);
+    --border-color: #334155;
+
+    --accent: #F47C04;
+    --accent-hover: #ff9122;
+    --accent-light: rgba(244, 124, 4, 0.2);
+
+    --text-primary: #f8fafc;
+    --text-secondary: #cbd5e1;
+    --text-muted: #64748b;
+    --text-inverse: #ffffff;
+    
+    --shadow: 0 4px 12px rgba(0, 0, 0, 0.5);
+    --shadow-glow: 0 0 20px rgba(244, 124, 4, 0.4);
+}

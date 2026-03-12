@@ -1,0 +1,85 @@
+@media (min-width: 992px) {
+	#s_buscador .col-md-4 {
+		padding-right: 0px;
+	}
+}
+
+.suscribe-PwSemana input[type="checkbox"] {
+    display: inline-block;
+}
+
+
+
+/* ****************** */
+
+.buscando {
+	width:16px;
+	vertical-align:bottom;
+	margin: 0 8px;
+	display:inline-block;
+}
+#buscando {
+	display:none;
+}
+
+/* ****************** */
+
+
+.caja {
+    margin: 0;
+    padding: 15px;
+    border: 1px solid #E3E3E3;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    margin-top: 5px;
+}
+	
+.amarilla {
+	background:#FFFFCC !important; 
+	}
+.sombra {
+	border: 1px solid blue;
+	}
+
+.txtRojo {
+	color:#990000;
+	}
+.destaca {
+	color:#F47C04;	/* 990000 */
+	}
+
+.med {
+	font-size:12px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+.peq {
+	font-size:11px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+.mini {
+	font-size:10px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+
+.prieto {
+	margin-top:0;
+	margin-bottom:0;
+	}
+
+.figure_tit {
+	display:block;
+	font-family:'ruda',sans-serif; 
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px dotted grey; 
+	}
+
+.dev {
+	/* background: #f8f8f8; */
+	background:#FFFFCC; 
+	/*font-size:11px; */
+	margin:2px; 
+	border:#c1c1c1 1px solid;
+	line-height:1.1em;
+	}
+

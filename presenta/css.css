@@ -1,0 +1,77 @@
+body {
+	background-color: #ebebeb;
+	text-align: center; 
+	min-width: 760px;
+}
+
+a:link {text-decoration: none;}
+a:visited {text-decoration: none;}
+a:hover {text-decoration: underline;}
+a:active {text-decoration: none;}
+
+#wrapper {
+	background-color: #fff;
+	width: 800px; 
+	margin: 0px; 
+	text-align: left; 
+}
+
+#contenido {
+	width: 560px;
+	float: right;
+	text-align: justify;
+	padding-right: 36px;
+	padding-bottom: 12px;
+	margin-bottom:24px;
+}
+#contenido * {margin: 0; padding: 0;}
+#contenido h1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 15px;
+	color: #FF6600;
+	font-weight: normal;
+	margin-bottom: 12px;
+}
+#contenido h2 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 10px;
+	color: #FF6600;
+	font-weight: normal;
+	margin-top: 18px;
+	margin-bottom: 3px;
+}
+#contenido p {margin-bottom: 3px;}
+
+#menu {
+	font-family: Arial, Helvetica, sans-serif;
+	float: left;
+	padding-left:12px;
+	width: 190px;
+	background-image: url(img/entremenu.gif);
+	background-repeat:no-repeat;
+	background-position: right top;
+}
+.mnu_txt {
+	
+	font-size: 10px;
+	color: #68501c;
+}
+.mnu_tit {
+	
+	font-size: 11px;
+	font-weight: bold;
+	color: #000000;
+}
+
+#pie {
+	clear: both;
+	background-color: #ebebeb;
+	padding-top: 6px;
+	padding-bottom: 12px;
+	text-align: center;
+	font-family: Verdana, Arial, Helvetica, sans-serif;
+	font-size: 9px;
+	font-weight: normal;
+	color: #0099FF;
+}
+#pie a:link, #pie a:visited, #pie a:hover, #pie a:active {text-decoration: none; color: #0099FF;}

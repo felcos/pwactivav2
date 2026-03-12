@@ -1,0 +1,72 @@
+/* CSS Document */
+.frm_cmd, .frm_cmd_med, .frm_cmd_ancho {
+	margin-top:24px;
+	margin-bottom:24px;
+}
+
+.btn2 {
+    background-color: #2B4E61;
+    /* height: 40px; */
+    
+    color: #ffffff;
+    font-size: 12px;
+}
+
+.btn {
+	background-color: #2B4E61;
+	border-radius: 3px;
+    -moz-border-radius: 3px;
+    -webkit-border-radius: 3px;
+	padding-top:6px;
+	padding-bottom:7px;
+	/*
+	padding-left:15px;
+	padding-right:15px;
+	*/
+	min-width:120px;
+	color: #fff;
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+.btn.disabled {
+	background-color:#CCC;
+	color: #2B4E61;
+}
+.btn.disabled:hover {
+	background-color:#CCC;
+}
+
+.btn.link {
+	min-width:inherit;
+	padding-left:15px;
+	padding-right:15px;
+	
+}
+.btn.destaca {
+	color: #f47c04;
+}
+
+.btn:hover {
+    background: #f47c04; 	/* #406C86; */
+}
+.btn.destaca:hover {
+	color: #2B4E61;
+}
+
+.frm_cmd > .izq {
+	margin-right: 10px;
+	}
+.frm_cmd > .centro {
+	margin-left: 10px;
+	margin-right: 10px;
+	}
+.frm_cmd > .dra {
+	margin-left: 10px;
+	}
+/*
+
+
+font-family: 'Ruda', sans-serif;
+
+*/

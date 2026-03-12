@@ -1,0 +1,45 @@
+.tbl_bordered td, .tbl_bordered th {
+	border-left: 1px solid #CCC;
+	border-top: 1px solid #CCC;
+	padding: 10px;
+	text-align: left;
+}
+.tbl_bordered {
+	border: solid #CCC 1px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	border-radius: 6px;
+	-webkit-box-shadow: 0 1px 1px #CCC;
+	-moz-box-shadow: 0 1px 1px #ccc;
+	box-shadow: 0 1px 1px #CCC;
+}
+.tbl_bordered td:first-child, .tbl_bordered th:first-child {
+	border-left: none;
+}
+.tbl_bordered th {
+	background-color: #DCE9F9;
+	background-image: -webkit-gradient(linear, left top, left bottom, from(#EBF3FC), to(#DCE9F9));
+	background-image: -webkit-linear-gradient(top, #EBF3FC, #DCE9F9);
+	background-image: -moz-linear-gradient(top, #EBF3FC, #DCE9F9);
+	background-image: -ms-linear-gradient(top, #EBF3FC, #DCE9F9);
+	background-image: -o-linear-gradient(top, #EBF3FC, #DCE9F9);
+	background-image: linear-gradient(top, #EBF3FC, #DCE9F9);
+	-webkit-box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	-moz-box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;
+	box-shadow: 0 1px 0 rgba(255, 255, 255, .8) inset;
+	border-top: none;
+	text-shadow: 0 1px 0 rgba(255, 255, 255, .5);
+}
+
+td, th {
+	display: table-cell;
+	vertical-align: inherit;
+}
+table {
+	border-collapse: separate;
+	border-spacing: 2px;
+	border-color: gray;
+	margin-left: 30px;
+	width: 360px;
+	font-family: 'questrial';margin-bottom: 10px;
+}

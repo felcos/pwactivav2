@@ -1,0 +1,174 @@
+/* header */
+@media (max-width:415px) {
+	body {background-color:#ffccff;}
+}
+@media (min-width: 416px) and (max-width:450px) {
+	body {background-color:#9999ff;}
+}
+/* bs */
+@media (min-width: 451px) and (max-width: 767px) {
+	body {background-color:#f2dede;}
+}
+@media (min-width: 768px) and (max-width: 991px) {
+	body {background-color:#c2f0f0;}
+}
+@media (min-width: 992px) and (max-width: 1199px) {
+	body {background-color:#b3ffb3;}
+}
+@media (min-width: 1200px) {
+	body {background-color:#FFC;}
+}
+
+/* header */
+[data-toggle='contador_leidos'] {
+	margin-left:3px;
+	margin-right:3px;
+	/*font-size:12px;*/
+	color:#ff6802 !important;
+	/*
+	margin-bottom:0;
+	margin-top:0;
+	padding:0;
+	*/
+}
+.derecha {
+	min-height:inherit;
+}
+.tlfOculto {
+	color: inherit !important;
+	font-size: 13px;
+	right:0;
+	background:#f2dede;
+	padding:4px;
+	margin-top:0px !important;
+}
+.tlfOculto li.informa, .tlfOculto li.informa span, .tlfOculto li.informa a span {
+	font-size: 11px !important;
+}
+.tlfOculto li.links, .tlfOculto li.links span, .tlfOculto li.links a span {
+	font-size: 13px !important;
+}
+
+.user ul li.informa, .user ul li.informa span, .user ul li.informa a span {
+	font-size: 11px !important;
+}
+.user ul li.links, .user ul li.links span, .user ul li.links a span {
+	font-size: 13px !important;
+}
+.userGtr {
+	margin-bottom:6px;
+}
+[data-toggle='notify'] {
+	float:right;
+	margin-left:10px;
+}
+
+@media (max-width: 767px) {  /* /////////    tablet    */
+  .tlfOculto {
+   width: 260px;
+  }
+}
+
+
+/* general : INI */
+.pw-warning {
+	background-color:#FFD7D7;
+}
+
+.btn.disabled {
+	cursor: default;
+	opacity: .5;
+}
+.btn.disabled:hover {
+	background:#2B4E61;
+}
+
+.dev {
+	background:#96DCDC;
+}
+.btn-dev {
+	background:#96DCDC !important;
+	color:black !important;
+}
+.btn-dev:hover {
+	background:#FF6701 !important;
+}
+.peq {
+	font-size:10px;
+}
+li.list-group-item.dev {
+	border-top-right-radius: 0px;
+	border-top-left-radius: 0px;
+	background:#96DCDC;
+}
+
+/* general : FIN */
+
+
+/* header: INI */
+.informa_dev {
+	text-align:right;
+	padding-top:1em;
+	font-size:11px;
+}
+.informa_dev > .destaca {
+	font-size:10px;
+	color: #ff6802;
+}
+
+.tbl-quotas-left {
+	padding-right:10px;
+}
+.tbl-quotas-rigth {
+	padding-left:10px;
+}
+
+
+#header_licencia .popover, #header_cliente .popover {
+	min-width:350px;
+}
+#header_licencia .popover table tr, #header_cliente .popover table tr {
+	border-top: 1px solid #dddddd;
+	border-bottom: 1px solid #dddddd;
+}
+#header_licencia .popover table, #header_cliente .popover table {
+	margin-bottom:15px;
+}
+/* header: FIN */
+
+/* info-inmuebles: INI */
+.inm_check .popover {
+	min-width:600px;
+}
+.inm_check .popover table {
+	width: 100%;
+}
+.inm_check .popover table tr {
+	border-bottom: 1px solid #CCC;
+}
+
+.inm_check .popover table tr td {
+	vertical-align:top;
+}
+
+.inm_check .popover table td:first-child {
+	width: 75px;
+}
+
+/* info-inmuebles : FIN */
+
+
+
+/* deals : INI */
+
+
+
+
+
+
+/* deals : FIN */
+
+.panel-primary > .panel-heading > a {
+	color:#FFF;
+}
+

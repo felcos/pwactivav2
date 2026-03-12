@@ -1,0 +1,153 @@
+/* Responsive Resets
+-------------------------------------------------------------- */
+
+@media print {
+	#cabecera {display:none};
+	
+	#frm_accesos {display:none}	};
+	
+}
+
+
+
+@-o-viewport {width: device-width;}
+@-ms-viewport {width: device-width;}
+@viewport {width: device-width;}
+
+html {
+	font-size:100%;
+	
+	overflow-y: scroll;
+	-webkit-text-size-adjust:100%;
+	-ms-text-size-adjust:100%;
+	
+	-ms-overflow-style: scrollbar;
+	/*
+	box-sizing: border-box;
+	*/
+	}
+
+body {
+	font-family: 'Open Sans', sans-serif;
+	/*
+	font-family: Tahoma, Geneva, sans-serif;
+	font: 100%/1.25 Tahoma, Geneva, sans-serif;
+	*/
+	margin:0; 
+	padding:0;
+	}
+
+{
+	margin-bottom: 2em;
+	}
+
+/*
+*, *:before, *:after {
+	box-sizing: inherit;
+}
+*/
+
+.contenedor {
+	/*
+	max-width: 1600px;
+	max-width: 1280px;
+	
+	width: 96%;		¿¿¿???
+	*/
+	margin: 0px auto;
+	/* position: relative;   ¿¿¿??? */
+	/* font-size: 0.85em; */
+	
+	/* font-size: 90%; */
+	line-height:1.25;
+	
+}
+
+#cabecera {
+	
+	width:100%;
+	}
+footer {
+	width:100%;
+	}
+
+.row {
+	clear: both;
+	}
+
+
+
+/* Micro Clearfix - https://nicolasgallagher.com/micro-clearfix-hack/
+For best results, use your favorite clearfix here.
+
+.head, li, h2 {}
+.head { text-decoration:none; display:block; }
+.content { display:none; }
+.head_art { text-decoration:none; display:block; }
+.content_art { display:none; }
+#improved li { position:relative; overflow:hidden; }
+td a, td a:link, td a:visited, td a:active, td a:hover { text-decoration: none; }
+a, a:link, a:visited, a:active, a:hover { text-decoration: none; }
+
+-------------------------------------------------------------- */
+
+#improved .content { display:none; }
+
+.cf:before, .cf:after { content:""; display:table; }
+.cf:after { clear:both; }
+.cf { zoom:1; } /* For IE 6/7 (trigger hasLayout) */
+
+
+
+@media screen and (min-width: 420px) {
+}
+
+@media screen and (max-width: 420px) {
+	.contenedor {
+		width:100%;
+		margin:0;
+	}
+	
+	#cabecera {
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+}
+
+
+@media screen and (min-width: 480px) {
+	.contenedor {
+		width: 98%;
+	}
+	
+	#cabecera {
+		/* 
+		width: 98%; 
+		*/
+		width: 100%;
+	}
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	
+	
+	.content-pad-right {
+		padding-right: 4%; /* Use (or don't) as necessary. */
+	}
+	
+	.content-pad-left {
+		padding-left: 4%;
+	}
+	
+	/*
+	.grid-flow-opposite {
+		min-width: 380px;
+	}
+	*/
+}
+
+
+

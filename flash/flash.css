@@ -1,0 +1,174 @@
+/*	jp	*/
+
+#flash {
+	min-height:450px;
+}
+
+/*	jp	*/
+
+
+
+/*h2.fecha {
+	margin-bottom:0; cursor:pointer;  }*/
+
+
+
+
+
+/*    anterior         */
+
+
+.articulo {
+	margin-bottom: 5px;
+/*	padding-left: 20px;*/
+	display:table;
+	width:100%;
+}
+.articulo input[type="checkbox"], input[type="radio"] {
+/*	margin-left: -20px;
+    margin-right: 3px;*/
+	vertical-align: top;
+	display:table-cell;
+	margin-right: 10px;
+	
+	}
+
+.articulo a{
+	vertical-align: top;
+	display:table-cell;
+/*	    padding-left: 8px;*/
+		    padding-top: 2px;
+			width:100%;
+ /*    margin-left: 3px;
+   padding-top: 3px;*/
+}
+
+
+.ubicacion_separador {
+	min-height: 1em;
+}
+
+
+/*
+.separador {
+	min-height: 2.4em;
+}
+*/
+.bloque {
+	margin-bottom: 0.5em;
+}
+.bloque_tit {
+	font-size: 1.4em;
+}
+
+.bloque_ubic {
+	text-align: right;
+	border-top: dotted 1px #90A8BB; 
+	
+}
+.bloque_ubic img {
+	vertical-align:top;
+}
+.primero {
+	border-top: 0px; 
+}
+
+.tit_buscadores {
+	border-bottom: solid 1px #000; 
+	margin-bottom: 0;
+}
+
+.apartado {
+	margin-top:.75em;
+}
+
+
+
+.vencim_empresa {
+	display:table;
+	float: left;
+	width:50%;
+	}
+
+.vencim_sup {
+	float: left;
+	width:18%;
+/*	text-align:right;*/
+	/* padding-right:2em; */
+	margin-right:2%;
+	}
+	
+.vencim_ubic {
+	float: left;
+	width:30%;
+	}
+	
+.vencim_encabezado {
+	margin-top:1em;
+	font-size: .8em;
+	/*
+	font-weight:bold;
+	margin-bottom:10px;
+	font-family: 'Ruda', sans-serif;
+	*/
+	border-bottom: 1px solid #e1e1e1;
+	}
+
+/*
+.vencim_encabezado.vencim_empresa {
+	padding-left:25px;
+	}
+*/
+
+@media (max-width:767px) {
+	
+	.articulo input[type="checkbox"], input[type="radio"] {
+	margin-right: 12px;
+	}
+  	
+.articulo input[type="checkbox"] {
+ /*   margin-right: 5px;
+	float: left;
+	background-color:red !important;*/
+	}
+.articulo a{
+/*	float: left;
+	background-color:#FFEDB0;*/
+	}	
+	
+.box_blanco{
+	padding:20px 14px 20px 10px ; }
+	
+
+}
+
+@media (max-width:450px) {
+	
+.tabla-botones .leer{
+	margin-left: 0%;
+	float:right;}
+	
+}
+
+
+
+
+/*@media (max-width: 767px){ 
+.articulo{
+		background-color:#0FF !important;
+	}
+.articulo input[type="checkbox"] {
+    margin-right: 5px;
+	background-color:red !important;
+	
+}
+}*/
+
+/*@media (min-width: 768px){ 
+.articulo{
+		background-color:#0FF !important;
+	}*/
+
+
+
+

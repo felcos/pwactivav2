@@ -1,0 +1,145 @@
+.cssform p {
+	/* width: 200px; */
+	clear: left;
+	margin: 0;
+	padding: 5px 0 8px 0;
+	padding-left: 85px; /*width of left column containing the label elements*/
+	}
+.cssform p.medw {
+	padding-left: 110px; /*width of left column containing the label elements*/
+	}
+.cssform p.ancho {
+	padding-left: 155px; /*width of left column containing the label elements*/
+	}
+
+
+.cssform p:last-of-type{
+	border-bottom: none;
+	}
+.cssform p.conlinea {
+	border-bottom: 1px dashed gray;
+}
+
+
+.cssform label{
+	/* font-weight: bold; */
+	float: left;
+	margin-left: -85px; /*width of left column*/
+	width: 80px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+	}
+.cssform label.medw {
+	margin-left: -110px; /*width of left column*/
+	width: 105px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+	}
+.cssform label.ancho {
+	margin-left: -155px; /*width of left column*/
+	width: 150px; /*width of labels. Should be smaller than left column (155px) to create some right margin*/
+	}
+
+.cssform input[type="text"]{ 
+	/*width of text boxes. IE6 does not understand this attribute*/
+	/*
+	width: 180px;
+	*/
+	}
+
+.cssform textarea{
+	width: 150px;
+	height: 120px;
+	}
+
+.buscando {
+	width:16px;
+	vertical-align:bottom;
+	margin: 0 8px;
+	display:inline-block;
+}
+#buscando {
+	display:none;
+}
+/*.threepxfix class below:
+Targets IE6- ONLY. Adds 3 pixel indent for multi-line form contents.
+to account for 3 pixel bug: https://www.positioniseverything.net/explorer/threepxtest.html
+*/
+
+* html .threepxfix{
+	margin-left: 3px;
+}
+
+.container p.frm_informa {
+	margin-bottom:.9em;
+	}
+/*
+.frm_fields {
+	float: left;
+	}
+*/
+
+.frm_cmd, .frm_cmd_med, .frm_cmd_ancho {
+	margin-top:12px;
+}
+
+.frm_cmd {
+	margin-left: 85px;
+	}
+.frm_cmd_med {
+	margin-left: 110px;
+	}
+.frm_cmd_ancho {
+	margin-left: 155px;
+	}
+
+
+@media screen and (max-width: 480px){ /* responsive form settings, when window width is 480px or less */
+
+	.cssform p {
+		padding-left: 0;
+		width: auto;
+		padding-bottom: 1em;
+	}
+
+	.cssform label {
+		float: none;
+		display: block;
+		margin-left: 0;
+	}
+
+	.cssform input[type="text"] {
+		/*width of text boxes. IE6 does not understand this attribute*/
+		width: 95%;
+	}
+	
+	.cssform textarea{
+		width: 95%;
+	}
+	
+	.frm_cmd, .frm_cmd_med, .frm_cmd_ancho {
+		margin-left: 0;
+	}
+}
+
+/* frmAdminLogin */
+
+#div_frmAdminLogin {
+	border: 1px blue solid;
+	background: yellow;
+	}
+
+
+@media screen and (max-width: 480px){
+	
+	
+	
+	
+}
+
+
+
+
+
+
+
+
+
+
+/* frmAdminLogin */

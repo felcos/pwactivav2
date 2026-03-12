@@ -1,0 +1,182 @@
+.pagsum_apartados {
+	margin-top:12px;
+	padding: 3px 0 6px 0;
+	font-size:1.2em;
+	/*background-color:#CCC;*/
+	}
+.pagsum_detalle {
+	/* margin-left: 10px; */
+	}
+
+.linea {
+	/* max-width:1000px; */
+	padding:.3em 0 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	float:none;
+	margin:0;
+	}
+
+.detalle_nombre {
+	float:left;
+	width:	70%;
+	}
+.detalle_pais {
+	display:inline-block;
+	float:left;
+	margin-left:10px;
+	}
+
+.detalle_bandera {
+	float:right;
+	margin-right:.4em;
+	}	
+.detalle_empresa {
+	width:	90%;
+	float:left;
+	}
+
+.detalle_actividad {
+	font-size:9px;
+	float:left;
+	/* padding-top:4px; */
+	}
+.detalle_contador {
+	float:left;
+	width:20px;
+	text-align:right;
+	margin-right:10px;
+	}
+
+@media screen and (max-width: 800px) {
+	.detalle_nombre {
+		width: 100%;
+	}
+	.detalle_pais {
+		display:none;
+	}
+	.detalle_bandera {
+		display:none;
+	}
+	.detalle_empresa {
+		width:	100%;
+	}
+	
+	.empresa {
+		width:100%;
+		padding:4px 0;
+	}
+	.pagsum_apartados {
+		/*
+		text-align:right;
+		*/
+	}
+	
+	
+}
+
+
+/*  info */
+.inm_tbl {
+	width: 100%;
+	display: table;
+	}
+.inm_row  {
+	display: table-row;
+	/* cursor: pointer; */
+	}
+.inm_contador {
+	display: table-cell;
+	width:24px;
+	text-align:right;
+	padding:.3em 12px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.inm_nombre {
+	display: table-cell;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+	
+.inm_tipo {
+	display: table-cell;
+	width:	200px;
+	font-size:.8em;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.inm_tipog {
+	display: table-cell;
+	width:	350px;
+	font-size:.8em;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.inm_uso {
+	font-size:.8em;
+	}
+.inm_disp_total {
+	display: table-cell;
+	width:	50px;
+	font-size:1em;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	text-align:right;
+	}
+.inm_disp_min {
+	display: table-cell;
+	width:	40px;
+	font-size:.9em;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	text-align:right;
+	}
+.inm_disp_max {
+	display: table-cell;
+	width:	50px;
+	font-size:.9em;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	text-align:right;
+	}
+.inm_disp_fecha {
+	display: table-cell;
+	width:	80px;
+	font-size:.9em;
+	padding:.3em 0 0 15px;
+	border-bottom: 1px solid #c1c1c1;
+	/*text-align:right;*/
+	}
+	
+.inm_ubic {
+	display: table-cell;
+	width: 135px;
+	font-size:.8em;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.inm_ubicg {
+	display: table-cell;
+	width: 250px;
+	font-size:.8em;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.inm_pais {
+	display: table-cell;
+	width: 20px;
+	padding:.3em 2px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+	
+@media screen and (max-width: 800px) {
+	.inm_pais, .inm_contador {
+		display:none;
+	}
+	.inm_nombre {
+		
+	}
+	.inm_tipo {
+}
+
+
+

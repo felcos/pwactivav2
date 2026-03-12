@@ -1,0 +1,608 @@
+
+/* fuentes:  'icomoon' 'ruda''questrial'*/
+	
+	
+		/* #buscador*/
+	
+		/* #resumen */
+		
+		/* #titulos */
+		
+/* general - estructura	
+-------------------------- */
+
+ul li {list-style-type: none;}
+
+.lateral { /*float:right ;  se movio al cambiar estilos*/
+}
+
+.lateral-inversores {  
+	float:right ;
+    padding-right: 0px;
+}
+
+.right{
+	float:right !important;}
+
+.left{
+	float:lert !important;}
+	
+	
+
+	
+
+/* Elements		
+-------------------------------------------------------------- */
+
+.caja {
+	margin: 0;
+	padding:15px;
+	border: 1px solid #E3E3E3;
+	background-color:#FFF;
+	margin-bottom:5px;
+	margin-top:5px;
+	border-radius: 5px;
+	}
+
+
+
+
+.box_blanco {
+	/*float: left;*/
+    background-color: #ffffff;
+    border: 1px solid #efefef;
+   /* color: #000000;*/
+    display: block;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+    /*font-family:'ruda',sans-serif;*/;
+     font-size: 12px; */
+    font-weight: normal;
+    border-radius: 9px;
+    -moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+    text-align: left;
+    padding: 20px;
+	padding-top: 6px;
+    box-shadow: 1px 2px 1px #b8bcbf;
+    margin-bottom: 10px;
+	
+	border-radius: 0px 0px 9px 9px;
+-moz-border-radius: 0px 0px 9px 9px;
+-webkit-border-radius: 0px 0px 9px 9px;
+
+}
+
+
+/* TITULOS
+-------------------------- */
+
+h1.heading {
+	color: #2b4e61;
+	font-size: 30px;
+	margin: 0;
+	font-family:'ruda',sans-serif;
+	position:relative;
+
+	
+	}
+.sub-heading {
+	font-size: 16px;
+	margin-bottom: 6px;
+	}
+ 
+h2.tit_buscadores{
+	font-family:'ruda',sans-serif;
+
+	color: #FF6802;    }    /* formularios*/
+ 
+h2.tit_box{                /* pertenece a flash*/
+	font-family:'ruda',sans-serif;
+    color: #FF6802;
+    font-size: 20px;
+    margin-bottom: 4px;
+    border-bottom: 2px solid #90A8BB;
+    margin-bottom: 0px;
+    line-height: 22px;
+	
+	padding: 7px 7px 3px 5px;
+    border-radius: 5px 5px 0px 0px;
+	/*    background-color: #C55214;*/
+	}
+	
+h2.tit_box span{
+	       font-size: 15px;
+    padding-right: 1.2%;
+	padding-left: 0.5%;
+	color:#90A8BB;
+	  }	
+	
+
+h2.tit_buscadores2, h3.tit_buscadores2, .tit_buscadores2>h2,.tit_buscadores2>h3,.list-inver h3{          /*  en la parte de flash titulos esta en h2 debería ser un h3, */ 
+	/*background-color:#F00;  */  
+	color: #195677;
+    font-size: 17px;
+/*	margin-top:19px;*/
+	margin-bottom:5px;
+	    margin-top: 7px;
+	}
+	
+.tit_mod{
+			font-family:'ruda',sans-serif;
+			color:#2B4E61;
+		}
+
+/*.list-inver h3{
+	margin-top:8px;
+	margin-bottom:2px;}*/
+		
+/* botones - enlaces
+-------------------------- */
+
+.btn {                            /* revisar btn en form_boots */
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+}
+
+a {
+	color: #000000;	/* 0066cc */
+	text-decoration:none;
+	}
+a:focus, a:hover {
+	color: #F47C04;	/* 003399	990000	 */
+	/* text-decoration:none; */
+	}
+
+input[type="button"] ,input[type="submit"] {
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid transparent;
+  border-radius: 4px;
+  background-color:#2B4E61;
+  color:#FFF
+	}
+	
+a.btn, .btnAzul {
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: none;
+	background-color:#2B4E61;
+	color:#FFF  }
+	
+a.btn:hover, .btnAzul:hover {
+	background-color: #3F728D;
+	color:#FFF;
+ }
+ 
+
+
+	
+
+/* general - home	
+-------------------------- */
+.slogan{
+	    background-color: #FCFEFF;
+    padding: 0px 15px 10px;
+    border-bottom: 1px solid #D6DBE0;}
+
+
+.inversores .boxer .box-row{
+	font-size: 14px; !important;	} /* recolocar */
+
+/* colores 
+-------------------------------- */
+.grisClaro{	background-color:#CCC}
+.grisAzul01{	background-color:#90A8BB;color:#90A8BB} 
+.grisAzul02{	color:#6C8796} 
+
+.azul{	color:#2b4e61}
+.azulClaro{	background-color:#3F728D}
+.naranja{	}
+
+/* inversores 
+-------------------------------- */
+.inversores {
+	    border: 1px solid #E0E0E0;
+	    border-radius: 5px;
+	    background-color: #ECECEC;
+    margin: 0px -7px 0px -7px;
+    padding: 5px 15px 5px;
+	};
+
+.inversores h2{
+	font-family:"ruda";
+	font-size: 15px;
+	border-bottom:1px solid #c1c1c1;
+	color: #195677;
+	font-weight:bold;}
+
+.visto {
+	background-color: #FFF;
+    padding: 4px;
+    border: 1px solid #D8D8D8;
+    border-radius: 5px;
+	/*box-shadow: 1px 2px 1px #b8bcbf*/;}
+
+.visto [class*="col-"]{    /*col-md-6*/
+	  padding-left: 5px;
+ 	 padding-right: 5px;
+	}              
+
+.masvisto {
+	list-style:none;
+	    margin-bottom: 5px;}
+	
+.masvisto img{
+	position: relative;
+    top: 0px  !important;	
+	}
+
+.cajaInterior{
+	margin-top: 3px; 
+	margin-bottom: 5px;  /* cambio */
+	background-color: #ffffff;
+    border: 1px solid #efefef;
+	 
+    border-radius: 9px;
+    /*-moz-border-radius: 9px;
+    -webkit-border-radius: 9px;
+	 box-shadow: 1px 2px 1px #b8bcbf;*/
+    text-align: left;
+    padding: 10px !important;
+   
+	}
+
+
+.titu_lomas{
+	margin: 0px 0px 10px;
+	
+	}
+
+
+/* suscribe-PwSemana publi
+-------------------------------- */
+.suscribe-PwSemana{ }
+
+.suscribe-PwSemana .icon-info{
+	color: #FF6802;
+    position: relative;
+    top: 0.02em;
+}
+
+.suscribe-PwSemana p a{
+	color: #FF6802;
+    margin: 0 0.5em 0 0;
+    text-decoration: none;}
+.suscribe-PwSemana input[type="checkbox"]{
+	display: inline-block;
+	}
+	
+.suscribe-PwSemana input[type="submit"]{
+	display: table;
+	margin: auto 0 auto auto;
+	}
+
+
+
+/* bienvenido
+-------------------------------- */
+
+.cliente {
+	margin:auto;
+    width: 80%;
+    max-width: 890px;}
+
+.cliente tr td { 
+margin-top: 5px;
+    padding-top: 9px;
+
+	}
+.cliente tr td label { 
+    margin-left: 10px;
+    margin-right: 5px;	
+	}
+
+
+
+
+.cliente .botones{
+	text-align: right;}
+
+.bienvenido {
+	margin: auto 4%;}
+	
+.bienvenido	textarea{
+	width:100%;}
+	
+.bienvenido form{
+	color:#666;}
+	
+.bienvenido	.btn{ 
+margin: 10px 0px auto auto; 
+display: table;
+}	
+
+.bienvenido	strong, .cliente strong{ 
+color:#2b4e61;
+}	
+
+.naranja {
+	color:#F47C04;	
+	}
+.naranjaRojo {
+	color: #F54003;
+	}
+
+.destaca {
+	color:#F47C04;
+	/*font-size:24px;*/
+	}
+
+.restringida{
+	margin-left:2%;
+	color:#666;}
+	
+	
+	
+	
+/* pw semana , pw dia , flash
+-------------------------------------------------------------- */	
+
+.nav-check{
+	margin:  -2px -15px auto -15px;
+}
+
+.nav-check>*{
+	display:inline-block;
+	}
+
+.nav-check .explica-01{
+	margin-right:3%;
+	margin-top: 5px;
+    text-align: right;
+    float: right;
+	color: #2B4E61;
+	}
+
+.bts-selecciona{}                                     /* -- btn -- */
+.btn.blanco, .btn.blancoHover{
+	background-color: white;
+    color: #2B4E61;
+    border-color: #e3e3e3
+	}
+.btn.blancoHover:hover{
+	background-color: #3F728D;
+	color:#FFF;
+
+	}
+
+.fechas .col-md-4{
+	padding-left:2px;
+	padding-right:2px;
+	}
+	
+
+.fechas .heading {
+	font-size: 28px ;
+	}	
+
+.heading.PWhoy{
+	margin-left:15px;}
+
+
+.heading>span.icoLogo{
+	line-height:10px ;
+	font-size: 10px ;
+	}
+	
+	
+.heading>span.icoLogo:before {
+	content:url(/img/imagotipo_naran.png);
+	position: absolute;
+    top: 1px;
+    left: -5px;
+	/*position: relative;
+	top: -17px;
+    left: 5px;*/
+	}	
+	
+.heading.PWsemana span.icon{
+    font-size: 20px;
+    border-left: solid 1px #B0B0B0;
+    padding-left: 5px;
+	}
+	
+.heading.PWsemana:hover{
+	color: #1F85BD;
+/*	color:red;*/
+	}	
+	
+	
+.fecha_actual{    
+    cursor: pointer;
+    background-color: #F7F7F7;
+    display: table;
+    padding: 2px 10px;
+    border-radius: 5px;
+	margin: 7px 0 auto auto;
+    color: #2b4e61;
+    font-size: 20px;
+ }
+	
+	.listado_fechas{
+	border-left: 2px solid #71A7C5;
+    padding-left: 10px;
+	}
+	
+.listado_fechas li a{
+	color:#737373;
+	}
+.listado_fechas span.azul2{
+		color:#2b4e61;
+	}
+	
+.otraSeleccion{
+	float:right; padding-top:15px;
+	margin-right: -15px;
+}
+
+.otraSeleccion label{
+	    margin-bottom: 0px;
+}
+	
+	
+/* Helpers		  .. pabloo ??
+-------------------------------------------------------------- */
+
+/*.amarilla {
+	background:#FFFFCC; 
+	}
+.sombra {
+	box-shadow: 3px 3px 0px #b8bcbf;
+	}
+.txtRojo {
+	color:#990000;
+	}
+
+.med {
+	font-size:12px;
+
+	}
+.peq {
+	font-size:11px;
+
+	}
+.mini {
+	font-size:10px;
+
+	}
+
+.prieto {
+	margin-top:0;
+	margin-bottom:0;
+	}
+
+.figure_tit {
+	display:block;
+	font-family:'ruda',sans-serif; 
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px dotted grey; 
+	}
+
+.dev {
+	background:#FFFFCC; 
+	margin:2px; 
+	border:#c1c1c1 1px solid;
+	line-height:1.1em;
+	}*/
+	
+/* jp, elementos q jp3 no está teniendo en cuenta en style.css	
+-------------------------------------------------------------- */
+
+
+
+@media (max-width:767px) {          /* ///////// solo movil    */
+
+.cliente {
+    width: 100%;
+   }                               
+
+.fechas .caja{
+	padding:10px;}
+	
+.fechas div[class^="col"]	{
+
+	padding-left: 5px;
+    padding-right: 0px;}	
+	
+
+	
+}
+
+@media (max-width:450px) { 
+
+
+	.bts-selecciona{ width:100%; text-align: center;}
+
+ .fechas  .col-xs-6 {
+	 width:100%;}	
+	 
+ .fechas .fecha_actual{ 
+ width:100%;
+ margin: 10px auto;}
+ 
+.nav-check .explica-01 {width:100%;
+ text-align:center;
+ margin: 10px auto;
+ font-size: 13px;}
+}
+
+
+@media (max-width:415px) { 
+ } 
+
+
+
+
+
+@media (min-width: 768px){  /*    ///////// standard    */
+	.lateral-inversores {
+	position: relative !important;
+    float: right !important;
+}
+
+	
+}
+
+@media (min-width: 992px) {           /* /////////    escritorio    */
+
+.lateral {
+    /*float: right !important;    jj */
+	position: relative !important;
+    float: right !important;
+}
+
+}
+
+
+ @media (min-width:1200px) {                 /* //////  escritorio grande   */
+
+	
+}
+
+
+
+
+ 
+

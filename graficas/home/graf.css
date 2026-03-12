@@ -1,0 +1,60 @@
+.note {
+	font-size: 0.8em;
+}
+.jqplot-yaxis-tick {
+  white-space: nowrap;
+}
+.jqplot-title {
+	font-size: 1.7em;
+}
+.graf_next, .graf_prev {
+  margin-top: 120px;
+  width: 82px;
+  height: 82px;
+  color: #232222;
+  background: #d4d8d8;
+  text-align: center;
+  font: 400 72px/80px 'Arial';
+  cursor: pointer;
+  border-radius: 41px;
+  -webkit-transition: 0.3s color ease;
+  transition: 0.3s color ease;
+  z-index: 10;
+}
+
+.graf_next:hover, .graf_prev:hover {
+  color: #F47C04;
+}
+
+.graf_next:before {
+  padding-left: 10px;
+  content: '>';
+}
+.graf_prev:before {
+  padding-right: 10px;
+  content: '<';
+}
+#graf_titulo {
+	text-align:center;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:1.25em;
+	color:#666;
+}
+#graf_subtitulo {
+	text-align:center;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:1.7em;
+	color:#666;
+	font-weight:600;
+}
+#graf_fuente {
+	/*
+	text-align:center;
+	font-weight:600;
+	*/
+	padding-left:45px;
+	padding-top:8px;
+	font-family: "Trebuchet MS",Arial,Helvetica,sans-serif;
+	font-size:.8em;
+	color:#666;
+}

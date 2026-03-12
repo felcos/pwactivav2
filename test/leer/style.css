@@ -1,0 +1,382 @@
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+
+body {
+    line-height: 1;
+}
+
+ol, ul {
+    list-style: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+caption, th, td {
+    text-align: left;
+    font-weight: normal;
+    vertical-align: middle;
+}
+q, blockquote {
+    quotes: none;
+}
+q:before, q:after, blockquote:before, blockquote:after {
+    content: "";
+    content: none;
+}
+a img {
+    border: none;
+}
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+    display: block;
+}
+
+html, body {
+    height: 100%}
+body {
+    overflow: hidden;
+    background: #000 url('background.jpg') 0 0 repeat;
+    position: relative;
+    font: 14px/1 "Lucida Console", "Lucida Sans Typewriter", Monaco, "Bitstream Vera Sans Mono", monospace;
+    color: #FFF;
+    text-shadow: 0 -1px 0 #000;
+}
+a {
+    color: white;
+}
+
+.logo {
+    padding:  12px 0 0 10px;
+    float: left;
+}
+
+.logoimg {
+    margin: 0 0 12px 0;
+}
+
+.logo h2 {
+    padding:  0;
+    margin:  0 0 0 8px;
+    font-size: 15px;
+    font-family: Arial;
+    color: #ddd;
+}
+
+.logo h2 a {
+    color: #fff;
+    font-weight: bold;
+}
+
+.ap-demo {
+    padding: 20px 0;
+    margin-left: 20px;
+    text-align: center;
+    float: left;
+    height: 90px;
+}
+
+.top-right {
+    z-index: 1;
+    margin: 10px 15px 0 0;
+    float: right;
+}
+
+
+a.download {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 24px;
+    border: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #2e8ece;
+    text-decoration: none;
+    text-shadow: none;
+}
+
+ a.buy {
+    margin-right: 10px;
+    font-size: 13px;
+    font-weight: bold;
+    padding: 6px 22px;
+    border: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #00a651;
+    -webkit-box-shadow: 0px 3px 0px 0px #007238;
+    -moz-box-shadow:    0px 3px 0px 0px #007238;
+    box-shadow:         0px 3px 0px 0px #007238;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+    text-decoration: none;
+    text-shadow: 0 1px 0 #007238;
+}
+
+ a.close-button-right {
+    font-size: 13px;
+    font-weight: bold;
+    padding: 8px 15px;
+    border: 0;
+    font-family: Arial, sans-serif;
+    color: #fff;
+    background: #3a718a;
+    text-decoration: none;
+}
+
+
+a.download:hover, a.buy:hover, a.close-button-right:hover  {
+    text-decoration: none;
+    -moz-opacity: 0.90;
+    opacity: 0.90;
+    -ms-filter:"progid:DXImageTransform.Microsoft.Alpha"(Opacity=90); 
+}
+
+
+#wrapper {
+    -webkit-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
+    -moz-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
+    -ms-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
+    -o-transition: height 240ms ease, width 240ms ease, margin 240ms ease;
+    transition: height 240ms ease, width 240ms ease, margin 240ms ease;
+    -webkit-box-shadow: 0 0 12px 1px #000;
+    -moz-box-shadow: 0 0 12px 1px #000;
+    box-shadow: 0 0 12px 1px #000;
+    -webkit-transform: translate3d(0,  0,  0);
+    position: relative;
+    background-color: #FFF;
+    width: 100%;
+    height: 100%;
+    display: block;
+    margin: 0 auto;
+}
+
+#wrapper iframe {
+    width: 100%;
+    height: 100%;
+}
+#wrapper.noTransitions {
+    -webkit-transition: 0;
+    -moz-transition: 0;
+    -ms-transition: 0;
+    -o-transition: 0;
+    transition: 0;
+}
+#wrapper .keyboard-bg {
+    -webkit-transform: translateY(-20px);
+    -moz-transform: translateY(-20px);
+    -ms-transform: translateY(-20px);
+    -o-transform: translateY(-20px);
+    transform: translateY(-20px);
+    display: block;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    pointer-events: none;
+}
+#wrapper[data-device="smartphonePortrait"].keyboard, #wrapper[data-device="smartphoneLandscape"].keyboard, #wrapper[data-device="tabletLandscape"].keyboard, #wrapper[data-device="tabletPortrait"].keyboard {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+#wrapper[data-device="smartphonePortrait"].keyboard .keyboard-bg, #wrapper[data-device="smartphoneLandscape"].keyboard .keyboard-bg, #wrapper[data-device="tabletLandscape"].keyboard .keyboard-bg, #wrapper[data-device="tabletPortrait"].keyboard .keyboard-bg {
+    -webkit-transform: translateY(0px);
+    -moz-transform: translateY(0px);
+    -ms-transform: translateY(0px);
+    -o-transform: translateY(0px);
+    transform: translateY(0px);
+    opacity: 1;
+}
+#wrapper[data-device="smartphonePortrait"].keyboard {
+    padding-bottom: 260px;
+}
+#wrapper[data-device="smartphonePortrait"].keyboard .keyboard-bg {
+}
+#wrapper[data-device="smartphoneLandscape"].keyboard {
+    padding-bottom: 194px;
+}
+#wrapper[data-device="smartphoneLandscape"].keyboard .keyboard-bg {
+}
+#wrapper[data-device="tabletLandscape"].keyboard {
+    padding-bottom: 307px;
+}
+#wrapper[data-device="tabletLandscape"].keyboard .keyboard-bg {
+}
+#wrapper[data-device="tabletPortrait"].keyboard {
+    padding-bottom: 395px;
+}
+#wrapper[data-device="tabletPortrait"].keyboard .keyboard-bg {
+}
+body>header {
+    background: #295f77;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 35px;
+    z-index: 100;
+    overflow: hidden;
+}
+body>section {
+    position: fixed;
+    top: 35px;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 3;
+}
+#size {
+}
+header .keyboard, .cssrefresh {
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    color: #EEE;
+    position: absolute;
+    z-index: 1;
+    top: 8px;
+    right: 8px;
+    border: 1px solid #363738;
+}
+header .keyboard a, .cssrefresh a, .close-button {
+    background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #343434),  color-stop(100%,  #242424));
+    background: -webkit-linear-gradient(#343434, #242424);
+    background: -moz-linear-gradient(#343434, #242424);
+    background: -o-linear-gradient(#343434, #242424);
+    background: -ms-linear-gradient(#343434, #242424);
+    background: linear-gradient(#343434, #242424);
+    -webkit-box-shadow: inset 0 1px 0 #3c3c3c;
+    -moz-box-shadow: inset 0 1px 0 #3c3c3c;
+    box-shadow: inset 0 1px 0 #3c3c3c;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    border-radius: 4px;
+    text-decoration: none;
+    border: 1px solid #040404;
+    float: left;
+    display: block;
+    width: 30px;
+    height: 30px;
+    outline: none;
+    line-height: 30px;
+    text-transform: uppercase;
+    font-size: 16px;
+    text-align: center;
+}
+header .keyboard a:hover, .cssrefresh a:hover, .close-button:hover {
+    background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #313131),  color-stop(100%,  #242424));
+    background: -webkit-linear-gradient(#313131, #242424);
+    background: -moz-linear-gradient(#313131, #242424);
+    background: -o-linear-gradient(#313131, #242424);
+    background: -ms-linear-gradient(#313131, #242424);
+    background: linear-gradient(#313131, #242424);
+}
+header .keyboard a.active, header .keyboard a:active, .cssrefresh a.active, .cssrefresh a:active, .close-button.active, .close-button:active {
+    background: -webkit-gradient(linear,  50% 0%,  50% 100%,  color-stop(0%,  #1c1c1c),  color-stop(100%,  #242424));
+    background: -webkit-linear-gradient(#1c1c1c, #242424);
+    background: -moz-linear-gradient(#1c1c1c, #242424);
+    background: -o-linear-gradient(#1c1c1c, #242424);
+    background: -ms-linear-gradient(#1c1c1c, #242424);
+    background: linear-gradient(#1c1c1c, #242424);
+    -webkit-box-shadow: inset 0 1px 0 #242424;
+    -moz-box-shadow: inset 0 1px 0 #242424;
+    box-shadow: inset 0 1px 0 #242424;
+    outline: none;
+}
+header .keyboard a.active span, header .keyboard a:active span, .cssrefresh a.active span, .cssrefresh a:active span, .close a.active span, .close a:active span {
+    opacity: 1;
+}
+
+#devices {
+    -webkit-transition: all 200ms ease;
+    -moz-transition: all 200ms ease;
+    -ms-transition: all 200ms ease;
+    -o-transition: all 200ms ease;
+    transition: all 200ms ease;
+    z-index: 1;
+    float:right;
+    margin: 2px 20px 0 0;
+}
+#devices a:first-of-type {
+}
+#devices a:last-of-type {
+    
+    border-right-width: 1px;
+}
+#devices a {
+    background: #1b5069;
+    text-decoration: none;
+    border: 1px solid #12445d;
+    border-right-width: 0;
+    float: left;
+    display: block;
+    width: 40px;
+    height: 30px;
+    outline: none;
+}
+#devices a:hover {
+    background: #12445d;
+}
+#devices a.active, #devices a:active {
+    background: #12445d;
+    outline: none;
+}
+#devices a.active span, #devices a:active span {
+    opacity: 1;
+}
+#devices span {
+    text-align: center;
+    display: block;
+    width: 40px;
+    height: 30px;
+    text-indent: -9999px;
+    opacity: .75;
+}
+#devices .tablet-portrait span, #devices .tablet-landscape span {
+    background: transparent url('tablet.png') 50% 50% no-repeat;
+}
+#devices .smartphone-portrait span, #devices .smartphone-landscape span {
+    background: transparent url('mobile.png') 50% 50% no-repeat;
+}
+#devices .tablet-landscape span, #devices .smartphone-landscape span {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+
+#devices .auto span {
+    background: transparent url('desktop.png') 50% 50% no-repeat;
+}
+
+
+@media only screen and (max-width: 1200px) {
+    
+    .top-right {
+        margin-top: 20px;
+    }
+    
+    #devices {
+        margin-top: 20px;
+        margin-right: 15px;
+    }
+}

@@ -1,0 +1,256 @@
+
+/*  inmuebles  // con disponibilidad*/
+
+.inm_tbl.cabecera {
+	margin-top:10px;}
+.inm_tbl.cabecera div{
+	font-weight:bold; 
+	color:#666666;
+ }
+
+.inm_caja-disp{
+	display:table-cell;
+	width:200px;
+	position:relative;
+	}
+
+.inm_disp_disp{
+	font-size: .85em;
+	display:table;
+	width:100%;
+	text-align:center;
+	position:absolute;
+	top:-12px;
+	font-weight: normal;
+	}
+	
+.inm_caja-disp div{
+	line-height: 0.2;
+	font-size: .8em;
+	font-weight:bold;}
+	
+.inm_caja-disp span{
+	}
+
+
+/* general */
+
+.inm_tbl {
+	
+		}
+.inm_row  {
+	width: 100%;
+	display: table;
+	}
+	
+.inm_tbl.cab{
+	    border-bottom: 1px solid #EEEEEE;
+		color:#666;}
+
+
+.inm_row a{                                  /* -- btn -- */
+	width: 100%;
+    display: table;
+    border-bottom: 1px solid #c1c1c1;
+
+	text-decoration:none;
+	color: #666666;}
+	
+.inm_row a:hover{
+	background-color: #FFF3CA;
+	}	
+	
+		
+	
+
+.inm_contador {
+	display: table-cell;
+	width:24px;
+	text-align:right;
+	padding:.3em 12px 0 0;
+/*	border-bottom: 1px solid #c1c1c1;*/
+	
+	}
+a .inm_nombre {
+    display: table-cell;
+	padding:.3em 5px 0 0;
+	color: #0973AE;
+	}
+.inm_nombre {
+	display: table-cell;
+	padding:.3em 5px 0 0;}
+	
+.inm_tipo {
+	display: table-cell;
+	width:	160px;
+	font-size:.8em;
+	padding:.3em 5px 0 0;
+	}
+.inm_tipog {
+	display: table-cell;
+	font-size:.8em;
+	padding:.3em 5px 0 0;
+	width:24%;
+	}
+	
+	
+.inm_uso {
+	font-size:.8em;
+	}
+.inm_disp_total {
+	display: table-cell;
+	width:	50px;
+	font-size:1em;
+	padding:.3em 5px 0 0 ;
+	text-align:right;
+	}
+.inm_disp_min {
+	display: table-cell;
+	width:	40px;
+	font-size:.9em;
+	padding:.3em 5px 0 0 ;
+	text-align:right;
+	}
+.inm_disp_max {
+	display: table-cell;
+	width:	50px;
+	font-size:.9em;
+	padding:.3em 5px 0 0 ;
+	text-align:right;
+	}
+.inm_disp_fecha {
+	display: table-cell;
+	width:	80px;
+	font-size:.9em;
+	padding:.3em 2px 0 15px;
+	color:#CF5800;
+	}
+.inm_pais {
+	display: table-cell;
+	width: 25px;
+	padding:.3em 2px 0 5px ;
+	}
+	
+/*	sencillo */
+
+.inm_ubic {
+	display: table-cell;
+	width: 130px;
+	font-size:.8em;
+	padding:.3em 5px 0 0 ;
+	}
+.inm_ubicg {
+	display: table-cell;
+	width: 24%;
+	font-size:.8em;
+	padding:.3em 5px 0 0 ;
+	}
+.inm_paisg {
+	display: table-cell;
+	width: 25px;
+	padding:.3em 2px 0 5px ;
+	}
+	
+@media (max-width:767px) { 
+
+.inm_row  {	}
+
+.inm_contador {
+	display: none;
+    width: 24px;
+    text-align: right;
+    padding: .3em 12px 0 0;
+    border-bottom: 1px solid #c1c1c1;
+	}
+a .inm_nombre, .inm_nombre{
+	display: block;
+    width: 100%;
+    padding: .3em 5px 0 0;
+    border-bottom: 1px dotted #c1c1c1;
+	}
+
+/*  AAA */
+
+.inm_tipog {
+	display: inline-block;
+    width: 45%;
+    font-size: .8em;
+    padding: .3em 5px 0 0;
+	}	
+.inm_ubicg {
+	display: inline-block;
+    width: 45%;
+    font-size: .8em;
+    padding: .3em 5px 0 0;
+
+	}
+.inm_paisg {
+	display: inline-block;
+    width: 10%;
+    text-align: right;
+    padding: .3em 2px 0 0;
+	}
+/*  con disponibilidad */
+.inm_caja-disp{
+	width:auto;
+	display: inline-block;
+	margin-left: -3px;}
+
+.inm_disp_disp{
+	position:relative;
+	top:0px;}
+.inm_tipo,.inm_ubic,.inm_disp_min,.inm_disp_max, .inm_disp_fecha, .inm_pais{
+	display: inline-block;
+	 vertical-align: top;
+}
+
+
+.inm_tipo, .inm_ubic { width: 27%;}
+.inm_ubic{ width: 27%;}
+.inm_pais{ display:none	}
+
+   }
+	
+@media (max-width:450px) {
+	
+
+.inm_caja-disp{width:100%;} 
+
+.inm_disp_disp {
+    position: relative;
+    top: -3px;
+    text-align: right;
+    padding-right: 12px;}
+
+
+
+/*.inm_tipo,.inm_ubic {display: block; float:left;}*/
+	
+/*.inm_disp_min{clear:left;}*/
+/*.inm_disp_fecha{text-align:right}*/
+
+
+
+.inm_tipo{display:none !important;}
+.inm_ubic{display:none !important;}
+
+/* */
+.inm_caja-disp{width:35%;    margin-left: 0px; display:table-cell} 
+a .inm_nombre, .inm_nombre {
+	display:table-cell;
+	width: 65%;
+    padding: .3em 5px 0 0;
+	border:none;
+	}	
+.inm_disp_min, .inm_disp_max, .inm_disp_fecha {
+	display: inline-block;
+      width: 47%;
+	
+}
+.inm_disp_fecha{
+		display:none;}
+	
+	
+	
+	
+}

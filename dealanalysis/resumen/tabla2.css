@@ -1,0 +1,63 @@
+
+
+
+.tbl_resum {
+	width: 100%;
+	display: table;
+	font-size: 13px ;
+	font-weight: bold;
+}
+.fila_resumt  {
+	display: table-row;
+	text-transform: capitalize;
+	background-color: #a2c3d7 ;
+	
+}
+.fila_resum  {
+	display: table-row;
+	text-transform: capitalize;
+}
+.resum_seccion{
+	display: table-cell;
+	padding-top: 2px;
+	
+	padding-right: 0px;
+	border-bottom: 1px solid #a2c3d7;
+	text-transform: capitalize;
+	padding-left: 2px;
+}
+.resum_ops {
+	display: table-cell;
+	padding-top: 2px;
+	width: 25px;
+	text-align:right;
+	padding-right: 0px;
+	border-bottom: 1px solid #a2c3d7;
+}
+
+.resum_eur {
+	display: table-cell;
+	padding-top: 2px;
+	width:60px;
+	text-align:right;
+	padding-right: 0px;
+	border-bottom: 1px solid #a2c3d7;
+}
+.resum_superf {
+	display: table-cell;
+	padding-top: 2px;
+	width: 80px;
+	text-align:right;
+	padding-right: 2px;
+	border-bottom: 1px solid #a2c3d7;
+}
+.tot {
+	font-weight:bold;
+	border-bottom: 0px;
+	}
+
+.madbcn {
+	padding-top:0;
+	font-size:.8em;
+	font-weight: normal ;
+	}

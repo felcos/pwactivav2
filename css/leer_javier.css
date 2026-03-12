@@ -1,0 +1,215 @@
+
+
+/*  //////////    ARTICULOS     ///////////////  */
+
+/* estructura */
+
+  .caja_aside{            /* BORRAR porque ya no hay aside*/
+	    margin: 0;
+    padding: 15px;
+    border: 1px solid #E3E3E3;
+    background-color: #FFF;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    border-radius: 5px;}
+	
+
+	
+/* fin estructura */
+
+.jj_articulos{  
+	/*margin-left: -15px;
+    margin-right: -15px;*/}
+
+
+                                          /* avanza  */
+.aside_avanza{                   /* ?? v.1*/
+	margin: 0px auto 15px;
+    display: table;
+	padding-bottom: 3px;
+    border-bottom: solid 1px #CECECF;
+	width:100%;
+	}
+	
+.aside_avanza>div{                 /* ?? v.1*/
+	display: table-cell;
+	 margin: auto 2px;
+	     text-align: center;
+	}
+.aside_avanza>a{                   /* ?? v.1*/
+	    margin: auto 2px;
+	}
+.aside_avanza a.btn>span{             /* ?? v.1*/
+	color:#9C9C9C;
+	}
+.aside_avanza a.btn{                 /* btn    */  /* ?? v.1*/
+	padding: 6px 12px;
+	height:auto;
+  display: inline-block;
+  padding: 6px 12px;
+  margin-bottom: 0;
+  font-size: 14px;
+  font-weight: normal;
+  line-height: 1.42857143;
+  text-align: center;
+  white-space: nowrap;
+  vertical-align: middle;
+  -ms-touch-action: manipulation;
+      touch-action: manipulation;
+  cursor: pointer;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  background-image: none;
+  border: 1px solid #D3D3D3  ;
+  
+  background-color:#fff;
+  width: 86%;
+}
+
+
+
+@media (max-width:767px) {          /* ///////// solo movil    */
+
+
+.menosLeft, .menosAmbos{    /* ?? v.1*/
+	margin-left: -15px ; 
+	margin-right: -15px; }
+
+.caja_aside{                 /* ?? v.1*/ 
+	padding:0px}
+.aside_avanza{              /* ?? v.1*/
+	margin: 8px auto 2px;
+	}
+
+}
+
+
+@media (min-width: 768px){  /*    ///////// a partir de  tablet   */
+
+.menosAmbos{                /* ?? v.1*/
+	margin-left: -15px ; 
+	margin-right: -15px; }
+	
+.menosLeft{                /* ?? v.1*/
+	margin-left: -15px ;}
+	
+
+}
+
+
+@media (min-width: 992px){  /*    /////////  tablet   */
+
+
+
+.menosRight{              /* ?? v.1*/
+	margin-right: -15px;
+	}
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*    ///////////////////      ???????????????         //////////////           */
+
+
+/* tabla operaciones */
+.tbl_jp {
+	font-family:'Ruda', sans-serif;
+}
+.tbl_jp td {
+	font-family:'Ruda', sans-serif;
+	font-size:13px;
+	border-top:#39F 1px solid;
+}
+
+.tbl_plantas {}
+.tbl_plantas td {
+	font-family:'Ruda', sans-serif;
+	font-size:10px;
+	border-bottom:#39F 1px solid;
+	border-top: 0px;
+}
+
+
+/* password */
+
+
+/*#div_frmAdminLogin {
+
+	font-family: 'ruda',sans-serif;
+	}
+#div_frmAdminLogin p {
+	text-align:center;
+	margin-bottom:.8em;
+	
+	}
+#div_frmAdminLogin h1 {
+	padding:20px;
+	font-family: 'ruda',sans-serif;
+	font-size: 24px;
+	}	
+#div_frmAdminLogin form {
+
+	}
+#div_frmAdminLogin form textarea {
+	margin-bottom:1em;
+	} 
+.bienvenido {
+
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	
+}
+.restringida {
+	padding-top:30px;
+	}
+
+#div_registro {
+
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	}
+#result_registro {
+
+	text-align:center;
+	margin:5px;
+	padding:10px;
+	}
+
+*/

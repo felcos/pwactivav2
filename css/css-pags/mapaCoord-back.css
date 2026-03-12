@@ -1,0 +1,274 @@
+
+/* /////   RESULTADOS   ////  */
+
+
+.popover.top{
+	display:block;
+    position: relative;
+  left: -46%;
+    top: -10px;
+	/*  display:none;*/
+	
+}
+
+
+
+
+
+
+
+.caja-operaciones,.caja-distribucion,.caja-agencias{
+
+	}
+
+.caja-operaciones img,.caja-distribucion img,.caja-agencias img{
+	max-width:100%;
+	height:auto;
+
+	}
+
+
+.mapaPrueba-div{
+	max-width: 935px;
+	height: 650px; /*935x650*/
+	background-image: url(/_inc/javier/img/gnral/mapa-prueba.jpg);
+	z-index: 0;
+	background-repeat: no-repeat;	
+	position: relative;
+	}
+
+
+	
+/* tabla  */
+	
+.popover-tb01{
+	margin: 2px;
+	/* margin: 2px 2px 2px auto;*/
+	z-index: 1;
+   background-color: #FFFFFF;
+	min-width:62px;
+	text-align: center;
+	    border-radius: 8px 0 0 0;
+	}
+	
+	
+.popover-tb01 td{
+	vertical-align:bottom;
+	}	
+
+.popover-tb01 tr td:first-child{
+	text-align:right;
+	color:#009aff;
+	padding-right:2px;
+	font-weight: bold;
+	font-size:12px;
+	}
+
+.popover-tb01 tr td:last-child{
+	width:13px;
+	color: #666666;
+	font-size:9px;}	
+	
+.popover-tb01 td:last-child img{
+	 display:inline-block;
+    max-width: 30px;
+    height: auto;
+	padding-left: 1px;
+	padding-bottom: 2px;
+	}	
+
+
+/* nav  */
+
+
+.infoBox:hover .popover-check{
+	/*display:block; no se ve check*/
+		}	
+		
+.infoBox a{
+	text-decoration:none;	
+	}		
+
+.popover-check{
+	/*display:none; no se ve check*/
+    position: relative;
+    background-color: #004768;
+    z-index: -1;
+		}	
+
+
+
+	
+.btnCheck{
+    position: absolute;
+	top: -14px;
+    left: -25px;
+/*    top: -12px;
+    left: -25px;*/
+   	background-color: transparent;
+    box-shadow: none;
+	    outline: 0px;
+	}
+	
+.btnCheck:before{
+    content: "\e711";
+    font-family: 'icomoon';
+	padding: 5px;
+    border-radius: 20px;
+    line-height: 10px;
+    background-color: rgba(255, 255, 255, 0.75);
+	color: #6E6E6E;
+}	
+
+.btnCheck:hover:before{
+	content: "\e710";
+   	color:#3C0;
+	background-color:#FFF;
+	 box-shadow: 0px 0px 1px #292929;
+	
+}	
+
+.btnCheck.checked:before{	
+	content: "\e710";
+   	color:#3C0;
+	background-color:#FFF;
+	box-shadow: 0px 0px 3px #292929;	
+	}
+
+	
+/* popover  */	
+
+
+/*
+
+
+.popover.top.punto011{
+	    top: 210px !important; 
+    left: 200px !important; 
+    display: block;  }
+	
+.popover.top.punto022{
+	    top: 310px !important; 
+    left: 68px !important; 
+    display: block;  }
+		
+	
+.popover.top.punto033{
+	top: 420px !important; 
+    left: 100px !important; 
+    display: block;  }
+		
+*/
+/*.infoBox{
+	background-color:#6CF;}
+*/
+
+
+
+/*.infoBox:hover .popover-tb01:hover + .arrow:after {
+		border-top-color: #FF6802;
+	    margin-bottom: -4px;	
+	}*/
+	
+	
+.myMap .popover.top{
+	display:block;
+	border-bottom: 3px solid #004768;
+	padding: 0px;
+	font-size:12px;
+	
+}
+
+.myMap .popover.top > .arrow:after {
+   /* content: " ";
+    bottom: 1px;
+    margin-left: -10px;
+    border-bottom-width: 0;*/
+    border-top-color: #004768;
+}
+
+.infoboxPosition{
+	position:absolute;
+	bottom:100%;}
+
+/* .infoBox:hover */
+.infoBox:hover {
+	z-index:1200 !important;
+	}
+
+.infoBox  .popover.top:hover{     /*.infoBox:hover  .popover.top{*/
+	border-bottom: 3px solid #009aff;;
+	}
+
+.infoBox .popover.top:hover > .arrow:after {   /*.infoBox:hover .popover.top > .arrow:after*/
+		border-top-color: #009aff;;
+	    margin-bottom: -5px;	
+	}
+	
+	
+/*  /////   Disponibilidad   /////	*/	
+
+	
+.popover-tbDisp{
+	/*margin: auto;*/
+	margin: 4px 3px 2px;
+	z-index: 1;
+    background-color: #FFFFFF;
+	min-width: 72px;
+/*	width:96%;*/
+	cursor:pointer;
+	}
+	  
+
+.popover-tbDisp tr td{
+	vertical-align:bottom;
+	text-align:right;
+	}	
+.popover-tbDisp tr:first-child{
+/*	border-bottom: 1px dotted #66CCFF;*/
+	}		
+	
+.popover-tbDisp tr:nth-child(2) td span:first-child{
+	border-top: 1px dotted #66CCFF;
+	padding-top:5px;
+	}	
+		
+.popover-tbDisp tr td span{
+	line-height:0.5;}
+
+.popover-tbDisp tr td span:first-child{
+	color:#7d7d7d;
+	padding-right:2px;
+	font-size:10px;
+	display:block;
+}
+
+
+
+.popover-tbDisp tr td span:nth-child(2){
+	color: #004768;
+	font-size:12px;
+	font-weight:bold;}	
+	
+.popover-tbDisp tr td span:nth-child(3){
+	color: #004768;
+	font-size:9px;
+	padding-right:2px;
+}	
+	
+
+.popover-tbDisp tr:nth-child(3) td {
+    color: #004768;
+    font-size: 10px;
+    font-weight: bold;
+    text-transform: uppercase;
+	text-align: center;
+	    padding-bottom: 1px;
+	}
+		
+.popover-tb01 img{
+	display:inline-block;
+  /*  max-width: 30px;
+    height: auto;*/}	
+	
+	

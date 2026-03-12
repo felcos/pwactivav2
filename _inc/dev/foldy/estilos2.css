@@ -1,0 +1,135 @@
+/* css para aproximar FOLDY a JAVIER */
+/* */
+@font-face {
+	font-family: "Ruda";
+	src: url("/css/fonts/ruda/Ruda-Regular.ttf"), url("/css/fonts/ruda/Ruda-Black.ttf"), url("/css/fonts/ruda/Ruda-Bold.ttf"), url("/css/fonts/ruda/SignikaNegative-Bold.ttf");  
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Ruda IE";
+	src: url("/css/fonts/ruda/Ruda-Black.eot"),url("/css/fonts/ruda/SignikaNegative-Bold.eot"),url("/css/fonts/ruda/Ruda-Regular.eot"),url("/css/fonts/ruda/Ruda-Bold.eot");
+}
+
+@font-face {
+	font-family: "Questrial";
+	src: url("/css/fonts/questrial/Questrial-Regular.ttf");	    
+}
+
+@font-face {
+	font-family: "Questrial IE";
+	src: url("/css/fonts/questrial/Questrial-Regular.eot");
+}
+
+
+body {
+	/**/
+	background-color: #F5F5F5;
+	/* font-family: "Ruda"; */
+	}
+.container {
+	/* font-size:.85em;	*/
+}
+	
+#cabecera, footer {
+	/* background-color: #F5F5F5; */
+	background-color: #FFF;
+	}
+
+/*	llevado a /flash/css_foldy.css
+.box_blanco {
+	background-color: #FFF;
+	}
+*/
+	
+.heading {}
+	
+.caja {
+	/*
+	border: 1px solid #c1c1c1;
+	*/
+	background-color: #FFF;
+	}
+	
+.widget{
+	/* background: #FFF; */
+}
+.widget > .widget-tittle {
+	/*
+	background:#b8bcbf;
+	color:#FFF;
+	
+	border: none;
+	*/
+}
+.widget-body {
+	background:#FFF;
+}
+
+
+.resp-tabs-container {
+	/* box-shadow: 3px 3px 0px #b8bcbf; */
+	}
+.resp-tab-active {
+	/*box-shadow: 3px 3px 0px #b8bcbf;*/
+	}
+	
+
+section.flash > h2.titulo {
+	/*border-bottom:none !important;*/
+	}
+
+section.flash > .titulos {
+	background: #FFF;
+	/*border-top: 1px solid #c1c1c1;*/
+	border-bottom: 1px solid #c1c1c1;
+	}
+
+
+
+@media screen and (min-width: 480px) {
+	.caja {
+		border-radius: 6px;
+	}
+	
+	.widget-tittle {
+		border-radius: 6px 6px 0 0;
+		/*
+		-moz-border-radius: 5px 5px 0 0;
+		-webkit-border-radius: 5px 5px 0 0;
+		*/
+	}
+	
+	.widget > .widget-body:last-of-type, .widget > form >.widget-body:last-of-type {
+		border-radius: 0 0 6px 6px;
+		/*
+		-moz-border-radius: 0 0 5px 5px;
+		-webkit-border-radius: 0 0 5px 5px;
+		*/
+	}
+	.widget {
+		border-radius: 6px;
+		/*
+		-moz-border-radius: 6px 6px 6px 6px;
+		-webkit-border-radius: 6px 6px 6px 6px;
+		*/
+	}
+	
+	section.flash {
+		border-left:1px solid #c1c1c1;
+		border-right:1px solid #c1c1c1;
+		border-top:1px solid #c1c1c1;
+		
+		border-radius: 6px;
+	}
+	section.flash > .titulos {
+		border-radius: 0 0 6px 6px;
+	}
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	
+}

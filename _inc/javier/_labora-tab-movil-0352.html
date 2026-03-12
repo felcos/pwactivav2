@@ -1,0 +1,441 @@
+<!-- saved from url=(0022)https://internet.e-mail -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>PropertyWeb</title>
+<!--include virtual="inc_head.asp" -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<link href="../../css/base.css" rel="stylesheet" type="text/css">
+<link href="../../css/estilos.css" rel="stylesheet" type="text/css">
+<link href="../../css/fuentes.css"  rel="stylesheet" type="text/css" >
+
+<link href="../../css/form_boots.css" rel="stylesheet" type="text/css">
+<link href="../../css/titulos.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_info.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_operaciones.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/leer_javier.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/js-components.css" rel="stylesheet" type="text/css">
+<!-- css temporal, estilos por defecto bt-->
+<link href="../../css/header.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/footer.css" rel="stylesheet" type="text/css">
+<link  href="../../css/estilo_imprimir.css" rel="stylesheet" type="text/css" media="print">
+
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/mapaCoord.css">
+
+<!-- EXTRA  -->
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/tabs031-izq.css">
+
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosForm.css">
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosResultados.css"><!---->
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+
+<!--[if lt IE 9]><script src=""js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--<script src="js/ie-emulation-modes-warning.js"></script>-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<!--include virtual="/js/inc_js.asp" -->
+<script src="../../lib/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="../../js/jquery.form.js" type="text/javascript"></script>
+
+<!--<script src="../../lib/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>  -->
+
+<script src="../../lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="../../js/modernizr.js" type="text/javascript"></script>
+
+<!-- :inc_head.asp  -->
+
+<script type="text/javascript">
+
+$(document).ready(function(){
+
+$("#bt_lanza").click(function(){
+	var pantalla=  $(window).width() + " , " +$(window).height() ;
+	var texto01 = $(".deal-navs").position().left + " , " +
+				$(".deal-navs").position().right  ;
+	$("#informaSize").html(pantalla);
+	})
+
+
+
+	//$('.dropdown-toggle').dropdown()
+	
+	$("#verSubmenu").data("clicks", false);	
+	btSubmenu($("#verSubmenu"));
+	
+	
+	$("#verSubmenu").on('click', function (e){
+	     btSubmenu($(this));
+		 e.preventDefault();
+	 });
+	 
+	 
+	 function btSubmenu(elemento){
+		//  alert( elemento.data('clicks') );
+		  var clicks = elemento.data('clicks');
+		  
+		  if (clicks) {
+			$(".deal-navs").animate({   'right' : "0"   });
+			elemento.find("span.ico").removeClass("icon-search").addClass("icon-cross giro"); //icon-arrow-left2 
+		  } else {
+			$(".deal-navs").animate({   'right' : "-330px"   });
+			elemento.find("span.ico").removeClass("icon-cross giro").addClass("icon-search"); //icon-arrow-left2 
+		  }
+		 elemento.data("clicks", !clicks);
+		 };
+
+	 /*  pablo v0.3   */
+	$(".close").on('click',function(){
+		//$(this).parent().hide("slow");
+		$('.divPreguntas').removeClass("activo");
+		$('#verSubmenu').removeClass("animaHide");
+				
+		setTimeout( function () {
+			 		$('.divPreguntas').appendTo('#busqueda').addClass("lateralFiltro");
+		}, 800 );
+		
+		//$('#verSubmenu').removeClass("animaHide");
+		
+	});
+
+	$(".divPreguntas").addClass("activo");
+	
+	
+	 
+
+	$(".btCiudad").on('click',function(e){ 
+	
+		var i = $(".btCiudad").index($(this))+1;
+		if( $("#qCiudad").val().length < 1){
+				$(".depura").addClass("activo");
+				$(".depura").text("Hay que rellenar campo");
+				//alert("vacio")
+			}else if( i == $(".btCiudad").index() ) {
+				//$(".divPreguntas").removeClass("activo");
+				$('.divPreguntas').removeClass("activo");
+				$('#verSubmenu').removeClass("animaHide");
+				
+				setTimeout( function () {
+			 		$('.divPreguntas').appendTo('#busqueda').addClass("lateralFiltro");
+				}, 800 );
+				
+				//alert("relleno")
+			}else {
+				alert($(".btCiudad").index());
+				preguntaSiguiente(i);
+				}
+			
+		e.preventDefault();
+	});
+		
+	$("#qCiudad").change(function(){
+		//var i = $(".btCiudad").index($(this)) + 1;
+		if( $("#qCiudad").val().length < 1){
+				$(".depura").addClass("activo");
+				$(".depura").text("hay que rellenar campo");
+				//alert("vacio")
+			}else{
+				$(".tit_busqueda").text($("#qCiudad").val());				
+				preguntaSiguiente(1);
+				//alert("relleno")
+			}	
+	});
+		
+		
+	$(".navPuntos span").on('click',function(){
+		preguntaSiguiente($(this).index());
+		 // preguntaSiguienteBIS($(this));  $(event.delegateTarget)
+	});
+	
+	function preguntaSiguiente(i){
+		$(".depura").removeClass("activo");
+		
+		$(".navPuntos span").removeClass("checked"); 
+		 $(".navPuntos span").eq(i).addClass("checked");		 
+		 var ii = i * -100;
+		 $(".contTodo").css({"left": ii + "%" });
+		}
+		
+
+	
+
+});
+
+
+	
+
+
+
+
+</script>
+<!-- //////////////////        /////////////////////// -->
+<style type="text/css">
+header {
+	background: url(img/gnral/header-1170.jpg) no-repeat;
+	height: 246px;
+}
+
+
+
+/* //////////    divPreguntas   /////////////////// */
+
+</style>
+</head>
+<body>
+<div class="container">
+  <header> </header>
+</div>
+<!--
+<div class="container">
+<button id="bt_lanza" type="button">DimensionesPantalla</button>
+<div id="informaSize" class="divInline"></div>
+</div>-->
+
+<div class="container">
+  <div class="caja">
+    <div class="miga">
+      <h2 class="tit_miga02">Disponibilidad</h2>
+    </div>
+    <div class="tit_resultados">
+      <p><span class="tit_busqueda">ESPAÑA </span><span class="tit_numero">67 resultados, </span><span class="tit_metros">con un total de 734.203 m2</span></p>
+    </div>
+    
+    
+    
+    
+    
+    <div class="PwTabs"> <!--deal-tabs--> 
+      
+      <a id="verSubmenu" href=""  class="btn bt_lupa animaHide" ><span class="ico icon-cross"></span><span class="hidden-xs"> BUSCAR</span></a> <!--visible-xs icon-arrow-left2--> 
+      <!-- Nav tabs -->
+      <ul class="nav nav-tabs clearfix lineNavs" style="">
+        <li class="active"><a href="#mapa" data-toggle="tab" aria-expanded="true"><span class="icon-map2"></span> Mapa</a></li>
+        <li class=""><a href="#operaciones" data-toggle="tab" aria-expanded="false"><span class="icon-menu"></span> Listado</a></li><!--icon-list2-->
+        
+    
+  
+<li class="dropdown visible-xs">
+		
+
+   		  <a class="dropdown-toggle " data-toggle="dropdown" id="" aria-expanded="false"><!--paisDrop-->
+          	<span class="icon-stats-bars2"></span>
+            <!--<span class="dropdown-txt ">Analisis</span>borrar paisNombre sustituir estilo-->
+            <span class="icon-arrow-down2 separadorSpan"></span>
+          </a>
+   
+
+          <ul class="dropdown-menu" >
+             <li> <a href="#agencias" data-toggle="tab" aria-expanded="false">Agencias</a></li>
+             <li> <a href="#distribucion" data-toggle="tab" aria-expanded="false">Distribución</a></li>
+             <li> <a href="#take" data-toggle="tab" aria-expanded="false" >Take Up</a></li>
+          </ul>
+
+</li> 
+        
+    <!-- /////////////////////////   : TAB NAV -->
+
+        <li class="hidden-xs"><a href="#agencias" data-toggle="tab" aria-expanded="false">Agencias</a></li>
+        <li class="hidden-xs"><a href="#distribucion" data-toggle="tab" aria-expanded="false" >Distribución</a></li>
+        <li class="hidden-xs"><a href="#take" data-toggle="tab" aria-expanded="false" >Take Up</a></li>
+      </ul>
+      
+      <!-- Tab panes -->
+      <div class="tab-content">
+      
+        <div class="deal-navs" > 
+          <!-- Nav tabs -->
+          <ul class="nav nav-tabs clearfix" style="display:none">
+            <!--hidden-xs -->
+            <li class="active"><a href="#busqueda" data-toggle="tab" aria-expanded="false"><span class="icon-search"></span> Busqueda</a></li>
+            <!-- <li class=""><a href="#registros" data-toggle="tab" aria-expanded="true"><span class="icon-file-text2"></span> Registro</a></li>-->
+            <li style="
+    display: none;
+"><a href="#resultados" data-toggle="tab">Resultados</a></li>
+          </ul>
+          
+          <!-- Tab  CONTENT -->
+          <div class="tab-content">
+            <div class="tab-pane  active" id="busqueda"> <!--     01 --> 
+              </div>
+            <!-- <div class="tab-pane " id="registros">    
+                        <img src="img/gnral/transacciones.jpg">
+             </div>    02 -->
+            <div class="tab-pane" id="resultados"> <!--     02 -->
+              <p>Enlace03</p>
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane active" id="mapa"> <!-- /////////////////////////     01 -->
+        
+        
+        
+        
+        <!--   PABLO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+      
+          
+          <div class="divPreguntas"> <!-- jj  style="width:500px-->
+             <button type="button" class="close"><span aria-hidden="true">×</span></button>
+
+             <div class="contTodo">
+             
+                  <div id="cont01" class="cont fCiudad">
+                    <label for="qCiudad">¿En qué ciudad?</label>
+                    <div> 
+                      <span class="icon-location"></span>
+                      <input id="qCiudad" type="text" class="qCiudad">
+                      <a href="#" class="btn transparente btCiudad pull-right" ><span class="icon-arrow-right2"></span></a> 
+                    </div>
+                    <div class="depura">hola</div>
+                  </div><!--  : contenedor 1   -->
+                  
+                  <div id="cont02" class="cont fMetros">
+                    <label for="">¿Qué M<sup>2</sup> buscas?</label>
+                    <div class="periodo">
+                          <div class="bl47">
+                                  <span class="icon-arrow-right"></span> 
+                                 <input  type="text" class="" id="desde" placeholder="desde...">
+                          </div>
+                          <div class="bl47">
+                                 <span class="icon-arrow-left  icon-right"></span>         
+                                 <input  type="text" class="" id="desde" placeholder=" hasta">
+                          </div>
+                     </div>
+                     <a href="#" class="btn transparente btCiudad pull-right"><span class="icon-arrow-right2"></span></a><!--btCiudad-->
+                     <div class="depura">hola</div>
+                  </div><!--  : cont02   -->
+                  
+           </div> <!--  : contTodo   --> 
+        
+     	   <div class="navPuntos"><span class="checked"></span><span></span></div> 	<!--   -->
+        </div><!--  : Preguntas   -->
+        
+        
+        <!--  : PABLO !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! -->
+    
+
+          
+        <div class="mapaPrueba-div myMap" style="background-position-x: center;background-image: url(img/gnral/mapa02.jpg);"><!--background-image: url(/_inc/javier/img/gnral/mapa02.jpg);-->
+          <div class="infoBox">
+            <div class="infoboxPosition"  style="left:160px;  top:290px">
+              <div class="popover top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck"><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:100px; top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck ckecked"><!--<span class="icon-checkmark" style="color:green;background-color:white"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:200px;  top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck "><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011--> 
+          <!--coordenadas--> 
+        </div>
+        <!--:mapaPrueba-div   :infobox --> 
+      </div>
+      <div class="tab-pane" id="operaciones"> <!-- /////////////////////////     02 -->
+        <p>panel002</p>
+        <div class="caja-operaciones"> <img src="img/gnral/tab-operaciones.jpg"> 
+          <!--coordenadas--> 
+        </div>
+        <!--:mapaPrueba-div--> 
+      </div>
+      <div class="tab-pane" id="agencias"> <!-- /////////////////////////     03 -->
+        <p>panel003</p>
+        <div class="caja-agencias"> <img src="img/gnral/tab-agencias.jpg"> </div>
+      </div>
+      <div class="tab-pane" id="distribucion"> <!-- /////////////////////////     04 -->
+        <p>panel004</p>
+        <div class="caja-distribucion"> <img src="img/gnral/distribucion.jpg"> </div>
+      </div>
+    </div>
+    <!--:tab-content--> 
+    
+  </div>
+</div>
+<!-- :titulas-->
+</section>
+</div>
+
+<!--include virtual="footer.asp" -->
+</body>
+</html>

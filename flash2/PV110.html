@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "https://www.w3.org/TR/html4/strict.dtd"> 
+<html> 
+<head> 
+	<title>Screenpresso HTML 5 video player</title> 
+	<style type='text/css'> 
+		html , body  , #content_span  {
+			height:100%; 
+			width:100%; 
+			margin:0;
+			padding:0;
+			font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
+			font-size: 11px;		
+			color:#FFFFFF;
+		}
+		
+		body
+		{
+			/*background-color:#000000;*/
+			background-color: #f6f6f6;
+			color: white;
+			background-image: url('PV110_player/background.jpg');
+			background-repeat: no-repeat;
+			background-position: center -16px;
+			padding-top: 20px;
+		}
+		
+		th
+		{
+			text-align:left;
+		}
+	 
+		#content {
+			height:100%;
+			display:table;   
+			margin:auto;
+		}
+	 
+		#content_span {
+			display:inline-block; 
+			width:2px;
+			vertical-align:middle;
+		}
+	 
+		#video {
+			display:inline;
+			zoom:1;   
+			vertical-align:middle;
+		}
+	 
+		#content > #video , #content > #content_span {
+			display:table-cell;
+		}
+		
+		a
+		{
+			color: #EEEEEE;
+			font-weight: bold;
+			text-decoration: none;			
+		}
+		
+		img
+		{
+			border: 0;
+		}
+	 
+		a:hover {
+			text-decoration: underline;
+		}
+	</style> 
+	
+	<script type="text/javascript">
+		// Add VideoJS to all video tags on the page when the DOM is ready
+		VideoJS.setupAllWhenReady({
+		controlsBelow: false, // Display control bar below video instead of in front of
+		controlsHiding: true, // Hide controls when mouse is not over the video
+		defaultVolume: 0.85, // Will be overridden by user's last volume if available
+		flashVersion: 9, // Required flash version for fallback
+		linksHiding: true // Hide download links when video is supported
+    });
+	</script>
+	<link rel="stylesheet" href="PV110_player/video-js.css" type="text/css" media="screen" title="Video JS">
+</head> 
+<body> 
+	<div id="content"> 
+		<span id="content_span"></span> 
+		<div id="video"> 
+			<a href="https://www.screenpresso.com/?utm_source=Video%2BPlayer&utm_medium=Link&utm_campaign=Video%2BPlayer" title="Visit screenpresso.com and download it for FREE" target="_blank"><img src="PV110_player/screenpresso-logo.png"/></a>
+			<!-- Begin VideoJS -->
+			<div class="video-js-box">
+				<!-- Using the Video for Everybody Embed Code https://camendesign.com/code/video_for_everybody -->
+				<video 
+					id="example_video_1" 
+					class="video-js" 
+					width="799" 
+					height="389" 
+					controls="controls" 
+					preload="auto" 
+					poster="PV110_player/preview.png">
+						<source src="PV110.mp4" type='video/mp4; codecs="avc1.42E01E, mp4a.40.2"' />
+						
+						 						
+						<!-- Flash Fallback. Use any flash video player here. Make sure to keep the vjs-flash-fallback class. -->
+						<object id="flash_fallback_1" class="vjs-flash-fallback" width="799" height="389" type="application/x-shockwave-flash"
+						data="PV110_player/flowplayer-3.2.3.swf">
+						<param name="movie" value="PV110_player/flowplayer-3.2.3.swf" />
+						<param name="allowfullscreen" value="true" />
+						<param name="flashvars" value='config={"playlist":["PV110_player/preview.png", {"url": "PV110.mp4","autoPlay":true, "autoBuffering":true, "scaling": "orig"}]}' />
+						<!-- Image Fallback. Typically the same as the poster image. -->
+						<img src="PV110_player/preview.png" width="799" height="389" alt="Poster Image"
+						title="No video playback capabilities." />
+						</object>
+				</video>
+			</div>
+			<!-- End VideoJS -->
+				<p class="fallback">
+					<p>
+					HTML 5 player from <a title="videojs.com" href="https://videojs.com/" target="_blank"><img src="PV110_player/video-js-logo.png"/></a>
+					&nbsp;<a href="videojs-LICENSE.txt" title="Read the license" target="_blank">(GNU Lesser General Public License)</a>
+					<br/><br/><br/>
+					Supported browsers : <img alt="Firefox" title="Firefox" src="PV110_player/firefox-icon.png"/>
+					<img alt="Safari" title="Safari" src="PV110_player/safari-icon.png"/>
+					<img alt="Google Chrome" title="Google Chrome" src="PV110_player/chrome-icon.png"/>
+					<img alt="Opera" title="Opera" src="PV110_player/opera-icon.png"/>
+					<img alt="Internet Explorer 9" title="Internet Explorer 9" src="PV110_player/ie9-icon.png"/>
+					<img alt="Internet Explorer 8" title="Internet Explorer 8" src="PV110_player/ie8-icon.png"/>
+					<img alt="Internet Explorer 7" title="Internet Explorer 7" src="PV110_player/ie7-icon.png"/>
+					<img alt="Internet Explorer 6" title="Internet Explorer 6" src="PV110_player/ie6-icon.png"/>
+					<img alt="iPhone" title="iPhone" src="PV110_player/iphone-icon.png"/>
+					<img alt="iPad" title="iPad" src="PV110_player/ipad-icon.png"/>
+					<img alt="Android" title="Android" src="PV110_player/android-icon.png"/>
+					</p>
+					<table>				
+						<tr>
+<th><img src="PV110_player/iconvideo.jpg"/></th><th>&nbsp;&nbsp;<a href="PV110.mp4">Download the MP4 video file (13,43 MB)</a><br/></th>
+</tr>
+						
+						 						
+						<tr> 
+							<th><img src="PV110_player/flowplayer.jpg"/></th><th>&nbsp;&nbsp;<a href="https://flowplayer.org" target="_blank">Flowplayer</a> fallback for browser not HTML5 compatible&nbsp;<a href="https://flowplayer.org/download/license_gpl.htm" target="_blank">(Flowplayer GPL license)</a><br/></th> 
+						</tr> 
+						<tr>
+							<th><img src="PV110_player/flash.png"/></th><th>&nbsp;&nbsp;<a href="https://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager04.html" target="_blank">Configure Flash Security (Requested for Flowplayer playing local file)</a><br/></th> 
+						</tr>
+					</table> 
+				</p>			
+		</div> 
+	</div> 
+</body> 
+</html>

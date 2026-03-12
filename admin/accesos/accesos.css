@@ -1,0 +1,166 @@
+/* tabla */
+
+table.reg, table.reg th, table.reg td {
+	border-bottom:1px solid #c1c1c1;
+	padding: 2px 8px;
+	
+	}
+	
+table.reg {
+    border-collapse: collapse;
+	/* table-layout: fixed; */
+	}
+table.reg th {
+	/* text-align:left; */
+}
+table.reg td {
+    vertical-align: bottom;
+}
+
+
+.dra {
+	text-align:right;
+}
+.mini {
+	color: #c1c1c1;
+}
+
+/* tabla DIV */
+.tabla {
+	/*width: 100%;*/
+	display: table;
+	/*font-size:.85em;*/
+	}
+.fila  {
+	display: table-row;
+	
+	/*cursor: pointer; */
+	}
+/*
+.fila:nth-child(even) {background: #CCC;}
+.fila:nth-child(odd) {background: #FFF;}
+*/
+	
+.tit {
+	font-weight:bold;
+	border-bottom: 1px solid black;
+	/* text-align:left; */
+	}
+
+/* reg */
+
+.reg_fecha {
+	display: table-cell;
+	border-bottom: 1px solid #999;
+	width: 180px;
+	}
+	
+.reg_col, .reg_col_p {
+	display: table-cell;
+	border-bottom: 1px solid #999;
+	text-align:right;
+	}
+.reg_col {
+	width: 80px;
+	}
+.reg_col_p {
+	width: 50px;
+	font-size:80%;
+	}
+
+#div_mas {
+	margin-top:20px;
+	
+	}
+
+.articulos_col, .articulos_n, .articulos_col_p, .articulos_colw {
+	display: table-cell;
+	border-bottom: 1px solid #999;
+	}
+.articulos_col {
+	width: 80px;
+	}	
+.articulos_colw {
+	width: 180px;
+	}
+.articulos_n, .articulos_col_p {
+	width: 50px;
+	}
+.articulos_col_p {
+		font-size:80%;
+}
+
+
+/* accesos */
+.accesos_icon {
+	display: table-cell;
+	width: 15px;
+	text-align:center;
+	font-size:15px;
+	font-weight:900;
+	}
+.accesos_num {
+	display: table-cell;
+	width: 35px;
+	text-align:right;
+	padding-right: 10px;
+	}
+.accesos_session_id {
+	display: table-cell;
+	width:24px;
+	}
+	
+.accesos_session_start {
+	display: table-cell;
+	width:150px;
+	}
+
+.accesos_fecha {
+	display: table-cell;
+	width: 65px;
+	text-align:right;
+	padding-right: 5px;
+	}
+.accesos_hora {
+	display: table-cell;
+	width: 55px;
+	text-align:right;
+	padding-right: 5px;
+	}
+.accesos_hora_logout {
+	display: table-cell;
+	width: 55px;
+	text-align:right;
+	padding-right: 5px;
+	}
+	
+.accesos_session_usuario {
+	display: table-cell;
+	width:	100px;
+	}
+.accesos_session_nombre {
+	display: table-cell;
+	width:	100px;
+	}
+
+
+.accesos_remote_host {
+	display: table-cell;
+	width: 85px;
+	}
+	
+.accesos_xx {
+	display: table-cell;
+
+	}
+
+.accesos_separador {
+	display: table-cell;
+	width: 10px;
+	}
+
+/* generales */
+
+
+
+

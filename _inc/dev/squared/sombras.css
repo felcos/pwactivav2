@@ -1,0 +1,33 @@
+.resp-tabs-container {
+	box-shadow: 6px 6px 8px #b8bcbf;
+	}
+.resp-tab-active {
+	/* box-shadow: 6px 0px 8px #b8bcbf; */
+	}
+
+
+@media screen and (min-width: 480px) {
+	#navmain {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+	.caja {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+	
+	.widget {
+		box-shadow: 6px 6px 8px #b8bcbf;
+		
+	}
+	
+	section.flash {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+	
+	img.sombra {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+}

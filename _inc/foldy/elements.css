@@ -1,0 +1,79 @@
+.widget {
+	margin:0;
+	padding:0;
+	
+	}
+.widget > .widget-tittle {
+	margin:0;
+	padding:10px;
+	position:relative;
+	border: 1px solid #c1c1c1;
+	}
+.widget > .widget-body,
+.widget > form > .widget-body {
+	padding:10px; 
+	border-bottom: 1px solid #c1c1c1;
+	border-left: 1px solid #c1c1c1;
+	border-right: 1px solid #c1c1c1;
+	}
+
+
+/* widgets control-panel */
+
+.row.informa {
+	background-repeat:no-repeat;
+	/*background-position:right center;*/
+	background-size:32px;
+	background-position: 99% center;
+	}
+
+.widget-body > .row {
+	color:#111111;
+	display:block;
+	
+	border-bottom:1px solid #e1e1e1;
+	color:#555;
+	display:block;
+	font-size:1em;
+	
+	padding-top:10px;
+	padding-bottom:10px;
+	}
+
+	
+.widget-body > .row:first-of-type {}
+.widget-body > .row:last-of-type {
+	border-bottom:none;
+	}
+
+.row {
+	width:100%;
+	}
+.row:after {
+	clear:both;
+	content:"";
+	display:table;
+	}
+	
+
+/* widgets */
+
+
+@media screen and (max-width: 415px) {
+	.widget > .widget-tittle, .widget > .widget-body {
+		border-left: none;
+		border-right: none;
+	}
+	
+	.widget > .widget-tittle {
+		padding-left:4px;
+		padding-right:4px;
+	}
+	.widget > .widget-body, .widget > form > .widget-body {
+		padding-left:4px;
+		padding-right:4px;
+	}
+	
+	
+	
+}

@@ -1,0 +1,39 @@
+
+
+
+@media screen and (min-width: 420px) {
+	
+}
+
+@media screen and (max-width: 420px) {
+	
+}
+
+@media screen and (min-width: 480px) {
+	
+
+}
+
+
+@media screen and (min-width: 800px) {
+	html {
+		overflow:inherit !important;
+	}
+	
+	
+	footer {
+		position: absolute;
+		bottom: 0;
+	}
+	
+	.contenedor {
+		position: absolute;
+		left: 0;
+		right: 0;
+		bottom: 27px;
+		top:83px;
+		overflow-x: hidden;
+		overflow-y: scroll;
+		
+	}
+}

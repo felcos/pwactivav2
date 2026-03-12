@@ -1,0 +1,87 @@
+/* Toggle Checkboxes by Schoberg.net */
+.toggle-checkbox {
+	display:none;
+	}
+
+div.tog {
+	display:block;
+	/*
+	margin:1em auto;
+	*/
+	float:right;
+	
+	margin-top:1px;
+	margin-bottom:1px;
+	
+	height:	35px;	/* 40 */
+	width:120px;	/*	100*/
+	position:relative;
+	cursor:pointer;
+	/* font:18px/18px arial; */
+	background:#ccc;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	}
+div.tog:after {
+	content:"";
+	display:block;
+	height:25px;	/* 30 */
+	width:35px;		/* 40 */
+	background:#fff;
+	position:absolute;
+	top:5px;
+	left:5px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	}
+div.tog:before {
+	content:"OFF";
+	position:absolute;
+	right:11px;
+	top:10px;	/* 12px */
+	color:#fff;
+	}
+div.tog:hover:after {
+	left:15px;
+	}
+div.tog.on:before {
+	content:"ON";
+	right:60px;	/* 60 */
+	}
+
+div.tog.on {
+	background:	#658DB5; /* 0c0 */
+	}
+	
+div.tog.on:after {
+	left:80px;	/* 55 */
+	}
+div.tog.on:hover:after {
+	left:70px;	/* 50 */
+	}
+	
+	
+div.tog.on:hover:before, div.tog:hover:before {
+	/* color:#F47C04; */
+	}
+	
+div.tog.visible:before {content:"oculto";}
+div.tog.visible.on:before {content:"visible";}
+
+div.tog.dev-log:before {content:"track";}
+div.tog.dev-log.on:before {content:"no track";}
+
+
+div.tog.dev-deals:before {content:"titulos";}
+div.tog.dev-deals.on:before {content:"dirs.";}
+
+div.tog.fix:before {content:"unfixed";}
+div.tog.fix.on:before {content:"fixed";}
+
+div.tog.load:before {content:"unloaded";}
+div.tog.load.on:before {content:"loaded";}
+

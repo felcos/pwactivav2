@@ -1,0 +1,81 @@
+html {
+	overflow-y: scroll;
+	box-sizing: border-box;
+	}
+
+*, *:before, *:after {
+	box-sizing: inherit;
+	}
+
+
+/* Grid > 6 Column Mobile First		
+-------------------------------------------------------------- */
+.contenedor {
+	/*
+	max-width: 1600px;
+	*/
+	width:92%;
+	margin:0 auto;
+	position: relative;
+	
+	font-size: 0.85em;
+	}
+.cabecera {
+	/* max-width: 1600px; */
+	width:92%;
+	margin:0px auto;
+	position: relative;
+	padding: 10px 0 0 0;
+	}
+
+
+@media screen and (min-width: 420px) {
+	body {font-family: Tahoma, Geneva, sans-serif;}
+}
+
+@media screen and (max-width: 420px) {
+	.contenedor {
+		width:100%;
+		margin:0;
+	}
+	.cabecera {
+		width:100%;
+		margin:0;
+		padding:0;
+	}
+}
+
+@media screen and (min-width: 480px) {
+	.contenedor {
+		width: 98%;
+	}
+	.cabecera {
+		width: 98%;
+	}
+	
+	.grid-1, .grid-2, .grid-3, .grid-4, .grid-5, .grid-6,
+	.grid-half, .grid-full, .grid-unit {
+		float: left;
+		width:100%;
+		margin:0 0 8px;
+	}
+	
+	.gallery .grid-unit,
+	.grid-half {
+		width:46.969696969697%;
+		margin: 0 1.515151515152% 1em;
+	}
+	
+	.grid-flow-opposite{
+		float:right
+	}
+	
+}
+
+/* 640px */
+@media screen and (min-width: 800px) {
+	.gallery .grid-unit {
+		width: 33.33333333333333%;
+	}
+}
+

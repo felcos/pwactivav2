@@ -1,0 +1,194 @@
+/*
+.articulo > a {
+	font-size: 90%;
+}
+*/
+/* Typography	
+-------------------------------------------------------------- */
+.container {
+	font-size:.85em;
+}
+.heading {
+	font-size: 2em;
+	margin: 12px 0 8px;;
+	}
+.sub-heading {
+	font-size: 1.7em;
+	margin-bottom: 0.5em;
+	}
+
+a {
+	color: #000000;	/* 0066cc */
+	text-decoration:none;
+	}
+a:focus, a:hover {
+	color: #F47C04;	/* 003399	990000	 */
+	/* text-decoration:none; */
+	}
+
+	
+/* Elements		
+-------------------------------------------------------------- */
+img, audio, video {
+	max-width: 100%;
+	}
+	
+hr {
+	border:0;
+	height:1px;
+	background:#c1c1c1;
+	}
+
+figure {
+	margin: 0;
+	/* background:#f8f8f8;	 */
+	
+	padding:10px;
+	border-radius: 6px;
+	-moz-border-radius:6px;
+	-webkit-border-radius:6px;
+	
+	box-shadow: 2px 2px 0px #b8bcbf;
+	
+	border: 1px solid #f8f8f8;
+	}
+
+figcaption {
+	padding: 0.5em 1em 1em;
+	font-size: 0.875em;
+	}
+
+code {
+	padding: 0.5em;
+	background: #efefef;
+	}
+
+input.grande, select.grande {
+	width:320px;
+	}
+input.fecha {
+	width:70px;
+	}
+
+.container p {
+	margin-top:4px;
+	margin-bottom:4px;
+	
+	}
+
+/* Helpers		
+-------------------------------------------------------------- */
+.show-grid div[class*='grid-'] {
+	background-color: #eee;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	display: block;
+	padding: 0.5em 1em;
+	margin-bottom: 1em;
+	/*
+	text-align: center;
+	border: 1px solid grey;
+	*/
+	}
+
+/*
+div[class*='grid-'] {
+	border: 1px dotted red;
+}
+*/
+
+.caja {
+	margin: 0;
+	padding:10px;
+	border: 1px solid #c1c1c1;
+	}
+	
+.amarilla {
+	background:#FFFFCC !important; 
+	}
+.sombra {
+	border: 1px solid #c1c1c1;
+	}
+
+.txtRojo {
+	color:#990000;
+	}
+.destaca {
+	color:#F47C04;	/* 990000 */
+	}
+
+.med {
+	font-size:12px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+.peq {
+	font-size:11px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+.mini {
+	font-size:10px;
+	/*font-family:'ruda',sans-serif;*/
+	}
+
+.prieto {
+	margin-top:0;
+	margin-bottom:0;
+	}
+
+.figure_tit {
+	display:block;
+	font-family:'ruda',sans-serif; 
+	font-size:18px;
+	font-weight:bold;
+	border-bottom:1px dotted grey; 
+	}
+
+.dev {
+	/* background: #f8f8f8; */
+	background:#FFFFCC; 
+	/*font-size:11px; */
+	margin:2px; 
+	border:#c1c1c1 1px solid;
+	line-height:1.1em;
+	}
+	
+/* jp, elementos q jp3 no está teniendo en cuenta en style.css	
+-------------------------------------------------------------- */
+div.btn-wrap .btn_3 { margin-top: 1em; margin-bottom: 1em;}	/* jp */
+
+
+
+
+/* migrando a javier
+-------------------------------------------------------------- */
+
+/*	llevado a /flash/css_foldy.css
+.box_blanco {
+	border: 1px solid #c1c1c1;
+}
+*/
+.col-sm-1.titulo, .col-sm-2.titulo, .col-sm-3.titulo, .col-sm-4.titulo, .col-sm-5.titulo, .col-sm-6.titulo,
+.col-sm-7.titulo, .col-sm-8.titulo, .col-sm-9.titulo, .col-sm-10.titulo, .col-sm-11.titulo, .col-sm-12.titulo,
+.grid-2.titulo, .grid-4.titulo, .grid-6.titulo, .grid-full.titulo, .grid-3.titulo, .grid-half.titulo {
+	margin-bottom:0;
+	}
+
+a.volver > h1 {
+    background-position: right center;
+    background-repeat: no-repeat;
+    background-image: url("/css/fonts/icomoon/png/32px/prev.png");
+	bac
+}
+
+@media screen and (min-width: 800px) {
+	body {
+		/*
+		font-size:14px;
+		line-height:1.2;
+		*/
+		
+		/* font-family: "Ruda"; */
+	}
+	
+}

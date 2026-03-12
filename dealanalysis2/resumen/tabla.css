@@ -1,0 +1,59 @@
+
+
+
+.tbl_resum {
+	width: 100%;
+	display: table;
+	font-size:.9em;
+}
+.fila_resum  {
+	display: table-row;
+	background-color:#006699; 
+	color:#FFFFFF; 
+	font-size: 15px; 
+	font-weight: bold; 
+	border-left: 1px solid #0070A8; 
+}
+
+.resum_seccion{
+	display: table-cell;
+	padding-top: 2px;
+	
+	padding-rigth: 5px;
+	border-bottom: 1px solid #c1c1c1;
+	background-color: lightskyblue;
+}
+.resum_ops {
+	display: table-cell;
+	padding-top: 2px;
+	width: 25px;
+	text-align:right;
+	padding-rigth: 10px;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.resum_eur {
+	display: table-cell;
+	padding-top: 2px;
+	width:60px;
+	text-align:right;
+	padding-rigth: 5px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.resum_superf {
+	display: table-cell;
+	padding-top: 2px;
+	width: 80px;
+	text-align:right;
+	padding-rigth: 2px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.tot {
+	font-weight:bold;
+	border-bottom: 0px;
+	}
+
+.madbcn {
+	padding-top:0;
+	font-size:.8em;
+	}

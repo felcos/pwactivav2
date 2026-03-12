@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Info windows</title>
+    <style>
+      html, body, #map-canvas {
+        height: 100%;
+        margin: 0px;
+        padding: 0px
+      }
+    </style>
+</head>
+<body>
+<div id="map-canvas"></div>
+</body>
+</html>
+<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false&region=ES"></script>
+<script>
+// This example displays a marker at the center of Alcalá.
+// When the user clicks the marker, an info window opens.
+function initialize() {
+	var myLatlng = new google.maps.LatLng(40.4947898, -3.3666759);	//alcalá
+	var mapOptions = {
+		zoom: 12,
+		center: myLatlng
+	};
+	
+	var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);
+	
+	var contentString = '<div id="content">'+
+		'<div id="siteNotice">siteNotice siteNotice siteNotice'+
+		'</div>'+
+		'<h1 id="firstHeading" class="firstHeading">Uluru</h1>'+
+		'<div id="bodyContent">'+
+		'<p><b>Uluru</b>, also referred to as <b>Ayers Rock</b>, is a large ' +
+		'Heritage Site.</p>'+
+		'<p>Attribution: Uluru, <a href="https://en.wikipedia.org/w/index.php?title=Uluru&oldid=297882194">'+
+		'wikipedia.org</a> <br>'+
+		'(last visited June 22, 2009).</p>'+
+		'</div>'+
+		'</div>';
+	
+	var infowindow = new google.maps.InfoWindow({
+		content: contentString,
+		maxWidth: 300
+	});
+	
+	var marker = new google.maps.Marker({
+		position: myLatlng,
+		map: map,
+		title: 'Alcalá de Henares, Madrid (Spain)',
+		icon: '/img/mapicons/white/information.png'
+	});
+	google.maps.event.addListener(marker, 'click', function() {
+		infowindow.open(map,marker);
+	});
+}
+
+google.maps.event.addDomListener(window, 'load', initialize);
+</script>

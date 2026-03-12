@@ -1,0 +1,418 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<title>PropertyWeb </title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<link href="../../css/base.css" rel="stylesheet" type="text/css">
+<link href="../../css/estilos.css" rel="stylesheet" type="text/css">
+<link href="../../css/fuentes.css"  rel="stylesheet" type="text/css" >
+<link href="../../css/form_boots.css" rel="stylesheet" type="text/css">
+<link href="../../css/titulos.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_info.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/titulos_operaciones.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/leer_javier.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/js-components.css" rel="stylesheet" type="text/css">
+
+<!-- css temporal, estilos por defecto bt-->
+<link href="../../css/header.css" rel="stylesheet" type="text/css"/>
+<link href="../../css/footer.css" rel="stylesheet" type="text/css">
+<link  href="../../css/estilo_imprimir.css" rel="stylesheet" type="text/css" media="print">
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/tabs031-izq.css">
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/mapaCoord.css">
+
+<!-- EXTRA  -->
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosForm.css">
+<link rel="stylesheet" type="text/css" href="../../css/css-pags/elementosResultados.css">
+<!---->
+
+<!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+
+<!--[if lt IE 9]><script src=""js/ie8-responsive-file-warning.js"></script><![endif]-->
+<!--<script src="js/ie-emulation-modes-warning.js"></script>-->
+
+<!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+      <script src="js/html5shiv.min.js"></script>
+      <script src="js/respond.min.js"></script>
+    <![endif]-->
+
+<script src="../../lib/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="../../js/jquery.form.js" type="text/javascript"></script>
+
+<!--<script src="../../lib/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>  -->
+
+<script src="../../lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<!--<script src="../../js/modernizr.js" type="text/javascript"></script>-->
+
+<!--   EXTRA -->
+<script src="js/javier.js"></script>
+
+<!-- :inc_head.asp  -->
+
+<script type="text/javascript">
+
+$(document).on("ready", function(){	
+
+	$(".selectDrop").fnSelectDrop('red');
+	$(window).on('resize', function(){ $(".selectDrop").fnSelectDrop('yellow');});			
+				
+				
+
+
+/*$("#bt_lanza").click(function(){
+	var pantalla=  $(window).width() + " , " +$(window).height() ;
+	var texto01 = $(".deal-navs").position().left + " , " +
+				$(".deal-navs").position().right  ;
+	$("#informaSize").html(pantalla);
+	})*/
+	
+	
+
+	$("#verSubmenu").on('click', function (e){         // interruptor para aparece/desaparece menú lateral
+		e.preventDefault(e);
+		
+		  var clicks = $(this).data('clicks');
+  
+		  if (clicks) {
+			$(".deal-navs").animate({   'right' : "0"   });
+			$(this).find("span.ico").removeClass("icon-search").addClass("icon-arrow-left2 giro");
+		  } else {
+			$(".deal-navs").animate({   'right' : "-330px"   });
+			$(this).find("span.ico").removeClass("icon-arrow-left2 giro").addClass("icon-search");
+		  }
+		  $(this).data("clicks", !clicks);
+	 });
+	 
+	 
+	$(".close").on('click',function(){
+		$(this).parent().hide("slow");
+	});
+	
+	
+
+
+});
+
+</script>
+<!-- //////////////////        /////////////////////// -->
+<style type="text/css">
+
+.loaderMapa{
+	
+	position: absolute;
+    z-index: 900;
+	width: 100%;
+    height: 100%;
+	text-align:center;
+	vertical-align: central;
+	background: rgba(255,255,255,0.5) url(img/gnral/loader.gif) no-repeat center center;
+	border-radius:10px;
+
+    /*margin-left: -100px;*/
+	
+	
+	}
+
+
+
+
+
+
+
+
+
+
+header {
+	background: url(img/gnral/header-1170.jpg) no-repeat;
+	height: 246px;
+}
+.divInline {
+	display: inline;
+	border-right: 1px solid grey;
+	padding-right: 3px;
+}
+.deal-navs {
+	right: 0px;
+	position: absolute;
+	z-index: 1000;
+	height: 100%;
+	overflow: auto;
+	background-color: white;
+}
+.icon-search {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+.icon-arrow-left2 {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+.btn.bt_lupa {
+	color: #999999;
+}
+#verSubmenu span.ico {
+	display: inline-block;
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+</style>
+</head>
+<body>
+<div class="container">
+  <header> </header>
+</div>
+<!--
+<div class="container">
+<button id="bt_lanza" type="button">DimensionesPantalla</button>
+<div id="informaSize" class="divInline"></div>
+</div>-->
+
+<div class="container">
+     
+      
+  <div class="caja">
+    <div class="miga">
+      <h2 class="tit_miga02">Disponibilidad</h2>
+    </div>
+    <div class="filtroMetros">
+      <div class="cont periodo "> <!--  contenedor 2   -->
+        <label>¿Qué M<sup>2</sup> quieres buscar?</label>
+        <div class="rMetros">
+          <div class="input-group-btn "> <!--     -->
+            
+            <div class="dropdown selectDrop ">
+              <select id="" name="" class="hide">
+                <option value="*">cualquiera</option>
+                <option value="0">&lt; 300 m²</option>
+                <option value="300"> &nbsp; de 300 a 699 m²</option>
+                <option value="700"> &nbsp; de 700 a 1.499 m²</option>
+                <option value="1500"> &nbsp; de 1.500 a 3.000 m²</option>
+                <option value="3000">&gt; 3.000 m²</option>
+              </select>
+              <input type="hidden" name="" value="*" >
+              <!--    id="pais"       -->
+              
+              <div class="dropdown-toggle form-control selecFecha" data-toggle="dropdown" id="" aria-expanded="false"><!--paisDrop--> 
+                <span class="dropdown-txt paisNombre">Min.</span><!--borrar paisNombre sustituir estilo--> 
+                <span class="icon-arrow-down2 separadorSpan"></span> </div>
+              <ul class="dropdown-menu" role="menu" >
+              </ul>
+            </div>
+          </div>
+          <!-- : select --> 
+          
+        </div>
+        <!-- :bl50    --> 
+        
+      </div>
+      <!--  : contenedor 2   --> 
+      
+    </div>
+    <!--  : filtro metros   --> 
+    
+    <!-- /////////////////////////    TAB NAV --> 
+    
+    <!-- /////////////////////////   : TAB NAV -->
+    
+    <div class="PwTabs"> <!--deal-tabs--> 
+      
+      <a id="verSubmenu" href=""  class="btn bt_lupa" ><span class="ico icon-arrow-left2"></span><span class="hidden-xs"> Buscar</span></a> <!--visible-xs --> 
+      
+      <!-- Nav tabs NIVEL 01-->
+      <ul class="nav nav-tabs clearfix lineNavs" style="">
+        <li class="active"><a href="#mapa" data-toggle="tab" aria-expanded="true">Mapa</a></li>
+        <li class=""><a href="#operaciones" data-toggle="tab" aria-expanded="false">Operaciones</a></li>
+        <li class=""><a href="#agencias" data-toggle="tab" aria-expanded="false">Agencias</a></li>
+        <li><a href="#distribucion" data-toggle="tab">Distribución</a></li>
+      </ul>
+      
+      <!-- Tab tab-content -->
+      <div class="tab-content">
+      
+      <!-- Nav tabs  NIVEL 02-->
+        <div class="deal-navs" style=""> 
+          <!--hidden-xs  OCULTOS-->
+          <ul class="nav nav-tabs clearfix" style="display:none">
+            <li class="active">
+            	<a href="#busqueda" data-toggle="tab" aria-expanded="false"><span class="icon-search"></span> Busqueda</a>
+            </li>
+            <li style="display: none;">
+           	 <a href="#resultados" data-toggle="tab">Resultados</a>
+            </li>
+          </ul>
+          
+          <!-- Tab tab-content NIVEL 02-->
+          <div class="tab-content">
+          	<!-- tab-pane-->
+            <div class="tab-pane active " id="busqueda"> <!--     01 --> 
+              <img src="img/gnral/busqueda.jpg"> 
+            </div>
+            <!-- <div class="tab-pane " id="registros">    
+                        <img src="img/gnral/transacciones.jpg">
+             </div>    02 -->
+            <div class="tab-pane" id="resultados"> <!--     02 -->
+              <p>Enlace03</p>
+            </div>
+          </div>
+        </div><!-- :tab-content NIVEL 02-->
+        
+      	  <div class="loaderMapa">
+      <!--<img src="img/gnral/loader.gif" width="32" height="32">-->
+      </div>   
+        
+        
+        
+      <div class="tab-pane active" id="mapa"> <!-- /////////////////////////     01 --> 
+ 
+          <div class="mapaPrueba-div myMap" style="background-position-x: center;background-image: url(img/gnral/mapa-prueba.jpg);">
+          <div class="infoBox">
+            <div class="infoboxPosition"  style="left:160px;  top:290px">
+              <div class="popover top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck"><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:100px; top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck ckecked"><!--<span class="icon-checkmark" style="color:green;background-color:white"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011-->
+          
+          <div class="infoBox">
+            <div class="infoboxPosition" style="left:200px;  top:200px">
+              <div class="popover fade top" id="">
+                <div class="popover-check">
+                  <button type="button" class="btn btnCheck "><!--<span class="icon-checkmark2"></span><span class="icon-checkmark"></span>--></button>
+                </div>
+                <a href="www.propertyweb.eu">
+                <table class="popover-tb01">
+                  <tbody>
+                    <tr>
+                      <td>27,00</td>
+                      <td>€</td>
+                    </tr>
+                    <tr>
+                      <td>18.744</td>
+                      <td>m2</td>
+                    </tr>
+                    <tr>
+                      <td colspan="2"><img src="img/gnral/logo01.jpg"><!--<img src="img/gnral/logo01.jpg"/><img src="img/gnral/logo01.jpg"/>--></td>
+                    </tr>
+                  </tbody>
+                </table>
+                </a>
+                <div class="arrow" style="left: 47.6449%;"></div>
+              </div>
+            </div>
+          </div>
+          <!--:punto011--> 
+          <!--coordenadas--> 
+        </div>
+          <!--:mapaPrueba-div   :infobox --> 
+      </div>
+
+      <div class="tab-pane" id="operaciones"> <!-- /////////////////////////     02 -->
+        <p>panel002</p>
+        <div class="caja-operaciones"> <img src="img/gnral/tab-operaciones.jpg"> 
+          <!--coordenadas--> 
+        </div>
+        <!--:mapaPrueba-div--> 
+      </div>
+      
+      <div class="tab-pane" id="agencias"> <!-- /////////////////////////     03 -->
+        <p>panel003</p>
+        <div class="caja-agencias"> <img src="img/gnral/tab-agencias.jpg"> </div>
+      </div>
+      
+      <div class="tab-pane" id="distribucion"> <!-- /////////////////////////     04 -->
+        <p>panel004</p>
+        <div class="caja-distribucion"> <img src="img/gnral/distribucion.jpg"> </div>
+      </div>
+      
+    </div>
+    <!--:tab-content--> 
+    
+  </div>
+</div>
+<!-- :titulas-->
+
+<div> 
+  
+  <!-- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">Home</a></li>
+    <li role="presentation"><a href="#profile" aria-controls="profile" role="tab" data-toggle="tab">Profile</a></li>
+    <li role="presentation"><a href="#messages" aria-controls="messages" role="tab" data-toggle="tab">Messages</a></li>
+    <li role="presentation"><a href="#settings" aria-controls="settings" role="tab" data-toggle="tab">Settings</a></li>
+  </ul>
+  
+  <!-- Tab panes -->
+  <div class="tab-content">
+    <div role="tabpanel" class="tab-pane active" id="home">asdfasd</div>
+    <div role="tabpanel" class="tab-pane" id="profile">aaa</div>
+    <div role="tabpanel" class="tab-pane" id="messages">dd</div>
+    <div role="tabpanel" class="tab-pane" id="settings">ff</div>
+  </div>
+</div>
+<br>
+<br>
+<br>
+<br>
+</section>
+</div>
+
+<!--include virtual="footer.asp" -->
+</body>
+</html>

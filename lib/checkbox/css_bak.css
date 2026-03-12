@@ -1,0 +1,54 @@
+/* Toggle Checkboxes by Schoberg.net */
+div.tog {
+	display:block;
+	margin:1em auto;
+	height:40px;
+	width:100px;
+	position:relative;
+	cursor:pointer;
+	font:18px/18px arial;
+	background:#ccc;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	}
+div.tog:after {
+	content:'';
+	display:block;
+	height:30px;width:40px;
+	background:#fff;
+	position:absolute;
+	top:5px;
+	left:5px;
+	-webkit-transition: all .2s ease;
+	-moz-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease;
+	}
+div.tog:before {
+	content:'OFF'
+	;position:absolute;
+	right:11px;
+	top:12px;
+	color:#fff;
+	}
+div.tog:hover:after {
+	left:10px;
+	}
+div.tog.on:before {
+	content:'ON';
+	right:60px;
+	}
+div.tog.on {
+	background:#0c0;
+	}
+div.tog.on:after {
+	left:55px;
+	}
+div.tog.on:hover:after {
+	left:50px;
+	}
+
+
+

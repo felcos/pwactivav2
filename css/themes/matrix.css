@@ -1,0 +1,16 @@
+/* activa-v2/css/themes/matrix.css */
+[data-theme="matrix"] {
+    --bg-main: #000800;
+    --bg-surface: #001500;
+    --bg-surface-hover: #002200;
+    --bg-header: rgba(0, 8, 0, 0.9);
+    --border-color: #003300;
+    --accent: #00ff41;
+    --accent-hover: #33ff66;
+    --accent-light: rgba(0, 255, 65, 0.2);
+    --text-primary: #00ff41;
+    --text-secondary: #00aa2a;
+    --text-muted: #005515;
+    --font-family: 'Courier New', monospace;
+    --shadow-glow: 0 0 20px rgba(0, 255, 65, 0.4);
+}

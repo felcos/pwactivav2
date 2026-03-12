@@ -1,0 +1,272 @@
+
+
+
+.caret {                         /* flecha del select */
+  display: inline-block;
+  width: 0;
+  height: 0;
+  margin-left: 2px;
+  vertical-align: middle;
+  border-top: 4px dashed;
+  border-top: 4px solid \9;
+  border-right: 4px solid transparent;
+  border-left: 4px solid transparent;
+}
+.dropdown.selectDrop span[class*="icon-"] {
+    position: absolute;
+    top:  9px;
+    right: 8px;
+}
+
+.separadorSpan{border-left: solid 1px #B0B0B0;
+    padding-left: 5px;}
+
+
+
+/* .select =========== */
+
+.selecFecha{
+	background-color:#F7F7F7;
+	border:none;
+	color:#2B4E61;
+	font-family:ruda;
+	font-size:15px;
+	font-weight:bold;
+	}
+
+.selectCaja {
+	/*display:inline-block;
+	font-size: 13px;
+	color:#333;
+	width:200px;
+	background-color: #EFEFEF;
+		border: solid 1px #AFAFAF; */
+	padding: 0px;
+	height:120px;
+	overflow:auto;
+	}
+.selectCaja.focus {
+    border-color: #FF6802;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 102, 102, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 102, 102, 0.6);
+	}	
+	
+	
+.selectCaja.androidBr li{  
+	/*background-color:#FF0;                     visual android*/
+	
+	}
+
+
+.selectCaja.androidBr.focus {/* evita navegador android  sombra focus*/
+  border-color: #FF6802;
+  outline: 0;
+  -webkit-box-shadow:none;
+          box-shadow:none;
+}	
+	
+.selectTipo, .selectAnd {
+	width: 100%;
+	height:100%;
+	background: transparent;
+	/* margin: 10px;
+	padding: 5px; */
+}
+
+
+.selectTipo option ,.selectTipo li ,.selectAnd li{
+	/*	color: #F0F;*/
+	
+	padding: 4px 4px 4px 10px;
+	border-bottom: 1px solid #ABABAB;
+	border-top: 1px solid #EAEAEA;
+}
+.selectTipo option:hover,.selectTipo li:hover {
+	background-color: #E8E8E8;
+}
+
+/*.selectTipo.androidBr li:hover{
+	background-color:#FFF;
+	}*/
+
+
+.selectTipo option:before,.selectTipo li:before , .selectAnd li:before {
+	content: "\e711";
+	font-size: 12px;
+	color: #999;
+	font-family: 'icomoon';
+	font-style: normal;
+	font-weight: normal;
+	font-variant: normal;
+	text-transform: none;
+	line-height: 1;
+	padding-right: 10px;
+	/* Better Font Rendering =========== */
+	-webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
+}
+.selectTipo option:hover:before, .selectTipo li:hover:before{
+	content: "\e710";
+	color: #390;
+}
+/*.selectTipo.androidBr li:hover:before{
+	content: "\e711";
+	color: #999; 
+	}*/
+
+
+.selectTipo option.selected, .selectTipo li.selected,.selectAnd li.selected {
+		background-color: #E8E8E8;
+		color: #0973BF;
+	}
+.selectTipo .selected:before, .selectAnd .selected:before {
+	content: "\e710";
+	color: #390  !important;
+}	
+	
+/*	select */
+   
+/*.selectTipo option::selection{
+	background-color:red;}
+	
+.selectTipo option:checked{
+	background-color:red;}
+	
+.selectTipo option:active{
+	background-color:red;}
+	
+.selectTipo option:focus{
+	background-color:red;}*/
+	
+	
+/*	select  Dropdown personalizado */	
+
+.dropdown.selectDrop{
+	height:34px; /* borrar solo prueba movil*/
+	/*min-width:92px;*/
+	}
+.input-group-btn .dropdown.selectDrop .form-control{
+    padding: 6px 10px;
+    color: #555555;
+    background-image: none;
+    border: 1px solid #cccccc;
+/*	border-right-color: transparent;*/
+	border-right: none;
+    border-radius: 4px 0 0 4px;
+	    background-color: #ECECEC;
+		    min-width: 86px;
+	}
+.input-group-btn .dropdown.selectDrop.focus .form-control{
+	border-right: solid 1px #ff6802;
+	}	
+
+.dropdown>div{
+	position:relative;}
+	
+.dropdown.selectDrop.focus .form-control,.dropdown.selectDrop.open .form-control{
+    border-color: #FF6802;
+    outline: 0;
+    -webkit-box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 102, 102, 0.6);
+    box-shadow: inset 0 1px 1px rgba(0,0,0,.075), 0 0 8px rgba(102, 102, 102, 0.6);
+}	
+
+.dropdown.selectDrop span.paisNombre{
+	    height: 22px;
+    overflow: hidden;
+    display: inline-block;
+	padding-right: 8px;
+	}
+
+	
+.dropdown.selectDrop span.caret{
+	 position: absolute;
+    top: 14px;
+    right: 8px;
+	}
+	
+.selectDrop	.dropdown-menu{
+		width:100%;
+	    border-radius: 0px;
+		border-color: #FFB583;
+		margin-top:1px;
+		min-width: auto;
+		z-index: 9999;
+		/*box-shadow:none;*/
+	}
+
+.dropdown-menu > li > a {
+    display: block;
+    padding: 5px 20px;
+    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+	border-bottom: 1px solid #E6E6E6;
+}	
+
+.dropdown-menu > li > h6 {
+	padding: 4px 11px;
+    font-weight: bold;
+    font-size: 11px;
+    color: #5E6B72;
+    background-color: #EAF8FD;
+    margin: 0px;
+	margin-top: 1px;
+	
+	}
+
+.no-touchevents .dropdown-menu > li > a:hover,   .no-touchevents .dropdown-menu > li > a:focus {
+    text-decoration: none;
+    color:#0973BF;/* #262626;*/
+    background-color: #E8E8E8;}
+	
+	/*	Prueba select Movil */	
+/*.labelMovil{
+	position: absolute;
+    background-color: aliceblue;
+    width: 100%;
+	height: 80px;
+	}*/
+	
+	 /* #pais02 , #pais02b, */
+.selectDrop select{       
+	position:absolute;
+	border:1px solid red;
+	z-index: 10;
+    width: 100%;
+	height:100%;
+	height:34px;
+	zoom: 1;
+	filter: alpha(opacity=0);
+	opacity: 0;
+	}
+	
+ .selectDrop select option{ 
+	font-size:12px;
+	}  /* #pais02 */
+	
+	
+/* elemento depura del form final =========== */	
+
+.depuraAA {
+	 /*position: relative;*/
+	clear: both;
+    /* bottom: 0; */
+    /* top: 100%; */
+    /* left: 0; */
+	
+	padding: 4px 3px 3px 5px;
+/*    padding-left: 5px;
+    padding-top: 3px;
+    padding-bottom: 3px;*/
+    font-size: 12px;
+    background: burlywood;
+    /* margin-top: 23px; */
+    line-height: 11px;
+   /* display: table;*/
+	width:100%;
+    display: none;
+	/* display: none; */
+	}

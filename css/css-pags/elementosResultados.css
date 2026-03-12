@@ -1,0 +1,431 @@
+
+/* //////////    divPreguntas   /////////////////// */
+
+/* extructura preguntas */
+
+.divPreguntas {
+	position: absolute;
+	z-index: 20;
+	background-color: rgba(255, 255, 255, 0.92);
+	top: 20px;
+	
+	right: -300px;
+	/*left: -300px;*/
+	
+	padding: 15px 0px 5px;
+	width: 250px;
+	font-size: 16px;/*overflow: hidden;*/
+	overflow-x: hidden;
+	
+	transition: all 0.5s cubic-bezier(.03,.57,.47,1.17);
+	-webkit-transition: all 0.5s cubic-bezier(.03,.57,.47,1.17);
+	-moz-transition: all 0.5s cubic-bezier(.03,.57,.47,1.17);
+	-o-transition: all 0.5s cubic-bezier(.03,.57,.47,1.17);
+	-ms-transition: all 0.5s cubic-bezier(.03,.57,.47,1.17);
+	
+	box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.35);
+    border-radius: 3px;
+	
+	 /*-webkit-transition-delay: 0.5s; Safari
+    transition-delay: 0.5s;  */
+	
+}
+
+.divPreguntas.activo{
+	right:  20px;	
+	/*left: 20px;*/
+	}
+
+.divPreguntas.lateralFiltro{
+	position: relative;
+	right: 0px;
+   /*left: 0px;*/
+   margin-left: 10px;
+   margin-right: 10px;
+   top: 5px;
+	}
+.divPreguntas.lateralFiltro>.close{
+	display:none;
+	}
+
+/* apaño temporal    SE TENDRÍA QUE CAMBIAR DE NOMBRE::: .filtros-navs   SUBMENU , o algo así*/
+
+.filtros-navs {
+    position: absolute;
+	height : 100%;
+    /*overflow: auto; */
+	overflow-y: auto;
+    overflow-x: hidden;
+	
+	background-color: white;
+	
+	
+	z-index: 3;	 /*	arreglo*/
+	
+	/*background-color: transparent;*/
+	right: -100%;
+	/*right:-330px;*/
+   /* background-color: #3CF;*/
+	width: 320px;     /*	mofificable rwd */
+	
+	box-shadow: 1px 4px 5px rgba(0, 0, 0, 0.35);
+	
+	/*	cambios */
+	
+	  -webkit-transition: right ease-out .30s;
+    -o-transition: right ease-out .30s;
+    transition: right ease-out .30s;
+}
+
+.filtros-navs.activo{
+
+	right : 0px ;
+	}
+
+
+
+.contTodo {
+	width: 300%;
+	left: 0px;
+/*	left: -100%;*/
+	position: relative;
+	transition: all 0.7s linear;
+	-webkit-transition: all 0.5s ease-out;
+	-moz-transition: all 0.5s ease-out;
+	-o-transition: all 0.5s ease-out;
+	-ms-transition: all 0.5s ease-out;
+}
+.cont {
+	padding: 0px 10px;
+	display: block;
+	float: left;
+	width: 33.333%;
+}
+
+div.fCiudad {
+	/*background-color:#09F*/
+	}
+	
+div.fMetros {
+	/*background-color:#6CF;*/
+	}
+
+
+/*  navega  close*/	
+.divPreguntas button.close {
+	position: absolute;
+	right: 0px;
+	top: 0; /*-15px;*/
+	opacity: 1;
+	border-radius: 18px;
+	font-size: 17px;
+	background-color: transparen; /* white;*/
+	padding: 3px 6px;
+	opacity: 1;
+	color: #5b7b93;
+}
+.divPreguntas button.close:hover {
+	color: #52AAEC;
+}
+
+.navPuntos {
+	text-align: center;
+	margin-top: 5px;
+}
+
+.navPuntos span {
+	background: #f5f5f5;
+	border-radius: 10px;
+	border: 1px solid #52aaec;
+	width: 10px;
+	height: 10px;
+	display: inline-block;
+	margin: 0px 4px;
+}
+
+.navPuntos span.checked {
+	background-color: #08486E;
+	border-color: #52aaec;
+}
+.navPuntos span:hover {
+	background-color: #52aaec;
+	border-color: #52aaec;
+}	
+
+/* elementos cont */	
+.divPreguntas label {
+	font-family: ruda;
+	color: #2B4E61;
+	width: 100%;
+	display: block;
+}
+
+.divPreguntas input[type="text"] {
+	border: none;
+	border-bottom: 1px solid #52aaec;
+	background: transparent;
+	outline: 0px;
+	color: #0973BF;
+	padding-left: 19px;
+	width: 100%;
+	text-transform: capitalize;
+}
+
+.depura{
+	font-size: 14px;
+    margin: 3px;
+/*    color: #52AAEC;*/
+	color: #C94307;
+	line-height: 14px;
+    overflow: hidden;
+	transition: height 0.3s ease-out;
+	-webkit-transition: height 0.3s ease-out;
+	-moz-transition: height 0.3s ease-out;
+	-o-transition: height 0.3s ease-out;
+	-ms-transition: height 0.3s ease-out;
+	height: 0px;
+	}
+
+	
+.depura.activo{
+	height: 16px;;
+	}	
+	
+/*.divPreguntas .form-control {   
+    padding: 6px 10px;
+    color: #555555;
+
+    border-radius: 1px;
+	box-shadow: none;
+}*/
+
+
+/*  botones * transparente * close */	
+.btn.transparente {
+	background-color: transparent;
+	color: #3F728D;
+	border-color: transparent;
+}
+.btn.transparente:hover {
+	background-color: transparent;  /*#3F728D;*/
+	color: #52AAEC;
+}
+
+/* iconos  botones / inputs*/
+.divPreguntas  div>[class^="icon-"],.divPreguntas div>[class*=" icon-"]{ /*.icon-location, .divPreguntas .icon-arrow-up, .divPreguntas .icon-arrow-down*/  
+	color: #2B4E61;
+	position: absolute;
+	margin-top: 4px;
+}
+.divPreguntas .icon-right{
+	right: 0px;
+	}
+.divPreguntas .icon-right + input{
+	padding-left: 3px;
+	padding-right: 19px;
+	}
+
+
+
+
+	
+/* fCiudad fMetros */
+	
+.qCiudad {
+	width:190px !important;
+	padding-left: 19px;
+}
+
+.fMetros .periodo{
+	width: 190px;
+	
+	}
+
+.fMetros  div>[class^="icon-"],.fMetros div>[class*=" icon-"]  {
+	font-size: 12px;
+	margin-top: 4px;
+	color: #52AAEC;
+	}
+
+.fMetros input[type="text"] {
+	text-align:center;
+	}
+
+
+/* take up */
+/*columnas */  /* apoyado en col-xs-6 */
+
+.cont>.columnas{}
+
+.paddingLR5{
+	padding-left:5px;
+	padding-right:5px;}
+	
+.paddingL5{
+	padding-left:5px;
+	padding-right:0px;}
+.paddingR5{
+	padding-left:0px;
+	padding-right:5px;}
+	
+	
+.columnas .dropdown-toggle, .columnas a.btn  {
+	width:100%;
+	}
+	
+.columnas .dropdown-menu{
+	position:relative;
+	}
+
+.columnas .dropdown-menu.dropdown-subzonas{
+	left: -80%;
+    width: 180%;
+	}
+
+
+
+
+
+/*filtroMetros anterior select*/
+.filtroMetros{
+	/*background-color:#FFF4D5;*/
+	}
+
+.filtroMetros .cont{
+    padding: 0px;
+    display: block;
+    float: none;        /* cambio*/
+    width: 100%;      /* 50%;  */
+	}
+	
+/*.filtroMetros .cont {
+    padding: 0px 10px;
+    display: inline-block;
+    float: none;
+    width: 50%;
+}
+	*/
+.filtroMetros label{
+	padding-right: 15px;
+	padding-top: 4px;
+	font-family: ruda;
+	/*font-size: 14px;*/
+	color: #2B4E61;
+/*	width: 100%;*/
+	display: inline-block;
+	vertical-align: middle;
+	}
+.filtroMetros .qMetros{}	
+.filtroMetros .rMetros{
+/*	overflow: hidden;	*/
+
+	vertical-align: middle;
+	display: inline-block;
+	
+	max-width: 196px;/*	si se quita el .50	*/
+	}
+.filtroMetros  .input-group-btn .dropdown.selectDrop.focus .form-control{
+	border: solid 1px #ff6802;
+	}	
+	
+.filtroMetros .input-group-btn .dropdown.selectDrop .form-control{
+    padding: 6px 10px;
+    color: #555555;
+    background-image: none;
+    /*border: 1px solid #cccccc;*/
+/*	border-right-color: transparent;*/
+	border-right:  1px solid #cccccc;
+    border-radius: 4px 0 0 4px;
+	border-radius: 1px ;
+
+	min-width: 115px;
+
+			
+	background-color:#FFF;
+	}
+	
+.filtroMetros .dropdown-menu > li > a {
+/*    display: block;*/
+	padding-left: 9px ;
+
+/*    clear: both;
+    font-weight: normal;
+    line-height: 1.42857143;
+    color: #333333;
+    white-space: nowrap;
+    border-bottom: 1px solid #E6E6E6;*/
+}
+
+
+/*   ///////     BOTON  LUPA   comprementario : tabs031-izq.css     ////////////      */
+
+.icon-search {
+	-webkit-transform: rotate(0deg);
+	-moz-transform: rotate(0deg);
+	transform: rotate(0deg);
+}
+/*.icon-arrow-left2 {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}*/
+.icon-cross {
+	-webkit-transform: rotate(-180deg);
+	-moz-transform: rotate(-180deg);
+	transform: rotate(-180deg);
+}
+
+.btn.bt_lupa {
+	color: #999999;
+	transition: all 0.3s ease-out;
+	-webkit-transition: all 0.3s ease-out;
+	-moz-transition: all 0.3s ease-out;
+	-o-transition: all 0.3s ease-out;
+	-ms-transition: all 0.3s ease-out;
+	-webkit-transition-delay:  margin-right 0.5s;  /*Safari*/
+    transition-delay:  margin-right 0.5s;  
+}
+
+.btn.bt_lupa.animaHide {
+    margin-right: -200px;	
+	}
+
+#verSubmenu span.ico {
+	display: inline-block;
+	-webkit-transition: transform 0.5s;
+	-moz-transition: transform 0.5s;
+	-ms-transition: transform 0.5s;
+	-o-transition: transform 0.5s;
+	transition: transform 0.5s;
+}
+
+
+
+
+
+@media (max-width:767px) { 
+.navPuntos span{ 
+    padding: 5px;
+    margin: 10px 8px 0px;}
+}
+
+@media (max-width:450px) { 
+.filtros-navs {
+	width:100%;
+	}
+
+}
+
+
+
+
+@media (max-width: 360px){
+	.divPreguntas.activo {
+		left: 0px;
+    right: 0px;
+    margin: auto;
+    top: 2px;
+	}
+	
+	
+}

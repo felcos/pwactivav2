@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<title>PropertyWeb </title>
+<!--include virtual="/_inc/javier/inc_head.asp" -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+
+<link href="/css/base.css" rel="stylesheet" type="text/css">
+<link href="/css/estilos.css" rel="stylesheet" type="text/css">
+
+<link href="/css/fuentes.css" rel="stylesheet" type="text/css">
+
+<link href="/css/form_boots.css" rel="stylesheet" type="text/css">
+
+<link href="/_inc/javier/titulos.css" rel="stylesheet" type="text/css"/> <!--  comenta -->
+<link href="/_inc/javier/titulos_info.css" rel="stylesheet" type="text/css"/><!--  info/info_javier.asp -->
+<link href="/_inc/javier/titulos_operaciones.css" rel="stylesheet" type="text/css"/><!--  info/info_javier.asp -->
+
+<link href="/_inc/javier/leer_javier.css" rel="stylesheet" type="text/css"/><!-- css en articulos pasado a mi carpeta -->
+<link href="/_inc/javier/js-components.css" rel="stylesheet" type="text/css"><!-- css temporal, estilos por defecto bt-->
+
+<link href="/_inc/javier/header.css" rel="stylesheet" type="text/css"/>
+<link href="/_inc/javier/footer.css" rel="stylesheet" type="text/css">
+
+<link  href="/_inc/javier/estilo_imprimir.css" rel="stylesheet" type="text/css" media="print"> 
+
+ <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    
+    <!--[if lt IE 9]><script src=""/_inc/javier/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="/_inc/javier/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/_inc/javier/js/html5shiv.min.js"></script>
+      <script src="/_inc/javier/js/respond.min.js"></script>
+    <![endif]-->
+
+
+<!--include virtual="/js/inc_js.asp" -->
+<script src="../../lib/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<script src="../../js/jquery.form.js" type="text/javascript"></script>
+
+<!--<script src="../../lib/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>  -->
+
+<script src="../../lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<!--<script src="../../js/modernizr.js" type="text/javascript"></script>-->
+
+<!-- :inc_head.asp  -->
+
+<script type="text/javascript">
+var winW;
+var winH;
+function dimensionesPantalla() {
+	if (document.body && document.body.offsetWidth) {
+		winW = document.body.offsetWidth;
+		winH = document.body.offsetHeight;
+	}
+	if (document.compatMode=='CSS1Compat' && document.documentElement && document.documentElement.offsetWidth ) {
+		winW = document.documentElement.offsetWidth;
+		winH = document.documentElement.offsetHeight;
+	}
+	if (window.innerWidth && window.innerHeight) {
+		winW = window.innerWidth;
+		winH = window.innerHeight;
+	}
+	
+	informaPantalla()
+}
+function informaPantalla() {
+	//dimensionesPantalla();
+
+	$("#informa_width").html(winW);
+	$("#informa_height").html(winH);
+	
+};
+</script>
+
+
+
+<style type="text/css">
+
+header {
+	background:url(img/gnral/header-1170.jpg) no-repeat;
+	height:246px;
+
+}
+</style>
+</head>
+<body>
+<!--include virtual="/_inc/javier/header.asp" -->
+<header>
+</header>
+
+<div class="container">
+
+<h1>Property</h1>
+
+  
+</div>
+<!--include virtual="/_inc/javier/footer.asp" -->
+</body>
+</html>

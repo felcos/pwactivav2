@@ -1,0 +1,6 @@
+<h1>Rumores, cotilleos y oportunidades</h1>
+<img src="/presenta/inc/ejecutivos.gif" width="470" height="192"/>
+<h2>&#61633; Diariamente</h2>
+<p>PropertyWeb.eu &quot;deja escapar<strong> informaci&oacute;n delicada y caliente</strong> en su secci&oacute;n especial, por ejemplo, rumores de multinacionales entrando en Espa&ntilde;a, posibles operaciones &ldquo;secretas&rdquo;, ofertas &ldquo;off the market&rdquo;, profesionales que cambian de empresa, nuevos mandatos, y adem&aacute;s con los comentarios &quot;especiales&quot; de PropertyWeb.eu&hellip; . Pueden ser cotilleos y rumores que dan pistas e ideas que pueden producir &ldquo;oportunidades&rdquo;, pero que muchas veces son cosas que todav&iacute;a no sabe casi nadie&hellip;</p>
+<h2>&#61633; Base de datos</h2>
+<p>Apoya a nuestros clientes con cotilleos hist&oacute;ricos que forma una herramienta muy &uacute;til para buscar informaci&oacute;n hist&oacute;rica, sobre por ejemplo, un centro comercial, una empresa, hasta una persona, etc...</p>

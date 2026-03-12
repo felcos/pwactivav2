@@ -1,0 +1,19 @@
+/* CSS Document */
+
+
+@media screen and (min-width: 480px) {
+	.caja {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+	
+	.widget {
+		box-shadow: 6px 6px 8px #b8bcbf;
+		
+	}
+	
+	section.flash {
+		box-shadow: 6px 6px 8px #b8bcbf;
+	}
+	
+}

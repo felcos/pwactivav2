@@ -1,0 +1,200 @@
+/* tabla */
+/*
+.tabla {
+	width: 100%;
+	display: table;
+	}
+.fila  {
+	display: table-row;
+	cursor: pointer;
+	}
+*/
+
+/* unificando con JAVIER */
+.tabla {
+	}
+.fila  {
+	width: 100%;
+	display: table;
+	cursor: pointer;
+	}
+.tabla a{
+	display:table;
+	width:100%;
+	padding: 0px 2px;}
+
+
+.tabla a:hover{
+	background-color: #FFF3CA;
+	text-decoration:none;
+	color:#000;
+
+	}
+	
+/* dealanalysis */
+.deals_check {
+	/*float:left;*/
+	display: table-cell;
+	width: 15px;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_contador {
+	/*float:left;*/
+	display: table-cell;
+	width:24px;
+	text-align:right;
+	padding:.3em 12px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_titulo {
+	/*float:left;*/
+	display: table-cell;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_area {
+	font-size:90%;
+	display: table-cell;
+	width:	55px;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_op {
+	/*float: right;*/
+	display: table-cell;
+	width:	50px;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_precio {
+	/*float: right;*/
+	display: table-cell;
+	width: 85px;
+	text-align:right;
+	padding:.3em 8px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_tipoprecio {
+	/*float: right;*/
+	display: table-cell;
+	width: 55px;
+	font-size:75%;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.deals_superf {
+	/*float: right;*/
+	display: table-cell;
+	width: 90px;
+	text-align:right;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+
+.deals_fecha {
+	display: table-cell;
+	text-align:right;
+	font-size:85%;
+	width: 65px;
+	padding:.3em 0 0 5px;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.tit {
+	/* height:30px; */
+	font-size:.9em;
+	border-bottom: 1px solid black;
+	}
+	
+.agentes_ranking {
+	/*float:left;*/
+	display: table-cell;
+	width:15px;
+	text-align:right;
+	padding:.3em 12px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.agentes_nombre{
+	/*float:left;*/
+	display: table-cell;
+	padding:.3em 5px 0 0;
+	border-bottom: 1px solid #c1c1c1;
+	
+	}
+.agentes_superf {
+	/*float: right;*/
+	display: table-cell;
+	width: 120px;
+	text-align:right;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+.agentes_ops {
+	/*float: right;*/
+	display: table-cell;
+	width: 80px;
+	text-align:right;
+	padding:.3em 5px 0 0 ;
+	border-bottom: 1px solid #c1c1c1;
+	}
+
+.instrucciones {
+	margin-top: 10px;
+	/* padding-bottom: 10px; */
+	line-height:40px;
+	font-size:15px;
+	font-weight:bold;
+	/*min-height:60px;*/
+	}
+
+/********************************/
+.tbl_resum {
+	width: 100%;
+	display: table;
+	font-size:.9em;
+}
+.fila_resum  {
+	display: table-row;
+	
+}
+
+.resum_seccion{
+	display: table-cell;
+	padding-top: 2px;
+	padding-rigth: 5px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.resum_ops {
+	display: table-cell;
+	padding-top: 2px;
+	width: 25px;
+	text-align:right;
+	padding-rigth: 10px;
+	border-bottom: 1px solid #c1c1c1;
+}
+
+.resum_eur {
+	display: table-cell;
+	padding-top: 2px;
+	width:60px;
+	text-align:right;
+	padding-rigth: 5px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.resum_superf {
+	display: table-cell;
+	padding-top: 2px;
+	width: 80px;
+	text-align:right;
+	padding-rigth: 2px;
+	border-bottom: 1px solid #c1c1c1;
+}
+.tot {
+	font-weight:bold;
+	border-bottom: 0px;
+	}
+
+.madbcn {
+	padding-top:0;
+	font-size:.8em;
+	}

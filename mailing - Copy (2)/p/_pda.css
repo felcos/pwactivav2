@@ -1,0 +1,172 @@
+BODY {
+	FONT-SIZE: 11px; MARGIN: 0px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; BACKGROUND-COLOR: #ffffff; TEXT-DECORATION: none
+}
+.t11g {
+	FONT-SIZE: 11px; COLOR: #333366; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.v11r {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #cd3232; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.v11g {
+	FONT-SIZE: 9px; COLOR: white; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+TD {
+	FONT-SIZE: 8pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+INPUT {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+SELECT {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.estilotabla {
+	BORDER-RIGHT: #666666 0px solid; BORDER-TOP: #666666 0px solid; BORDER-LEFT: #666666 0px solid; BORDER-BOTTOM: #666666 0px solid; BACKGROUND-COLOR: #ffffff
+}
+.estilotabla1 {
+	BORDER-RIGHT: #666666 1px solid; BORDER-TOP: #666666 1px solid; FONT-WEIGHT: bold; FONT-SIZE: 13px; BORDER-LEFT: #666666 1px solid; COLOR: white; BORDER-BOTTOM: #666666 1px solid; FONT-FAMILY: Verdana, Arial; BACKGROUND-COLOR: #0099cc
+}
+.estiloceldaprincipal {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #0066cc
+}
+.estilocelda2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 9pt; COLOR: #fff; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #f8bb2d
+}
+.estilocelda3 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #333333; BACKGROUND-COLOR: #ff9900
+}
+.estiloceldaTEXTO {
+	FONT-WEIGHT: normal; FONT-SIZE: 10pt; COLOR: #333333; FONT-FAMILY: Verdana; BACKGROUND-COLOR: #fff
+}
+.boton4 {
+	FONT-SIZE: 10px; COLOR: #990; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.boton4 A:link {
+	FONT-SIZE: 10px; COLOR: #990; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.boton4 A:visited {
+	FONT-SIZE: 10px; COLOR: #990; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.boton4 A:hover {
+	FONT-SIZE: 10px; COLOR: #d7d700; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.negro {FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000;}
+.roj {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #ff9900
+}
+.roj2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; BACKGROUND-COLOR: #ff9933
+}
+.gri {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #8a8a8a
+}
+.gri2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; BACKGROUND-COLOR: #cccccc
+}
+.mor {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #0066cc
+}
+.mor2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; BACKGROUND-COLOR: #cccccc
+}
+.ver {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #0099cc
+}
+.ver2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; BACKGROUND-COLOR: #ff9933
+}
+.pis {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #ffffff; BACKGROUND-COLOR: #336699
+}
+.pis2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ffffff; BACKGROUND-COLOR: #333366
+}
+.ama {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #ff6600
+}
+.ama2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; BACKGROUND-COLOR: #3366cc
+}
+.verd {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #ccff99
+}
+.verd2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 10pt; COLOR: #000000; BACKGROUND-COLOR: #ccff99
+}
+
+.titroj {
+	FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titroj A:link {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titroj A:visited {
+	FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titroj A:hover {
+	FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.titgri {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titgri A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titgri A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titgri A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.titmor {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titmor A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titmor A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titmor A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.titver {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titver A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titver A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titver A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.titpis {
+	FONT-WEIGHT: bolder; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titpis A:link {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titpis A:visited {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #000000; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+.titpis A:hover {
+	FONT-WEIGHT: bold; FONT-SIZE: 10px; COLOR: #ff6600; FONT-FAMILY: Arial, Helvetica, sans-serif; TEXT-DECORATION: none
+}
+
+.boton2 {
+	FONT-WEIGHT: bold; FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Verdana; TEXT-DECORATION: none
+}
+.inputroj {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #c30; FONT-FAMILY: Arial, Helvetica, sans-serif
+}
+.selectroj {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #cc6600; FONT-FAMILY: verdana, arial
+}
+.aviso {
+	FONT-WEIGHT: bold; FONT-SIZE: 8pt; COLOR: #990000; FONT-FAMILY: Arial, Helvetica, sans-serif
+}

@@ -1,0 +1,66 @@
+﻿/*Pw Hoy*/
+.pwPubli input{
+	outline: none;
+	font-size:1em;
+	padding: 0.5em;
+	margin: 0.5em 0 0 0;
+	border-radius: 5px;
+}
+.pwPubli p{
+	font-size:1.1em;
+}
+.pwPubli p.userConditions{
+	font-size:0.9em;
+	margin: 1em 0 0 0;
+}
+.pwPubli p span{
+	color: #FF6802;
+    position: relative;
+    top: 0.02em;
+}
+.pwPubli p a{
+	color:#FF6802;
+	margin: 0 0.5em 0 0;
+	text-decoration: none;
+}
+.pwPubli p a:hover{
+	text-decoration: underline;
+}
+.pwPubli ul li{
+	display:inline-block;
+	width:auto;
+	margin: 0 0 0 0.4em;
+}
+.pwPubli ul li input{
+	width:auto;
+
+	
+}
+.pwPubli p input.checkbox {
+    width: auto;
+    margin: 0 0 0 0.5em;
+}
+.pwPubli input.btn{
+    background-color: #2B4E61;
+    width: 12%;
+    min-width: 150px;
+    margin: 0.5em 0.5em 1.5em 0.5em;
+    color: #fff;
+    font-size: 1em;
+    border: none;
+    outline: none;
+    cursor: pointer;
+  }
+  div .pwPubli .inputPwHoy{
+    position: relative;
+    top: 1.5em;
+    text-align: center;
+    border-top: 1px solid #E4E4E4;
+    padding: 0.8em 0 0.6em 0;
+  }
+  div .pwPubli .roll:hover {
+    background: #406C86;
+}
+ .pwPubli li.botSuscripcion{
+ 	float:right;
+ }

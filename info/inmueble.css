@@ -1,0 +1,188 @@
+.collapse p {padding:0 10px 1em}
+.top{font-size:.9em; text-align:right}
+#switch, .switch {margin-bottom:5px; text-align:right}
+
+
+/* --- Headings  --- */
+/*
+	h1 {
+	  margin-bottom:.75em; 
+	  font-family:georgia,'times new roman',times,serif; 
+	  font-size:2.5em; 
+	  font-weight:normal; 
+	  color:#c30
+	}
+	h2{font-size:1em}
+*/
+
+.expand {padding-bottom:.75em}
+
+
+/* --- Links  --- */
+/*
+	a:link, a:visited {
+	  border:1px dotted #ccc;
+	  border-width:0 0 1px;
+	  text-decoration:none;
+	  color:blue
+	}
+	a:hover, a:active, a:focus {
+	  border-style:solid;
+	  background-color:#f0f0f0;
+	  outline:0 none
+	}
+	a:active, a:focus {
+	  color:red;
+	}
+*/
+.expand a {
+  display:block;
+  /* padding:3px 10px */
+  padding:3px 0px;
+}
+.expand a:link, .expand a:visited {
+  border-width:1px;
+  background-image:url(/img/expand-down.gif);
+  background-repeat:no-repeat;
+  background-position:98% 50%;
+}
+.expand a:hover, .expand a:active, .expand a:focus {
+  text-decoration:underline
+}
+.expand a.open:link, .expand a.open:visited {
+  /*
+  border-style:solid;
+  background:#eee url(/img/expand-up.gif) no-repeat 98% 50%
+  */
+  background: url(/img/expand-up.gif) no-repeat 98% 50%
+}
+
+table.tblPlantas {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	border-collapse: 0;
+	line-height:normal;
+}
+table.tblPlantas td {
+	border-bottom: 1px solid #c3c3c3;
+	padding:1px;
+	}
+table.tblPlantas th {
+	border-bottom: 2px solid #555;
+}
+table.tblDisponibilidad td {
+	border: 0;
+	padding:0;
+	}
+.tblTotal {
+	font-size:10pt;
+	font-weight:bold;
+	}
+	
+	
+/* tablas Inmueble / Edificio / Planta */
+
+div.tEdif {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:12pt;
+	/* width:480px; */
+	clear: none;
+	overflow: auto;
+	line-height:normal;
+}
+div.tPlantas {
+	font-family:Arial, Helvetica, sans-serif;
+	font-size:9pt;
+	width:450px;
+	clear: none;
+	overflow: auto;
+	line-height:normal;
+}
+
+div.fEdif {
+	clear: both;
+	display:block;
+}
+div.fPlantas {
+	clear: both;
+}
+
+div.cTitEdif {
+	float: left;
+	padding: 2px;
+	background: #CCC; /* #F0E0A0; */
+	border-color: #CCC; /* #F0E0A0; */
+	border-style: solid;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+}
+div.cTitPlantas {
+	float: left;
+	padding: 0px;
+	background: #F0E0A0;
+	border-color: #F0E0A0;
+	border-style: solid;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+}
+
+div.cEdif {
+	float: left;
+	padding: 2px;
+	border-color: #CCC; /* #F0E0A0; */
+	border-style: solid;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 0px;
+}
+div.cPlantas {
+	float: left;
+	padding: 0px;
+	border-color: #F0E0A0;
+	border-style: solid;
+	border-right-width: 0px;
+	border-left-width: 0px;
+	border-top-width: 0px;
+	border-bottom-width: 1px;
+}
+
+/* ************** */
+#info_tit{
+	/* 
+	margin-top: 6px; 
+	margin-bottom: 10px;
+	*/
+	margin-top: 3px; 
+	font-family: Arial;
+	font-size: 12px;
+	border-bottom:1px dotted #dbdbdb;
+}
+
+.info_seccion {
+	color:#000000;
+	font-family:'ruda',sans-serif;
+	border-radius: 3px
+	;-moz-border-radius:3px;
+	-webkit-border-radius:3px;
+	font-size:20px;
+	background-color:#e9e9e9;
+	padding:10px;
+}
+
+.info_apartado {
+	padding: 3px;
+	font-size: 15px;
+	color: #5b5b5b;
+	border-radius:5px;
+	-moz-border-radius:5px;
+	-webkit-border-radius:5px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+	background: white url(/img/trama_puntos_claros.png) repeat 0 0;
+	margin-top:15px;
+}

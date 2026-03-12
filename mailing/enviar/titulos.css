@@ -1,0 +1,174 @@
+.t11g {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; color: #333366; text-decoration: none}
+.v11r {  font-family: Arial, Helvetica, sans-serif; font-size: 11px; font-weight: bold; color: CD3232; text-decoration: none}
+.v11g   { color: white; font-size: 9px; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+TD  { font-size: 8pt; font-family: Arial, Helvetica, sans-serif}
+input { font-size: 8pt; font-family: Arial, Helvetica, sans-serif; font-weight: bold}
+select  { font-size: 8pt; font-family: Arial, Helvetica, sans-serif;font-weight: bold}
+.estilotabla  { background-color: #ffffff; border: solid 0px #666666}
+.estilotabla1 { color: white; font-weight: bold; font-size: 13px; font-family: Verdana, Arial; background-color: #0099CC; border: solid 1px #666666 }
+.estiloceldaprincipal  { color: #fff; font-weight: bold; font-size: 10pt; font-family: Verdana; background-color: #FF9900}
+.estilocelda2  { color: #fff; font-weight: bold; font-size: 9pt; font-family: Verdana; background-color: #f8bb2d }
+.estilocelda3 { color: #333333; font-weight: bold; font-size: 10pt; background-color: #339999}
+.estiloceldaTEXTO { color: #333333; font-weight: normal; font-size: 10pt; font-family: Verdana; background-color: #fff }
+.td.boton4 { color: #990; font-size: 10px; font-family : Arial, Helvetica, sans-serif; text-decoration: none }
+.td.boton4 a:link, .boton4 a:visited, { color: #990; font-size: 10px; font-family: Arial, Helvetica, sans-serif ; text-decoration: none }
+.td.boton4 a:hover { color: #d7d700 ; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.roj   { color: #000000; font-weight: bold; font-size: 10pt; background-color: #FF9900}
+.roj2   { color: #333366; font-weight: bold; font-size: 10px; background-color: #FF9900}
+.roj3   { color: #333366; font-weight: bold; font-size: 10px; background-color: #BADDE9}
+.gri { color: #000000; font-family : Arial, Helvetica, sans-serif; font-weight: bold; font-size: 10pt; background-color: #8a8a8a }
+.gri2 { color: #000000; font-weight: bold; font-size: 10px; background-color: #CCCCCC}
+.mor	{ color: #000000; font-weight: bold; font-size: 10pt; background-color: #0066CC}
+.mor2	{ color: #000000; font-weight: bold; font-size: 10px; background-color: #0099CC}
+.ver { color: #000000; font-weight: bold; font-size: 10pt; background-color: #0099CC}
+.ver2 { color: #000000; font-weight: bold; font-size: 10px; background-color: #FF9933}
+.pis { color: #FFFFFF; font-weight: bold; font-size: 10pt; background-color: #336699}
+.pis2 { color: #FFFFFF; font-weight: bold; font-size: 10px; background-color: #333366}
+.ama { color: #000000; font-weight: bold; font-size: 10pt; background-color: #FF6600}
+.ama2  { color: #000000; font-weight: bold; font-size: 10px; background-color: #3366CC}
+.verd { color: #000000; font-weight: bold; font-size: 10pt; background-color: #CCFF99}
+.verd2 { color: #000000; font-weight: bold; font-size: 10pt; background-color: #CCFF99}
+.titroj  { color: #FF6600; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration:none}
+.titroj a:link, .titroj a:visited,    { color: #000000; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration : none }
+.titroj a:hover   { color: #FF6600; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.td.boton2  { color: #000000 ; font-weight: bold; font-size: 11px; font-family: Verdana; text-decoration: none }
+.titgri   { color: #FF6600; font-size: 10px; font-weight: bold;  font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight:bolder}
+.titgri a:link, .titgri a:visited,   { color:  #000000; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif ; text-decoration: none }
+.titgri a:hover    { color: #FF6600; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.titmor { color: #FF6600; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none ; font-weight:bolder }
+.titmor a:link, .titmor a:visited, { color: #000000; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration : none }
+.titmor a:hover { color: #FF6600; font-size: 10px; font-weight: bold;; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.titver { color: #FF6600; font-size: 10px;font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight:bolder }
+.titver a:link, .titver a:visited, { color: #000000; font-weight: bold;; font-size: 10px; font-family: Arial, Helvetica, sans-serif ; text-decoration: none }
+.titver a:hover { color: #FF6600; font-size: 10px; font-weight: bold;; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.titpis { color: #FF6600; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight:bolder }
+.titpis a:link, .titpis a:visited { color: #000000; font-weight: bold;; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.titpis a:hover { color: #FF6600; font-size: 10px; font-weight: bold;; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+
+.titnegro { color: #000000; font-size: 10px; font-weight: bold; font-family: Arial, Helvetica, sans-serif; text-decoration: none; font-weight:bolder }
+.titnegro a:link, .titnegro a:visited { color: #000000; font-weight: bold;; font-size: 10px; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+.titnegro a:hover { color: #FF6600; font-size: 10px; font-weight: bold;; font-family: Arial, Helvetica, sans-serif; text-decoration: none }
+
+.inputroj  { font-size: 8pt; font-weight: bold; font-family: Arial, Helvetica, sans-serif; font-weight: bold;color:  #c30}
+.selectroj  { font-size: 8pt; font-weight: bold; font-family: verdana, arial;font-weight: bold;  color:  #CC6600}
+.aviso {
+	font-size: 8pt;
+	font-weight: bold;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:  #990000;
+	text-decoration: none;
+}
+.avisoG {
+	font-size: 10pt;
+	font-weight: bold;
+	font-family:Geneva, Arial, Helvetica, sans-serif;
+	font-weight: bold;
+	color:  #990000;
+	text-decoration: none;
+}
+.noMargin {MARGIN: 0px}
+
+.negro { color: #000000; font-family: Arial, Helvetica, sans-serif; text-decoration:none}
+.negro a:link, .negro a:visited, .negro a:hover   {text-decoration : none }
+
+.pagsum_apartados {
+	color: #999999;
+	font-size: 13pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	text-transform: capitalize;
+	padding-left:9px;
+	padding-top:9px;
+	padding-bottom:3px;
+}
+.pagsum_contenidos {
+	color: #000000;
+	font-size: 26pt;
+	font-family: Arial, Helvetica, sans-serif;
+	padding-left:24px;
+	font-weight: 900;
+}
+
+/* Barra Operaciones */
+#barra_op {
+	padding: 0;
+	width: 100%;	/* 495px;*/ 	/* */	/* 788 */
+	background: transparent;
+	voice-family: "\"}\"";
+	voice-family: inherit;
+}
+#barra_op ul {
+	font: bold 11px Arial;
+	margin:0;
+	margin-left: 0px; /*margin between first menu item and left browser edge*/
+	padding: 0;
+	list-style: none;
+}
+#barra_op li {
+	display: inline;
+	margin: 0 2px 0 0;
+	padding: 0;
+	/* text-transform:uppercase; */
+}
+#barra_op a {
+	float: left;
+	display: block;
+	color: white;
+	margin: 0 1px 0 0; /*Margin between each menu item*/
+	padding: 1px 10px;
+	text-decoration: none;
+	letter-spacing: 1px;
+	background-color: black; /*Default menu color*/
+	border-bottom: 1px solid white;
+}
+#barra_op a:hover {
+	background-color: gray; /*Menu hover bgcolor*/
+}
+#barra_op #current a { /*currently selected tab*/
+	background-color: #D25A0B;
+	border-color: #D25A0B; 
+}
+
+#barra_op_line {
+	clear: both;
+	padding: 0;
+	width: 100%;
+	height: 2px;
+	line-height: 2px;
+	background: #D25A0B;
+}
+#barra_op #blanco { /* espacio */
+	background-color: #FFFFFF;
+	float: left;
+	display: block;
+	padding-top: 0px;
+	padding-right: 5px;
+	padding-bottom: 0px;
+	padding-left: 5px;
+}
+
+#barra_volver {
+	float: right;
+	display: block;
+	color: white;
+	margin: 0 1px 0 0; /*Margin between each menu item*/
+	padding: 0;
+	text-decoration: none;
+	letter-spacing: 1px;
+	background-color: #FFFFFF;
+	border-bottom: 1px solid white;
+}
+
+/* Barra Operaciones */
+
+.seccion {
+	color: #000000;
+	font-size: 13pt;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: 900;
+	padding-left:3px;
+	padding-top:9px;
+	padding-bottom:3px;
+}
+

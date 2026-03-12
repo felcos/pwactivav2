@@ -1,0 +1,7 @@
+@media (min-width: 992px) {
+	.lateral {
+		position: relative !important;
+		float: right !important;
+	}
+	
+}

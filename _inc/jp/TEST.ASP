@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<link href="/favicon.ico" rel="shortcut icon" type="image/x-icon"/>
+<title>PropertyWeb </title>
+<!--include virtual="/_inc/javier/inc_head.asp" -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+
+
+<link href="/css/base.css" rel="stylesheet" type="text/css">
+<link href="/css/estilos.css" rel="stylesheet" type="text/css">
+
+<link href="/css/fuentes.css" rel="stylesheet" type="text/css">
+
+<link href="/css/form_boots.css" rel="stylesheet" type="text/css">
+
+<link href="/_inc/javier/titulos.css" rel="stylesheet" type="text/css"/> <!--  comenta -->
+<link href="/_inc/javier/titulos_info.css" rel="stylesheet" type="text/css"/><!--  info/info_javier.asp -->
+<link href="/_inc/javier/titulos_operaciones.css" rel="stylesheet" type="text/css"/><!--  info/info_javier.asp -->
+
+<link href="/_inc/javier/leer_javier.css" rel="stylesheet" type="text/css"/><!-- css en articulos pasado a mi carpeta -->
+<link href="/_inc/javier/js-components.css" rel="stylesheet" type="text/css"><!-- css temporal, estilos por defecto bt-->
+
+<link href="/_inc/javier/header.css" rel="stylesheet" type="text/css"/>
+<link href="/_inc/javier/footer.css" rel="stylesheet" type="text/css">
+
+<link  href="/_inc/javier/estilo_imprimir.css" rel="stylesheet" type="text/css" media="print"> 
+
+ <!-- Just for debugging purposes. Don't actually copy these 2 lines! -->
+    
+    <!--[if lt IE 9]><script src=""/_inc/javier/js/ie8-responsive-file-warning.js"></script><![endif]-->
+    <!--<script src="/_inc/javier/js/ie-emulation-modes-warning.js"></script>-->
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!--[if lt IE 9]>
+      <script src="/_inc/javier/js/html5shiv.min.js"></script>
+      <script src="/_inc/javier/js/respond.min.js"></script>
+    <![endif]-->
+
+
+<!--include virtual="/js/inc_js.asp" -->
+<script src="/lib/jquery/jquery-1.11.3.min.js" type="text/javascript"></script>
+<!-- script src="/lib/jquery/jquery-2.1.4.min.js" type="text/javascript"></script -->
+<script src="/js/jquery.form.js" type="text/javascript"></script>
+
+<script src="/lib/scrollTo/jquery.scrollTo.js" type="text/javascript"></script>
+
+<script src="/lib/bootstrap/bootstrap.min.js" type="text/javascript"></script>
+<script src="/js/modernizr.js" type="text/javascript"></script>
+
+<!-- EXTRA  -->
+<link  href="css/elementosForm.css" rel="stylesheet" type="text/css">
+
+<!-- :inc_head.asp  -->
+
+<script type="text/javascript">
+
+
+var esMovil = 2;
+fnMovil();	
+$(window).resize(fnMovil);
+
+function fnMovil() {                         /*oculta/muestra menu con css según movil/escritorio*/
+	
+	/* 0>escritorio 1>movil 2>nada*/
+	if (   ($(window).width()>=750) &&  (esMovil !=0 )     )   {     /*escritorio*/
+			//alert("escritorio");
+		esMovil=0;
+		
+		$("#pais02 > option").each(function(){	 //  IMPORTANTE:  crea elemento en ul.dropdown-menu LI de forma automatica
+		  		$("ul.dropdown-menu").append("<li><a href='#'> "+ $(this).text() + "</a></li>");
+   			 });
+		$("#pais02").addClass("hide");
+		$(".selectDrop .dropdown-menu").removeClass("hide");
+		//alert("escritorio")		
+	} else if (($(window).width()<=750) &&  (esMovil !=1 )){
+		esMovil=1;
+		$("ul.dropdown-menu").empty();    // borra elementos de ul.dropdown-menu
+		$("#pais02").removeClass("hide");
+		$(".selectDrop .dropdown-menu").addClass("hide");
+	}
+	}
+
+
+$("#pais02").change(function(){
+		//var pepe = $("#pais02").val();
+		$("#paisDrop .paisNombre").text($(this).val());
+		$("#pais").val($(this).val());  /* envia valor a traves del campo oculto*/
+		});
+		
+
+	
+/* :: Solo para movil*/
+	
+	$(".dropdown-menu li a").click(function(e){
+		   e.preventDefault();
+		   $("#paisDrop .paisNombre").text($(this).text());
+		   $("#pais").val($(this).text());  /* envia valor a traves del campo oculto*/
+		});
+	
+
+	
+	$(".selectDrop").on("mouseenter",function(){    //selectDrop para hacer el efecto over (movil)
+		$(".selectDrop").addClass("focus");
+	});
+	
+	$(".selectDrop").on("mouseleave",function(){
+			$(".selectDrop").removeClass("focus");
+	});
+	
+
+/*  si se utiliza el DropSelect se puede suprimir este script que sirve solo para que se vea la flechita en android 4.l*/
+$(function () {
+  var nua = navigator.userAgent
+  var isAndroid = (nua.indexOf('Mozilla/5.0') > -1 && nua.indexOf('Android ') > -1 && nua.indexOf('AppleWebKit') > -1 && nua.indexOf('Chrome') === -1)
+  if (isAndroid) {
+  //$('select.form-control').removeClass('form-control').css('width', '100%');
+    $('select.form-control').removeClass('form-control').css({"width": "100%"}); //cualquier estilo no lo coge
+	$('.form-control.selectCaja').addClass('androidBr');   //para que no añada sombra y haga bien el scroll
+	$('.form-control.selectCaja ul').removeClass('selectTipo').addClass('selectAnd'); ; //para que no haga over
+	
+  }
+  
+
+})
+
+
+
+
+
+
+</script>
+
+
+
+<style type="text/css">
+
+header {
+	background:url(img/gnral/header-1170.jpg) no-repeat;
+	height:246px;
+
+}
+</style>
+</head>
+<body>
+<!--include virtual="/_inc/javier/header.asp" -->
+<header>
+</header>
+
+<div class="container"><div class="row"><div class="col-md-8 caja">
+
+
+
+  <!--     -->   
+<div class="form-group input-group">
+
+    
+      <h3 class="tit_mod ">Oficinas Madrid</h3>
+      <div class="input-group-btn"> 
+      
+      <div class="dropdown selectDrop">
+        
+		<select id="pais02" class="hide">
+        <option value="Albania">Albania</option>
+        <option value="Alemania">Alemania</option>
+        <option value="España" selected="">España</option>
+         <option value="Portugal">Portugal</option>
+        </select>
+       <input type="hidden" name="pais" value="Alemania" id="pais">
+       
+  <div class="dropdown-toggle form-control" data-toggle="dropdown" id="paisDrop" aria-expanded="false">
+    <span class="paisNombre">España</span>
+    <span class="caret"></span>
+  </div>
+ 
+    <ul class="dropdown-menu" role="menu" >  <!--style="display: none;"     aria-labelledby="dropdownMenu1"-->
+
+   <!-- <li>
+      <a href="#">Albania</a>
+    </li>
+    <li>
+      <a href="#">Alemania</a>
+    </li>
+     <li>
+      <a href="#">España</a>
+    </li>
+    <li>
+      <a href="#">Portugal</a>
+    </li>-->
+  </ul>
+</div>
+      
+  
+      </div>   
+    </div>
+    
+    
+
+    
+ 
+
+
+<h1>selec</h1>
+<div class="input-group-btn"> 
+      <div class="dropdown selectDrop">
+            <select id="pais02" class="hide">
+                <option value="Albania">Albania</option>
+                <option value="Alemania">Alemania</option>
+                <option value="España" selected="">España</option>
+                <option value="Portugal">Portugal</option>
+            </select>
+           <input type="hidden" name="pais" value="Alemania" id="pais">
+      <div class="dropdown-toggle form-control" data-toggle="dropdown" id="paisDrop" aria-expanded="false">
+        <span class="paisNombre">España</span>
+        <span class="caret"></span>
+      </div>
+     
+      <ul class="dropdown-menu" role="menu"><!-- contenido automático -->
+      </ul>
+    </div>
+</div>
+  
+  
+  
+  
+  
+  
+</div></div></div><!-- :col-md-8 :row :container -->
+<!--include virtual="/_inc/javier/footer.asp" -->
+</body>
+</html>

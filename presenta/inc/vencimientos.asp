@@ -1,0 +1,5 @@
+<h1>Posibles Vencimientos de contratos</h1>
+<p>Property Web acaba de lanzar lo que ser&aacute; todo un bombazo que servir&aacute; para dinamizar el mercado con un servicio que proporciona transparencia y muchas ideas con posibles vencimientos de contratos para oficinas, locales, naves, hoteles, etc.</p>
+<p>Property Web ahora ofrece a los players del mercado inmobiliario: agencias, inversores, propietarios, empresas de mudanzas, muebles de oficinas, aire acondicionado, etc&hellip; incluso m&aacute;s oportunidades de negocio con informaci&oacute;n detallada en la base de datos de  sobre qu&eacute; contratos &quot;pudieran&quot; estar a punto de terminarse y qu&eacute; empresas &quot;podr&iacute;an&quot; estar considerando un cambio de ubicaci&oacute;n.</p>
+<p>Con este servicio din&aacute;mico, todo el mundo conseguir&aacute; publicidad (y &iexcl;gratis) de cara a inversores existentes y/o futuros con indicaciones de qui&eacute;n est&aacute; operando y en qu&eacute; &aacute;rea y con un coste m&iacute;nimo considerando las infinitas posibilidades disponibles</p>
+<p>&gt; Coste: 175 &#8364;/Mes</p>

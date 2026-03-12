@@ -1,0 +1,86 @@
+/* css para aproximar FOLDY a JAVIER */
+/* 
+@font-face {
+	font-family: "Ruda";
+	src: url("/css/fonts/ruda/Ruda-Regular.ttf"), url("/css/fonts/ruda/Ruda-Black.ttf"), url("/css/fonts/ruda/Ruda-Bold.ttf"), url("/css/fonts/ruda/SignikaNegative-Bold.ttf");  
+	font-style: normal;
+	font-weight: normal;
+}
+
+@font-face {
+	font-family: "Ruda IE";
+	src: url("/css/fonts/ruda/Ruda-Black.eot"),url("/css/fonts/ruda/SignikaNegative-Bold.eot"),url("/css/fonts/ruda/Ruda-Regular.eot"),url("/css/fonts/ruda/Ruda-Bold.eot");
+}
+
+@font-face {
+	font-family: "Questrial";
+	src: url("/css/fonts/questrial/Questrial-Regular.ttf");	    
+}
+
+@font-face {
+	font-family: "Questrial IE";
+	src: url("/css/fonts/questrial/Questrial-Regular.eot");
+}
+*/
+
+body {
+	/**/
+	background-color: #F5F5F5;
+	/* font-family: "Ruda"; */
+	}
+	
+#cabecera, footer {
+	/* background-color: #F5F5F5; */
+	background-color: #FFF;
+	}
+
+/*
+section.flash {
+	background-color: #FFF;
+	}
+*/
+	
+.caja {
+	/*
+	border: 1px solid #c1c1c1;
+	*/
+	background-color: #FFF;
+	}
+
+.widget{
+	background: #FFF;
+	}
+
+/*
+.widget > .widget-body {
+	background:#FFF;
+	}
+*/
+	
+section.flash > .titulos {
+	background: #FFF;
+	/*border-top: 1px solid #c1c1c1; 
+	border-bottom: 1px solid #c1c1c1;*/
+}
+
+
+@media screen and (min-width: 420px) {
+	
+}
+
+@media screen and (max-width: 420px) {
+	
+}
+
+@media screen and (min-width: 480px) {
+	
+	section.flash {
+		background: #FFF;
+	}
+	
+}
+
+
+@media screen and (min-width: 800px) {
+	
+}

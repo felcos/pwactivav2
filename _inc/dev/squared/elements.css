@@ -1,0 +1,140 @@
+/*
+cols >> pasado a grid.css
+*/
+@media screen and (min-width: 415px) {
+	.cols-flow-opposite {
+		float:right
+		/* min-width: 380px; */
+	}
+}
+
+/*  */
+
+.widget {
+	margin:15px;
+	/*clear:both;	 ¿¿¿ sobra ???  */
+	}
+
+/* widgets  */
+
+.widget ul, .widget ol {
+	list-style:none;
+	list-style-image:none;
+	margin:0;
+	padding:0;
+	}
+	
+	
+.widget li {
+	color:#111111;
+	display:block;
+	}
+.widget li a {
+	border-bottom:1px solid #e1e1e1;
+	color:#555;
+	display:block;
+	font-size:1em;
+	padding:10px 15px;
+	}
+.widget li a:hover {
+	background:#eaeaea;
+	color:#587898
+	}
+.widget li a .right {
+	float:right;
+	color:#aaa;
+	}
+.widget li:last-child a {
+	border-bottom:none;
+	}
+.widget li ul {
+	margin-top:0.75em;
+	padding-left:1em;
+	}
+
+
+.widget-ios{
+	background:none;
+	margin:0;
+	padding:0 32px 0 0;
+	clear:both;
+	float:left;
+	width:300px;
+	}
+.widgettitle{
+	background:#658db5;
+	color:#FFFFFF;
+	font-weight:700;
+	font-family:'Open Sans', sans-serif;
+	font-size:1.1em;
+	margin:0;
+	padding:10px 15px;
+	position:relative;
+	}
+.widgettitle a{
+	color:#fff
+	}
+.widgettitle a:hover {
+	color:#555;
+	opacity:1
+	}
+.widgettitle .right {
+	font-size:0.73em;
+	color:#555;
+	float:right}
+
+.footer-widget {
+	padding:0;
+	margin:0 0 50px;
+	color:#aaa;
+	-moz-box-sizing:border-box;
+	display:inline;float:left;
+	padding:0 5%;
+	position:relative;width:50%;
+	}	
+.footer-widgettitle {
+	font-weight:700;
+	font-family:'Open Sans', sans-serif;
+	font-size:1.25em;
+	margin:0 0 10px 0;
+	padding:50px 0 0;
+	position:relative;
+	clear:both;
+	border:none;
+	}
+
+#subscribe-text{
+	background: #fefefe;
+	border: 1px solid #d1d1d1;
+	color: #555;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 0;
+	outline: medium none;
+	padding: 9px 0;
+	width: 100%;
+	text-align: center;
+	}
+#subscribe-text:hover{
+	background:#fff;
+	}
+.subscribe-button{
+	background: #555555;
+	border: 1px solid #555555;
+	color: #FEFEFE;
+	display: inline-block;
+	font-size: 1em;
+	font-weight: bold;
+	margin: 15px 0 20px;
+	padding: 8px;
+	text-decoration: none;
+	text-transform: uppercase;
+	width: 100%;
+	}
+.subscribe-button:hover{
+	background:#587898;
+	border:1px solid #587898;
+	}
+	
+/* widgets */
+

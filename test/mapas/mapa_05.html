@@ -1,0 +1,87 @@
+<html> 
+<head> 
+<script type="text/javascript" src="https://maps.google.com/maps/api/js?sensor=false"></script> 
+<script type="text/javascript" src="/lib/maps/infobox.js"></script> 
+<script type="text/javascript"> 
+function initialize() {
+    var latlng = new google.maps.LatLng(55.672962361614566, 12.56587028503418);
+
+    var myMapOptions = {
+         zoom: 15
+        ,center: latlng
+        ,mapTypeId: google.maps.MapTypeId.ROADMAP
+        ,streetViewControl: false
+    };
+    var theMap = new google.maps.Map(document.getElementById("map_canvas"), myMapOptions);
+// namn
+var name=[];
+name.push('Test 1');
+name.push('Test 2');
+
+// positioner
+var position=[];
+position.push(new google.maps.LatLng(55.667093265894245,12.581255435943604));
+position.push(new google.maps.LatLng(55.66453963191134, 12.584795951843262));
+
+// infoboxes
+var infobox = [];
+infobox.push("<div>Hello 1</div>");
+infobox.push("<div>Hello 2</div>");
+
+for (i = 0; i < position.length; i += 1) {
+// Call function
+createMarkers(position[i], infobox[i], name[i]);
+}
+
+function createMarkers(position,content,name) {
+
+    var marker = new google.maps.Marker({
+        map: theMap,
+        draggable: false,
+        position: position,
+        visible: true,
+        title: name
+    });
+
+    var boxText = document.createElement("div");
+    boxText.style.cssText = "background: yellow; width: 300px; height: 70px; padding: 5px;";
+    boxText.innerHTML = content;
+
+    var myOptions = {
+         content: boxText
+        ,disableAutoPan: false
+        ,maxWidth: 0
+        ,pixelOffset: new google.maps.Size(-37, -120)
+        ,zIndex: null
+        ,boxStyle: { 
+            background: "url('tipbox.gif') no-repeat"
+            ,opacity: 1
+            ,width: "300px"
+         }
+        ,closeBoxMargin: "5px 5px 5px 5px"
+        ,closeBoxURL: "https://www.google.com/intl/en_us/mapfiles/close.gif"
+        ,infoBoxClearance: new google.maps.Size(1, 1)
+        ,isHidden: false
+        ,pane: "floatPane"
+        ,enableEventPropagation: false
+    };
+
+    google.maps.event.addListener(marker, "click", function (e) {
+        ib.open(theMap, this);
+    });
+
+    var ib = new InfoBox(myOptions);
+    	ib.open(theMap, marker);
+
+    }
+
+}
+</script> 
+
+<title>Creating and Using an InfoBox</title> 
+</head> 
+<body onload="initialize()"> 
+<div id="map_canvas" style="width: 100%; height: 400px"></div> 
+
+</body>
+</html>

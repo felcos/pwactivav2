@@ -1,0 +1,73 @@
+/*
+.encontrados{ font-size: 0.7em; list-style: none; line-height:2;}
+.encontrados p { font-weight: 900!important;}
+.tit_buscadores {font-size: 2em; padding-top: 0.5em; border-bottom: solid 1px #000; padding-bottom: 0.2em}
+.tit_buscadores2 { font-size: 1.1em; font-weight: 600; border-bottom: solid 1px #d7d7d7; margin-bottom: 1em; margin-top:1em;}
+
+#titular a.simplemodal { font-weight: normal;}
+#tabla_titulares { font-size: 1em; line-height: 1.7em;}
+*/
+
+.encontrados {
+	margin-left: 1em;
+	}
+.encontrados_seccion {
+	float:left;
+	with: 200px;
+	}
+.encontrados_contador {
+	float:left;
+	}	
+
+.result_noencontrado {
+	color:#ec0c0c;
+}
+
+#titular {
+	margin-bottom: .25em;
+}
+
+.titular_fecha {
+	float:right;
+	font-size: .85em;
+	color:grey;
+}
+/*
+#parentesis {
+	display:block;
+}
+*/
+@media only screen and (max-width: 767px) {
+	.titular_fecha {
+		float:none;
+		margin-left:2em;
+	}
+/*
+	#parentesis {
+		display:none;
+	}
+*/
+}
+/* Helpers		
+-------------------------------------------------------------- 
+.show-grid div[class*='grid-'] {
+  background-color: #eee;
+  / * border: 1px solid grey; * /
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  display: block;
+  padding: 0.5em 1em;
+  margin-bottom: 1em;
+  / * text-align: center; * /
+}
+*/
+
+
+
+.list_titulo {
+    display: table-cell;
+    padding: .3em 5px 0 0;
+    color: #0973AE;
+}
+

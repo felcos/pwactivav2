@@ -1,0 +1,4 @@
+<h1>Publicidad</h1>
+<h2>&#61633; D&eacute;jate ver</h2>
+<p>Property Web es un centro de contacto en el mercado inmobiliario. Property Web llega a las mesas de las <strong>personas m&aacute;s influyentes en el mercado</strong> y por ello PropertyWeb, probablemente, es uno de los m&aacute;s eficaces y concentrados medios de marketing y publicidad para su empresa enfocado al mercado inmobiliario. <strong>Es el soporte publicitario ideal</strong>, a trav&eacute;s de banners, enlaces, anuncios, art&iacute;culos, operaciones, disponibilidad de producto, estudios de mercado, etc...</p>
+<img src="/presenta/inc/publicidad.gif"/>

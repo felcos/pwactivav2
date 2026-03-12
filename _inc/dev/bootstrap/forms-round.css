@@ -1,0 +1,21 @@
+.form-control {
+	border-radius: 4px;
+}
+
+.input-sm {
+	border-radius: 3px;
+}
+
+.form-group-sm .form-control {
+	border-radius: 3px;
+}
+
+.input-lg {
+	border-radius: 6px;
+}
+
+.form-group-lg .form-control {
+	border-radius: 6px;
+}
+
+
